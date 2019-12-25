@@ -1,0 +1,88 @@
+
+# Comments begin with the sharp character
+#
+# the following is 15x17 map with details of the bot
+# It is a single letter encoding for the bots logic
+#
+# This is a bit of work in progress
+#
+# Legend
+# X - Is a don't care. Placed in any unused square. Could be terrain
+# C - Denotes an activation check square (forks two outcomes)
+# P - Denotes a pilot check square (forks two outcomes)
+# A - Denotes an unit activation square
+# E - Denotes an Event
+# S - Denotes a sighting check 
+# M - Denotes a unit move location
+# C - Clear Hex
+# V - Light Woods
+# W - Heavy Woods
+
+# Action descriptions for the bots.
+# Format is single letter label for the action type such as A,S, or U. Followed by
+# a two digit x,y coordinate ont the game map for where the action takes place. There
+# can be multiple actions one a map spaces. For example a Piloting Check, Activation
+# Check, or Unit Behavior. Piloting and Activation checks are may by the player. 
+# Unit Behaviors are steps the AI Bot should perform if an AI unit is present. 
+#
+
+title: Test Bot #1 
+author: Michael Lambert
+date: 12/8/2019
+offsetx: 0
+offsety: 0
+map: Grassland #1 
+
+
+# A bots map may or may not have the coordinate labels.
+#  000000000111111
+#  123456789012345
+	
+01 CCCCCCCCCCCCCCC 01
+02 CCCCCCCCCCCCCCC 02
+03 CCVVWVCCCCCCCCC 03
+04 CCCCVCCCCCCCCCC 04
+05 CCCCWCCCCCCCCWC 05
+06 CCCCCCCCCVVCCCC 06
+07 CCVVCCCCCVWVCCC 07
+08 CCWVCCCCCCCCCCC 08
+09 CCCCCCCCCCWCCCC 09
+10 CCCCCCCCCCCCCCC 10
+11 CCCCCCCCCCCCCCC 11
+12 CVVCCCCCCCCCCVC 12
+13 CCCCCCCCWCCCVCC 13
+14 CCCCCCVVCCVVWVC 14
+15 CCCCCCCCCCVCWCC 15
+16 CCCCCCCCCCCCCCC 16
+17 CCCCCCCCCCCCCCC 17
+
+# valid map row formats 
+18 XCCCCCCCCCCCCCC
+CXCCCCCCCCCCCCC 19
+CCXCCCCCCCCCCCC
+
+#  000000000111111
+#  123456789012345
+
+
+# Action text is written in Markdown format.
+A0101. Action Check (+4)? S16 : None
+S1315 [s1] Player hears birds to the North.
+U0106.1 Unit 14 spawns at hex 1,6.
+U0106.2 If s1 enter hex 4,9.
+U0409.1 If Bot present and s1 fire on any unit within 3 hexes of 13,15
+S0106 [s1] A flare appears overhead illuminating the area around you.
+P0104 Pilot Check (+3) ? P0104.2 : P0104.3
+P0104.2 A soldier reports a tank seen in the direction of hex 5,12.
+P0104.3 Must have been the wind.
+U0503 Activate unit 3 in hex 5,13.
+A0205 Activation Check (+2) ? A0205.2 : A0205.3
+A0205.2 Activate unit 3 in hex 5.13. Unit 3 advantage x2 turns.
+A0205.3 Activate unit 3 in hex 5,13. Player advantage x2 turns.
+U1012.5 If unit 10 has no line of sight on player units. Clear s1 and take unit 10 off the map. You've lost track of it.
+  
+
+
+
+
+
