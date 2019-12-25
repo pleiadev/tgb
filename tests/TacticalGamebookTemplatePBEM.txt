@@ -1,0 +1,183 @@
+
+# Comments begin with the sharp character
+#
+# the following is 15x17 map with details for the middle of PBEM game.
+# It is a single letter encoding for the bots logic
+#
+# This is a bit of work in progress.
+#
+# Legend for the msp
+# X - Is a don't care. Placed in any unused square. Could be terrain
+# C - Denotes an activation check square (forks two outcomes)
+# P - Denotes a pilot check square (forks two outcomes)
+# A - Denotes an unit activation square
+# E - Denotes an Event
+# S - Denotes a sighting check 
+# M - Denotes a unit move location
+# C - Clear Hex
+# V - Light Woods
+# W - Heavy Woods
+
+# Action descriptions for the PBEM game tracking should be compatible with 
+# Bot AI text decriptions.  Bots and PBEM games are unlikely to interact 
+# directly in a single game; however, it may be useful to take a PBEM game 
+# file and convert one of the players units and actions to a bot script.
+#
+# See bot format notes see TacicalGamebookTemplate.txt file.
+#
+# This will likely require some manual editing to create various 
+# checks for solo play. It may be useful to create a wizard mode to process
+# a PBEM game turns. If the bot is Player 2 then for Player 1 prompt the
+# designer based on the Player 1 actions if they should be converted to
+# activation, sighting, or event checks. Skipping particular actions and 
+# merging bots could be useful features.
+# 
+# Compress Move Notation from the web for perspective taking:
+# 
+# Now let’s have a look at your pieces. They are abbreviated by capital 
+# letters in the following way: K=king, Q=queen, R=rook, B=bishop, N=knight. 
+# Of course, the knight can not be represented by a ‘k’ thanks to the king. 
+# Maybe you’ve recognized that we haven’t mentioned the pawn. The pawn is the 
+# only piece not indicated by a letter. Additionally, the capital letters can 
+# vary according to the language of the country where you play chess.
+# 
+# If you want to write down a move, then you notate the capital letter for 
+# the piece you use and the square to which you’ve moved your piece, for 
+# example Qd3 (the queen has moved to the d3 square). If you want to castle 
+# kingside, you write down ‘0-0’ while castling queenside is represented 
+# by ‘0-0-0’. If a piece captures another piece, you write an “x” between 
+# the capital letter and the square where you’ve moved, for example, Nxf3 
+# (the knight (N) has captured (x) a piece on the f3 square). Check is 
+# indicated with a plus at the end of the notation, while two pluses or a 
+# hashtag indicate a checkmate. If a player offers a draw after his move, you 
+# must notate it with a bracketed equal sign right behind the move like 
+# this: (=). The two special rules, en passant and the pawn promotion, also 
+# have special chess notation regulations. The pawn promotion is indicated by 
+# the square the pawn has moved to and the piece it is promoted into, e.g. 
+# b8=Q (a pawn has moved to b8 and been promoted into a queen). En passant 
+# is just indicated by the normal pawn move and “e.p.” behind it, e.g. exd6 
+# e.p. If two identical pieces can move to the same square, you have to 
+# indicate which piece you mean by writing down the square on which it is 
+# originally located right behind the piece, e.g. Nc2d4 (the knight on 
+# c2 moved to the d4 square).
+# 
+# Draft work for PBEM Compressed Move Notation
+#
+# The notation uses lower case letters a-h for the x axis and 
+# numerals for the y axis. Single upper case letters use for 
+# specific units. Each turn starts with a numeral and dot to 
+# mark the turn. Bots do not have turns but actioned based on 
+# player movement.
+#
+# 2. Qb3 e6  - verse- U0106.2 If s1 enter hex 4,9.
+#
+# Former lovely compactness and larger audience familiarity and later includes 
+# options for ladder logic necessary for solo play. Different games will have 
+# different coordinate systems in play. 
+#
+# Assignment of Player unit to Letter
+# P=BattleMaster BLR-1G
+# 
+# Move mode notation
+# 
+# s (stand)Still
+# w Walk
+# r Run
+# j Jump
+# h Hover (VTOL)
+# f Flight, altitude
+# 
+# Example move notation: unit mode from to
+# Pr h11 e11
+# 
+# Firing notation
+# P1xh12 L20, P, M, M
+# 
+# G Machine Gun
+# S Small Laser
+# M Medium Laser
+# L Large Laser
+# P PPC
+# A Auto Cannon, A2,A5, A10, A15, A20
+# L LRM, L5, L10, L15, L20
+# S SRM, S2, S4, S6
+# F Flamer
+# G Gauss Rifle
+# 
+# x Firing
+# h Hit
+# c Cluster Hit Location
+# + Critical
+# 
+# Hit Location 
+# H Head
+# LA Left Arm
+# LT Left Torso
+# CT Center Torso
+# RT Right Torso
+# RA Right Arm
+# LL Left Leg
+# RL Right Leg
+# 
+# Firing Move Example
+# Pw g7 h5 xh11 L20h14cRT-LA-H, PhLL, M, M
+# 
+
+
+title: Test PBEM #1
+author: Michael Lambert
+date: 12/25/2019
+offsetx: 0
+offsety: 0
+map: Grassland #1 
+
+
+# A gameboard map may or may not have the coordinate labels.
+#  000000000111111
+#  123456789012345
+#  abcdefghijklmno
+
+01 CCCCCCCCCCCCCCC 01
+02 CCCCCCCCCCCCCCC 02
+03 CCVVWVCCCCCCCCC 03
+04 CCCCVCCCCCCCCCC 04
+05 CCCCWCCCCCCCCWC 05
+06 CCCCCCCCCVVCCCC 06
+07 CCVVCCCCCVWVCCC 07
+08 CCWVCCCCCCCCCCC 08
+09 CCCCCCCCCCWCCCC 09
+10 CCCCCCCCCCCCCCC 10
+11 CCCCCCCCCCCCCCC 11
+12 CVVCCCCCCCCCCVC 12
+13 CCCCCCCCWCCCVCC 13
+14 CCCCCCVVCCVVWVC 14
+15 CCCCCCCCCCVCWCC 15
+16 CCCCCCCCCCCCCCC 16
+17 CCCCCCCCCCCCCCC 17
+
+#  000000000111111
+#  123456789012345
+#  abcdefghijklmno
+
+
+# Action text is written in Markdown format. TODO Update to represent a sample PBEM game.
+A0101. Action Check (+4)? S16 : None
+S1315 [s1] Player hears birds to the North.
+U0106.1 Unit 14 spawns at hex 1,6.
+U0106.2 If s1 enter hex 4,9.
+U0409.1 If Bot present and s1 fire on any unit within 3 hexes of 13,15
+S0106 [s1] A flare appears overhead illuminating the area around you.
+P0104 Pilot Check (+3) ? P0104.2 : P0104.3
+P0104.2 A soldier reports a tank seen in the direction of hex 5,12.
+P0104.3 Must have been the wind.
+U0503 Activate unit 3 in hex 5,13.
+A0205 Activation Check (+2) ? A0205.2 : A0205.3
+A0205.2 Activate unit 3 in hex 5.13. Unit 3 advantage x2 turns.
+A0205.3 Activate unit 3 in hex 5,13. Player advantage x2 turns.
+U1012.5 If unit 10 has no line of sight on player units. Clear s1 and take unit 10 off the map. You've lost track of it.
+  
+
+
+
+
+
