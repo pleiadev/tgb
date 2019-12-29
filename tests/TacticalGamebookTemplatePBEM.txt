@@ -72,7 +72,7 @@
 # 2. Qb3 e6  - verse- U0106.2 If s1 enter hex 4,9.
 #
 # Former lovely compactness and larger audience familiarity and later includes 
-# options for ladder logic necessary for solo play. Different games will have 
+# options for logic necessary for solo play. Different games will have 
 # different coordinate systems in play. 
 #
 # Assignment of Player unit to Letter
@@ -86,6 +86,7 @@
 # j Jump
 # h Hover (VTOL)
 # f Flight, altitude
+# d dead or disabled
 # 
 # Example move notation: unit mode from to
 # Pr h11 e11
@@ -109,6 +110,9 @@
 # c Cluster Hit Location
 # + Critical
 # 
+# Physical attack notation
+# P ph3LL
+#
 # Hit Location 
 # H Head
 # LA Left Arm
@@ -120,7 +124,7 @@
 # RL Right Leg
 # 
 # Firing Move Example
-# Pw g7 h5 xh11 L20h14cRT-LA-H, PhLL, M, M
+# Pw g7 h5 xh11 L20h14cRT-LA-H+C, PhLL, M, M
 # 
 
 
@@ -160,24 +164,211 @@ map: Grassland #1
 #  abcdefghijklmno
 
 
-# Action text is written in Markdown format. TODO Update to represent a sample PBEM game.
-A0101. Action Check (+4)? S16 : None
-S1315 [s1] Player hears birds to the North.
-U0106.1 Unit 14 spawns at hex 1,6.
-U0106.2 If s1 enter hex 4,9.
-U0409.1 If Bot present and s1 fire on any unit within 3 hexes of 13,15
-S0106 [s1] A flare appears overhead illuminating the area around you.
-P0104 Pilot Check (+3) ? P0104.2 : P0104.3
-P0104.2 A soldier reports a tank seen in the direction of hex 5,12.
-P0104.3 Must have been the wind.
-U0503 Activate unit 3 in hex 5,13.
-A0205 Activation Check (+2) ? A0205.2 : A0205.3
-A0205.2 Activate unit 3 in hex 5.13. Unit 3 advantage x2 turns.
-A0205.3 Activate unit 3 in hex 5,13. Player advantage x2 turns.
-U1012.5 If unit 10 has no line of sight on player units. Clear s1 and take unit 10 off the map. You've lost track of it.
-  
+# Action text is written in Markdown format. Notes from test session
+#
+# The notation below does not show facings but start and end spaces. Movement 
+# facing and turning in an AI bot is an added complexity. Not planning on 
+# using facing and turning as consuming movement points. Along this line of 
+# planning is for elevation providing a +1 bonus to the defender. 
+#
+# There was a lot of missing at times due to the randomness of the dice. Even 
+# so several of the units were getting shot up well enough. The to hit numbers 
+# were as follows:
+# 
+# Gunnery 4: Short, Medium, Long
+# Stand: 4/6/8
+# Walk: 5/7/9
+# Run: 6/8/10
+# Jump: 7/9/11
+#
+# The coordinate encoding was a little redundant e.g. H0505 vs 0505 or f05.
+# As the map was labeled it was easy to look at the map and record the 
+# position. On several occasion I had to return to add the 'H'. Given that
+# the map did not use a-o for x axis I thought it hard to translate that on 
+# the fly. It was simply easier to look at the map hex and record it. 
+# When looking at the notation, I reflected several times if there was and
+# easier way to record coordinates because I had to make some edits to 
+# keep it consistent.
+#
+# Having the start and stop position was very useful in backtracking which 
+# I had to do on a few occasions. Firing is recorded as 'x0505' the hex 
+# location so it is easy to record who is firing on which hex with which
+# weapon and recording the result. It was necessary to refer to a turn's 
+# stop space when backtracking to identify the unit being fired on from 
+# the log. 
+#
+# In recording hits and misses I found that I frequently used spaces around 
+# the commas. The spaces should be optional because it was hard to be 
+# consistent. It was cumbersome to change case I used caps lock off most of 
+# the time but did experiment with turning it on. 
+# 
+# I liked the single letter unit assignment but the two digit C1 unit threw
+# off the column spacing. A minor imparement to readability. Column editing 
+# was very useful but not having the column line up created extra edits. 
+# Using the first letter of the unit model name as its variable was 
+# straight forward to remember except in the case of the Catapult and 
+# Commando. 
+#
+# The use of 'x', 'h', 'c', '+' felt very natural to read and use. 
+#
+# I recorded misses which would be useful for back tracking heat accumulation. 
+# It would also be very useful to know misses because the AI bot will want to 
+# make the same attacks regardless of the missing. I believe it useful when 
+# refactoring a PBEM game into a bot. 
+#
+# At the start of each turn I created a number of rows for each unit with the 
+# the updated turn number. I looked at the last turns stop positions to 
+# record start positions e.g. deleted prior start positions.  Rolling team 
+# initiative I use the map to make movement decisions. Units are put in order 
+# by initiative.
+#   
+#   1. Lr H0301 H0206 
+#   1. Cr H1516 H1309 
+#   1. Tr H0401 H0704 xH0814 L15h9cRT-RA,L 
+#   
+#   2. Tr H0704 H
+#   2. Lr H0206 H
+#   2. Cr H1309 H
+#   
+# Moved units on the map updated move mode based on speed used. I used 
+# movement dice to record move mode and hit modifiers while making movements. 
+# After I was done moving units, I recorded final hex positions for each unit 
+# and recorded the movement mode for each unit (walk, run, etc 
+# 
+# 2. Tr H0704 H0710 xH0814 MhLA, M,M,L,S2
+# 2. Lr H0206 H0113 xH0814 M
+# 2. Cr H1309 H1103 xH0505 S6h2RA-CT, S4, M
+# 
+# In initiative order, I executing the firing declaration and resolution.
+# Updated the units status chart and recorded the results in the file.
+# 
 
+0. C1=Catapult CPLT-C1, H0201
+0. L=Locust LCT-1V, H0301
+0. T=Thunderbolt TDR-5S, H0401
+0. B=BattleMaster BLR-1G, H0501
+0. C=Commando COM-2D, H1516
+0. S=Shadow Hawk SHD-2H, H1216
+0. W=Wolverine WVR-6M, H1317
+0. A=Awesome AWS-8Q, H1416
 
+1. Lr H0301 H0206 
+1. Cr H1516 H1309 
+1. Tr H0401 H0704 xH0814 L15h9cRT-RA,L 
+1. Ar H1416 H1115 xH0704 P,P
+1. C1r H0201 H0203 xH1115 L15, L15
+1. Sr H1216 H0814 xH0704 L5,A5
+1. Bw H0501 H0702 xH0814 P
+1. Wr H1317 H1512 
 
+2. C1w H0203 H0505 xH0814 L15h9cLT-LA, L15h9cLT-RT
+2. Aw H1115 H1115 xH0710 PhRT, PhH+L, P
+2. Tr H0704 H0710 xH0814 MhLA, M,M,L,S2
+2. Sw H0814 H0814 xH0710 S2h1LA, L5h2RL,A5,M
+2. Wr H1512 H1308 xH0710 LhCT,MhRA,MhRL, M, S6h5cRT-RA-RA-RA-CT+G
+2. Br H0702 H1204 xH1308 PhRL, MhRT, MhLL, M, M, S6
+2. Lr H0206 H0113 xH0814 M
+2. Cr H1309 H1103 xH0505 S6h2RA-CT, S4, M
+
+3. C1w H0505 H0508 xH1009 MhRA,MhRL,M,M
+3. Aw H1115 H1115 xH0706 PhRT, P
+3. Bw H1204 H1307 xH1009 PhLT, S6h4LL-H-LA-LL
+3. Sr H0814 H1215 xH0706 L5,A5
+3. Lw H0113 H0917 xH1215 GhRT,M,G 
+3. Cw H1103 H1203 xH1307 M,S6,S4
+3. Ww H1308 H1009 xH0706 L,M,M,S6
+3. Tw H0710 H0706 xH1009 MhCT,L,M,M,L15,S2
+
+4. Tw H0706 H1007 xH1214 MhLL,MhRA,L15h9cLL-LL,L,S2,M
+4. As H1115 H1115 xH1007 PhLT,PhRA,P
+4. C1r H0508 H0411 xH1115 MhLL,L15,L15,M,M,M
+4. Wr H1009 H0807 xH1007 LhCT+Ammo,MhLA,MhRA,S6,
+4. Bw H1307 H1310 xH1214 MhLL,MhLA,MhH,S6h4cLA-RL-LL-RA,P,M 
+4. Cw H1203 H1106 xH0709 S6,S4,M
+4. Lr H0917 H0709 xH0807 MhLL,GhRT
+4. Ss H1215 H1213 xH0709 L5hLT,A5hCT,S2
+
+5. Tw H1007 DEAD 
+5. C1r H0411 H0411 xH1108 L15h9cRT-RL,L15h9cCT-lA,MhH,MHLT
+5. As H1115 H1115 xH1110 PhRT, PhRT, PhCT
+5. Lr H0709 H0716 xH1214 MhLT
+5. Wr H0807 H0409 xH0411 LhLA, MhRL, S6h5cLT-RL-RL-LL-LL
+5. Bw H1310 H1110 xH1108 MhCT, xH1214 PhRT, MhRL, S6h5cLA-CT-RA-CT-LT
+5. Cw H1106 H1108 xH1110 MhCT+E,S4h3cLL-RA-LL,S6h2cRL-LT
+5. Ss H1213 H1213 xH1110 A5hRT, S2h1cRT
+
+6. Td H1007 DEAD 
+6. Cd H1106 DEAD 
+6. Sd H1213 DEAD 
+6. C1w H0411 H0110 xH1114 L15h12cRA-LT-RA, MhRA, L15, M, xh0708 M,M
+6. Wr H0409 H0708 xH0511 LhRT, MhRT
+6. Bw H1110 H1113 xH0708 MhLT,M xH1114 PhRT, MhRL,MhLT,MhLT,MhRL pH1114 PhCT
+6. Aw H1115 H1114 xH1113 PhLT, PhLA, PhRT, ShRL pH1113 PhCT
+6. LW H0716 H0511 xH0708 MhRA
+
+7. Td H1007 DEAD 
+7. Cd H1106 DEAD 
+7. Sd H1213 DEAD 
+7. Ld H0511 DEAD
+7. Wr H0708 H0710 xH1113 MhCT+G
+7. C1w H0110 H0512 xH1114 L15h9cRA-RA,MhCT,L15,M,M,M, 
+7. Bw H1113 H1114 xH1113 PhCT,MhLT,MhCT+E,MhRT,S6,M pH1113 PhRA
+7. Aw H1114 H1113 xH1114 PhCT,P,P,S pH1114 PhRA
+
+8. Td H1007 DEAD 
+8. Cd H1106 DEAD 
+8. Sd H1213 DEAD 
+8. Ld H0511 DEAD
+8. Wr H0710 H1112 xH1013 LhRL, MhRA, MhRL, S6h3cRL-RT-RA
+8. C1w H0512 H0611 xH1114 MhLA,MhRT,MhRT,L15,L15,M
+8. As H1113 H1113 xH1013 PhLT,PhLL, P 
+8. Bw H1114 H1013 xH1114 PhCT,MhLA,MhRA,MhRA,MhCT, xH1112 MhRA,MhCT
+
+9. Td H1007 DEAD 
+9. Cd H1106 DEAD 
+9. Sd H1213 DEAD 
+9. Ld H0511 DEAD
+9. Bd H1013 DEAD 
+9. Ad H1113 DEAD 
+9. Wr H1112 H0912 xH0209 LhRL, MhRA,MhLT,S6h2cRT-RT
+9. C1w H0611 H0209 xH0912 L15h9cRT-RL, L15h9cRL-LT, MhH,M,M,M,
+
+10. Td H1007 DEAD 
+10. Cd H1106 DEAD 
+10. Sd H1213 DEAD 
+10. Ld H0511 DEAD
+10. Bd H1013 DEAD 
+10. Ad H1113 DEAD 
+10. C1s H0209 H0209 xH0409 L15h9cLA-LA,MhCT,MhCT,MhRL, L15,M
+10. Wr H0912 H0409 xH0209 LhCT, MhRA,MhCT, S6h4cRA-LA-RT-RL
+
+11. Td H1007 DEAD 
+11. Cd H1106 DEAD 
+11. Sd H1213 DEAD 
+11. Ld H0511 DEAD
+11. Bd H1013 DEAD 
+11. Ad H1113 DEAD 
+11. C1s H0209 H0209 xH0409 L15h9cLL-RT,MhLA,MhRL,MhRA,MhLA, L15
+11. Ws H0409 H0409 xH0209 LhRA, MhRA, MhLL, S6h3cLA-CT-LL
+
+12. Td H1007 DEAD 
+12. Cd H1106 DEAD 
+12. Sd H1213 DEAD 
+12. Ld H0511 DEAD
+12. Bd H1013 DEAD 
+12. Ad H1113 DEAD 
+12. Wd H0409 DEAD
+12. C1S H0209 DISABLED
+
+#
+# Battle fought to the fanitical end. No forced withdrawal rules.
+# On 12 twelve the Wolverine offered a draw but in reviewing damage and
+# weapons available to the mechs the Catapult declined and continued 
+# attacking.
+#
+# Last two units had weapons till the last turn, match ended with Catapult 
+# lost both legs, was immobilized with the pilot surviving while the 
+# Wolverine was destroyed.  
+#
 
 
