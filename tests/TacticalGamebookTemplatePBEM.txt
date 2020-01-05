@@ -127,7 +127,6 @@
 # Pw g7 h5 xh11 L20h14cRT-LA-H+C, PhLL, M, M
 # 
 
-
 title: Test PBEM #1
 author: Michael Lambert
 date: 12/25/2019
@@ -243,6 +242,7 @@ map: Grassland #1
 # Updated the units status chart and recorded the results in the file.
 # 
 
+# Setup and Deployment. Alias assignment
 0. C1=Catapult CPLT-C1, H0201
 0. L=Locust LCT-1V, H0301
 0. T=Thunderbolt TDR-5S, H0401
@@ -251,6 +251,8 @@ map: Grassland #1
 0. S=Shadow Hawk SHD-2H, H1216
 0. W=Wolverine WVR-6M, H1317
 0. A=Awesome AWS-8Q, H1416
+0. P1=C1,L,T,B
+0. P2=C,S,W,A
 
 1. Lr H0301 H0206 
 1. Cr H1516 H1309 

@@ -35,6 +35,7 @@
 #    
 #    #  000000000111111
 #    #  123456789012345
+#    #  abcdefghijklmno
 #    
 #    01 CCCCCCCCCCCCCCC 01
 #    02 CCCCCCCCCCCCCCC 02
@@ -55,8 +56,8 @@
 #    17 CCCCCCCCCCCCCCC 17
 #    
 #    #  000000000111111
-#       123456789012345
-#    
+#    #  123456789012345
+#    #  abcdefghijklmno
 #    
 #    # Action descriptions for the bots.
 #    # Format is single letter label for the action type such as A,S, or U. Followed by
@@ -82,9 +83,26 @@
 #    A0205.3 Activate unit 3 in hex 5,13. Player advantage x2 turns.
 #    U1012.5 If unit 10 has no line of sight on player units. Clear s1 and take unit 10 off the map. You've lost track of it.
 #      
+# Uses
+#    There are several modes the gamebook file could be used store information as follows:
+#       1. Solo Mode. As described above the bot mode could be used to generate operation of bots
+#           for scenario driven play. The bots when designed could allow for small variation in 
+#           placement, joining of multiple bot files into a single bot scenario, and testing of
+#           bot scenario conflicts such as placing multiple units in same hexes. 
+#       2. Player vs Player Mode. The gamebook format could be used to track a play by email 
+#           game between two players using a compressed chess like notation. In this format 
+#           the game state is tracked but it is up to the players to determine how combat is 
+#           resolved. The file can be emailed between players.
+#       3. Editing Mode. The gamebooks are akin to individual bots to be merged together into
+#           a scenario. The inspiration Ambush game merged some eight scenarios into one 
+#           map template which provides some obfuscation in the paragraph book. The scenarios
+#           could have a number of differences. Requires the ablity to generate the pharagraph
+#           book and the move or position substitution look up tables. 
 
 import sys
 import argparse
+import logging
+import re
 from pprint import pprint
 
 DESC = 'Ambush! like scenario generator'
@@ -110,30 +128,31 @@ class TacticalGamebookFileParserState:
     # switch sections when '\n\n' detected
     def section_update(self):
 
-        #print ("state %d %d" % (self.blanklines, self.state))
+        logging.debug("state %d %d" % (self.blanklines, self.state))
 
         # line has non whitespace content, check section transitions
         if PARSER_SECTION_DELIMITERS <= self.blanklines:
             if (PARSER_HEADERS == self.state):
-                #print ("state1 %d %d %d" % (self.blanklines, self.state, PARSER_MAP))
+                logging.debug("state1 %d %d %d" % (self.blanklines, self.state, PARSER_MAP))
                 self.state = PARSER_MAP
                 self.blanklines = 0
             elif (PARSER_MAP == self.state):
-                #print ("state2 %d %d %d" % (self.blanklines, self.state, PARSER_ACTIONS))
+                logging.debug("state2 %d %d %d" % (self.blanklines, self.state, PARSER_ACTIONS))
                 self.state = PARSER_ACTIONS
                 self.blanklines = 0
             elif (PARSER_ACTIONS == self.state):
-                #print ("state3 %d %d %d" % (self.blanklines, self.state, PARSER_FINISHED))
+                logging.debug("state3 %d %d %d" % (self.blanklines, self.state, PARSER_FINISHED))
                 self.state = PARSER_FINISHED
                 self.blanklines = 0
             else:
                 raise Exception("Invalid file parser state")
         else:
             # line has non whitespace, reset blank line count
-            # print ("clear %d %d %d" % (self.blanklines, self.state, PARSER_FINISHED))
+            logging.debug("clear %d %d %d" % (self.blanklines, self.state, PARSER_FINISHED))
             
-            #print ("state4 %d %d %d" % (self.blanklines, self.state, 0))
+            logging.debug("state4 %d %d %d" % (self.blanklines, self.state, 0))
             self.blanklines = 0
+
 
 class TacticalGamebookFile:
     def __init__(self, contents=None, filename=None):
@@ -148,20 +167,66 @@ class TacticalGamebookFile:
         # notes
         self.notes = []
         
+        # corrections
+        self.corrections = {}
+        # 
+        self.map_references = {}
+        
         if None != contents:
             self.parse_tg(contents)
         pass
 
-    def validate(self):
-        pass
+    def isPBEM(self):
+        if "actions" in self.headers and "pbem" == self.headers['actions'].lower():
+            return True
+        return False
+       
+    def isSolo(self):
+        if "actions" in self.headers and "solo" == self.headers['actions'].lower():
+            return True
+        return False
+
+    # process headers when new header pair detected
+    def header_append(self, t, v):
+        self.headers[t] = v
+        
+
+    # append the action to the action list, if entry already exists then append as 
+    # contingent / subaction e.g. a x.1, x.2, x.3 etc 
+    # 
+    def action_append(self, t, v):
+        # calculate next subaction index
+        i = 0
+        a = None
+        
+        # format tag name
+        if ".0" == t[-2:]: 
+            a = t[:-2]
+        elif "." == t[-1:]: 
+            a = t[:-1]
+        elif '.' in t:
+            a, sa = t.split('.')
+            i = int(sa)
+        else:
+            a = t
+
+        while "%s.%d" % (a,i) in self.actions:
+            i = i + 1
+
+        # format normalized key
+        k = "%s.%d" % (a,i)
+        # store action, note the value may reference non-normalized action names later in the file
+        self.actions[ k ] = v
+        # store mapping of action to the normalized action name for later replacement
+        self.corrections[ t ] = k
 
     def parse_tg_headers(self, state, line):
-        #print ("hdr %s " % (line))
+        logging.debug("hdr %s " % (line))
         if ":" in line:
             k,v = line.split(':', 1)
             
             kk = k.strip().lower()
-            self.headers[kk] = v.strip()
+            self.header_append(kk, v.strip())
         else:
             pass
 
@@ -176,7 +241,6 @@ class TacticalGamebookFile:
             pass
         
         return (s,n)
-
 
     def parser_tg_map(self, state, line):
         #print("map %s " % (line))
@@ -224,16 +288,17 @@ class TacticalGamebookFile:
         # map headers might conflict with map rows
         state.mapy = state.mapy + 1
         state.mapline = state.mapline + 1
-        
-
+    
+    
+    # todo how to handle pbem turn notation repeated 1. 1. 1. 1. 
     def parser_tg_actions(self, state, line):
-        #print("action %s " % (line))
+        logging.info("action %s " % (line))
         
         grid, logic = line.split(' ', 1)
-        #print("%s : %s" %(grid, logic))
+        logging.info("%s : %s" %(grid, logic))
         
         # save the bot logic, very little error checking during loading
-        self.actions[ grid ] = logic
+        self.action_append(grid, logic)
         
     def parse_tg_comments(self, state, line):
         # skip comments in the map section, they are likely the legend
@@ -260,7 +325,7 @@ class TacticalGamebookFile:
         
         for rl in contents.splitlines():
             line = rl.strip()
-            #print (line)
+            logging.debug(line)
 
             # handle blank lines
             if not line:
@@ -282,8 +347,57 @@ class TacticalGamebookFile:
         # after reading gamebook, 
         self.parser_tg_sanity_check(state)
 
+
+    def normalized_map_ref(self, x, y):
+        return "h%02d%02d" % (x, y)
+
+    # examine action text and map location references
+    # todo should 'hexes of' be detect for x,y  check meaning
+    def validate_location_scan(self, a):
+        logging.debug("processing %s" % (a))
+        
+        scans = []
+        scans.append("hex(?:es of)? (\d{1,2})[, ]+(\d{1,2})")
+        scans.append("[hH](\d{1,2})[, ]?(\d{1,2})")
+        
+        action = self.actions[a]
+        normalized = ""
+        
+        i = 0
+        y = 0
+        for s in scans:
+            i = i + 1
+            for m in re.finditer(s, action):
+                location = "H%02d%02d" % (int(m.group(1)), int(m.group(2)))
+                logging.debug("match %d %s loc=%s for x=%s y=%s match=%s (%d,%d)" % (i, a, location, m.group(1), m.group(2), m.group(0), m.start(0), m.end(0)))
+                
+                normalized = normalized + action[y:m.start(0)]
+                normalized = normalized + "".join(self.normalized_map_ref(int(m.group(1)), int(m.group(2))))
+                y = m.end(0)
+                
+        normalized = normalized + action[y:]
+        
+        # check action syntax 
+        if (action != normalized):
+            # perform fix up
+            logging.info("location fixup:\n\t%s\n\t%s" % (action, normalized))
+            self.actions[a] = normalized
+        
+    # run through the action text and build a map of hex locations
+    def validate_actions(self):
+        logging.debug("validating actions")
+
+        for a in self.actions:
+            self.validate_location_scan(a)
+        
     def parser_tg_sanity_check(self, state):
+        logging.debug("petforming sanity checks")
         # perform snity checks
+        
+        self.validate_actions()
+        
+        
+        
         # check that all the action reference exist within the bot
         # check that all the action map reference exist on the map
         # generate a map of the story forks
@@ -298,10 +412,11 @@ class TacticalGamebookFile:
         # generate a substitution grid
         #
         # work on feature that enable play by email, etg remote games
-    
-
         pass
 
+    def validate(self):
+        pass
+        
     def read(self, fd):
         self.parse(fd.read())
 
@@ -317,22 +432,28 @@ class TacticalGamebookFile:
 
         t = []
         o = []
+        l = []
         for i in range(1, dx+1):
             t.append("%d" % ((i / 10)))
             o.append("%d" % ((i % 10)))
+            if i > 26:
+                raise exception("The map is larger than the alphabet. What is the plan here 'aa'? ")
+            l.append("%s" % (chr(ord('`') + i)))
 
-        # todo write map coordinates
+        # write map coordinates
         fd.write("#  %s\n" % ("".join(t)))
         fd.write("#  %s\n" % ("".join(o)))
+        fd.write("#  %s\n" % ("".join(l)))
         fd.write("\n")
         
         for i in self.map.items():
             fd.write("%02d %s %02d\n" % (i[0]+1, i[1][0], i[0]+1))
 
-        # todo write map coordinates
+        # write map coordinates
         fd.write("\n")
         fd.write("#  %s\n" % ("".join(t)))
         fd.write("#  %s\n" % ("".join(o)))
+        fd.write("#  %s\n" % ("".join(l)))
 
         fd.write("\n\n")
 
@@ -430,8 +551,13 @@ def main(argv):
     parser = argparse.ArgumentParser(description=DESC)
     #parser.add_argument('-?', '--help', type=bool, help='Print help text')
     parser.add_argument('-i', '--input', type=str, help='scenario filename')
-    
+    parser.add_argument('--pbem', type=str, help='pbem file format')
+    verbosityChoices = [logging.NOTSET, logging.DEBUG, logging.INFO, logging.WARNING ]
+    parser.add_argument('-V', '--verbosity', type=int, choices=verbosityChoices, help='increase output verbose level')
     args = parser.parse_args(argv)
+    if None != args.verbosity:
+        pprint(args)
+        logging.getLogger().setLevel(args.verbosity)
 
     gb = TacticalGamebookFile()
     
