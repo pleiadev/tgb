@@ -103,6 +103,8 @@ import sys
 import argparse
 import logging
 import re
+import collections
+
 from pprint import pprint
 
 DESC = 'Ambush! like scenario generator'
@@ -347,14 +349,14 @@ class TacticalGamebookFile:
         # after reading gamebook, 
         self.parser_tg_sanity_check(state)
 
-
+        
     def normalized_map_ref(self, x, y):
         return "h%02d%02d" % (x, y)
 
     # examine action text and map location references
     # todo should 'hexes of' be detect for x,y  check meaning
     def validate_location_scan(self, a):
-        logging.debug("processing %s" % (a))
+        logging.debug("processing %s locations" % (a))
         
         scans = []
         scans.append("hex(?:es of)? (\d{1,2})[, ]+(\d{1,2})")
@@ -382,6 +384,40 @@ class TacticalGamebookFile:
             # perform fix up
             logging.info("location fixup:\n\t%s\n\t%s" % (action, normalized))
             self.actions[a] = normalized
+
+    def normalized_unit_ref(self, n):
+        return "u%02d" % (n)
+
+    # examine action text and map unit references
+    def validate_unit_scan(self, a):
+        logging.debug("processing %s units" % (a))
+        
+        scans = []
+        scans.append("[Uu]nit ?(\d{1,2})")
+                
+        action = self.actions[a]
+        normalized = ""
+        
+        i = 0
+        y = 0
+        for s in scans:
+            i = i + 1
+            for m in re.finditer(s, action):
+                unit = "u%02d" % (int(m.group(1)))
+                logging.debug("match %d %s unit=%s for n=%s match=%s (%d,%d)" % (i, a, unit, m.group(1), m.group(0), m.start(0), m.end(0)))
+                
+                normalized = normalized + action[y:m.start(0)]
+                normalized = normalized + "".join(self.normalized_unit_ref(int(m.group(1))))
+                y = m.end(0)
+                
+        normalized = normalized + action[y:]
+        
+        # check action syntax 
+        if (action != normalized):
+            # perform fix up
+            logging.info("location fixup:\n\t%s\n\t%s" % (action, normalized))
+            self.actions[a] = normalized
+
         
     # run through the action text and build a map of hex locations
     def validate_actions(self):
@@ -389,14 +425,20 @@ class TacticalGamebookFile:
 
         for a in self.actions:
             self.validate_location_scan(a)
+            self.validate_unit_scan(a)
+ 
+        # parse the gamebook actions and see if any exceptions are raised
+        p = ActionParser()
+        p.validate(self)
         
+
     def parser_tg_sanity_check(self, state):
         logging.debug("petforming sanity checks")
         # perform snity checks
         
         self.validate_actions()
         
-        
+
         
         # check that all the action reference exist within the bot
         # check that all the action map reference exist on the map
@@ -472,6 +514,213 @@ class TacticalGamebookFile:
         # notes
         self.notes = []  
     
+
+ACTION_STATE_INIT = 0
+ACTION_STATE_PASS = 1
+ACTION_STATE_CONTINUE = 2
+ACTION_STATE_RAISE = 3
+
+
+class ActionParserState:
+    def __init__(self, keywords):
+        self.state = ACTION_STATE_INIT
+        self.keywords = keywords
+        self.line_num = 1
+        self.line_start = 0
+        self.kind = None
+        self.value = None
+        self.column = 0
+        self.blanklines = 0
+        self.error = None
+        self.mo = None
+        
+    def process_group(self):
+        self.kind = self.mo.lastgroup
+        self.value = self.mo.group()
+        self.column = self.mo.start() - self.line_start
+        
+    def tokenize_number(self, state):
+        self.value = float(self.value) if '.' in self.value else int(self.value)
+        return ACTION_STATE_PASS
+    def tokenize_id(self, state):
+        if 'ID' == self.kind and self.value.upper() in self.keywords:
+            self.kind = self.value.upper()
+        return ACTION_STATE_PASS
+    def tokenize_newline(self, state):
+        self.line_start = self.mo.end()
+        self.line_num += 1
+        return ACTION_STATE_CONTINUE
+    def tokenize_space(self, state):
+        return ACTION_STATE_CONTINUE
+    def tokenize_mismatch(self, state):
+        self.error = f'{self.value!r} unexpected on line {self.line_num}'
+        return ACTION_STATE_RAISE
+    def tokenize_nop(self, state):
+        #pprint(self.mo)
+        logging.debug("action nop line=%d kind=%s value=%s column=%d" % (self.line_num, self.kind, self.value, self.column))
+        return ACTION_STATE_PASS
+        
+
+Token = collections.namedtuple('Token', ['type', 'value', 'line', 'column'])
+
+class Action:
+    def __init__(self, name):
+        self.name = name
+        self.tokens = []
+
+    
+class ActionParser:
+    def __init__(self):
+        pass
+
+    # ternary :  condition ? value if true : value if false
+    # notes
+    # currently not implementing string literals. it does make the file easier to read if 
+    # user text does not need to be quoted. could implement markdown processing
+    # [s2] notation not tokenized but sighting labels are tokenized
+    # 
+    
+    def action_tokens_generate(self, name, action):
+        logging.info("processing %s for tokens" % (name))
+
+        keywords = {'ACTION', 'PILOT', 'CHECK', 'EVENT', 'SIGHTING', 'IF', 'THEN', 'ELSE', 'WHILE', 'RETURN', 'GOTO', }
+        token_specification = [
+            ('NUMBER',   r'\d+(\.\d*)?'),  # Integer or decimal number
+
+            ('SIGHTING',   r's\d{1,2}'),   # action, label, or address
+            ('LABEL',   r'[APSEU]\d{2}\d{2}(?:\.\d{1,2})?'),  # action, label, or address
+            ('LOCATION',   r'[h]\d{2}\d{2}(?:\.\d{1,2})?'),  # action, label, or address
+            ('ID',       r'[A-Za-z]+'),    # Identifier
+            
+            #('ACTION_CHECK',  r'[Aa]ction [Cc]heck'),   #  operator
+            #('PILOT_CHECK',  r'[Pp]ilot [Cc]heck'),   #  operator
+
+            ('NE',       r'!='),          # logic operator
+            ('EQ',       r'=='),          # logic operator
+            ('LT',       r'<'),           # logic operator
+            ('LE',       r'<='),          # logic operator
+            ('GT',       r'>'),           # logic operator
+            ('GE',       r'>='),          # logic operator
+            ('AND',      r'&&'),          # logic operator
+            ('AND2',     r'and'),         # logic operator
+            ('OR',       r'\|{2}'),          # logic operator
+            ('OR2',      r'or'),          # logic operator
+            ('NOT',      r'!'),           # unary operator
+            
+            ('ASSIGN',   r'='),           # assignment operator
+            ('TERNARY',  r'\?'),           # ternary conditional
+            ('BRANCH',   r':'),           # ternary conditional branch 
+            
+            ('PLUS',     r'\+'),           # unary operator
+            ('MINUS',    r'-'),           # unary operator
+            ('MUL',      r'\*'),           # unary operator
+            ('DIV',      r'/'),           # unary operator
+            ('MOD',      r'%'),           # unary operators
+
+            ('LPAREN',   r'\('),           # Left Parenthesis   
+            ('RPAREN',   r'\)'),           # Right Parenthesis 
+            ('LBRACK',   r'\['),           # Left Bracket   
+            ('RBRACK',   r'\]'),           # Right Bracket 
+            ('LBRACE',   r'\{'),           # Left Brace   
+            ('RBRACE',   r'\}'),           # Right Brace
+            
+            ('COMMA',    r','),            # Right Parenthesis 
+            ('PERIOD',   r'\.'),           # Line endings
+            ('APOSTROPHE',   r'\''),       # 
+             
+            ('NEWLINE',  r'\n'),           # Line endings
+            ('SPACE',    r'[ \t]+'),       # Skip over spaces and tabs
+            ('MISMATCH', r'.'),            # Any other character
+            
+        ]
+
+        tok_regex = '|'.join('(?P<%s>%s)' % pair for pair in token_specification)
+
+        state = ActionParserState(keywords)
+        
+        switch = {}
+        switch['SIGHTING'] = state.tokenize_nop
+        switch['NUMBER'] = state.tokenize_number
+        switch['ID'] = state.tokenize_id
+        switch['LABEL'] = state.tokenize_nop
+        switch['LOCATION'] = state.tokenize_nop
+
+        switch['NE'] = state.tokenize_nop
+        switch['EQ'] = state.tokenize_nop
+        switch['LT'] = state.tokenize_nop
+        switch['LE'] = state.tokenize_nop
+        switch['GT'] = state.tokenize_nop
+        switch['GE'] = state.tokenize_nop
+        switch['AND'] = state.tokenize_nop
+        switch['AND2'] = state.tokenize_nop
+        switch['OR'] = state.tokenize_nop
+        switch['OR2'] = state.tokenize_nop
+        switch['NOT'] = state.tokenize_nop
+        switch['ASSIGN'] = state.tokenize_nop
+        switch['TERNARY'] = state.tokenize_nop
+        switch['BRANCH'] = state.tokenize_nop
+        switch['PLUS'] = state.tokenize_nop
+        switch['MINUS'] = state.tokenize_nop
+        switch['MUL'] = state.tokenize_nop
+        switch['DIV'] = state.tokenize_nop
+        switch['MOD'] = state.tokenize_nop
+        
+        switch['LPAREN'] = state.tokenize_nop
+        switch['RPAREN'] = state.tokenize_nop
+        switch['LBRACK'] = state.tokenize_nop
+        switch['RBRACK'] = state.tokenize_nop
+        switch['LBRACE'] = state.tokenize_nop
+        switch['RBRACE'] = state.tokenize_nop
+        switch['COMMA'] = state.tokenize_nop
+        switch['PERIOD'] = state.tokenize_nop
+        switch['APOSTROPHE'] = state.tokenize_nop
+
+        switch['NEWLINE'] = state.tokenize_newline
+        switch['SPACE'] = state.tokenize_space
+        switch['MISMATCH'] = state.tokenize_mismatch       
+        
+        for state.mo in re.finditer(tok_regex, action):
+            state.process_group()
+            
+            sub = switch[state.kind]
+            ret = sub(state)
+            if ACTION_STATE_PASS == ret:
+                pass
+            elif ACTION_STATE_CONTINUE == ret:
+                continue
+            elif ACTION_STATE_RAISE == ret:
+                raise Exception(state.error)
+
+            yield Token(state.kind, state.value, state.line_num, state.column)
+            
+    # run through the action text and build a list of tokens 
+    def parse(self, name, action):
+        logging.debug("parsing action into tokens")
+        a = Action(name)
+        for t in self.action_tokens_generate(name, action):
+            #logging.debug(t)
+            a.tokens.append(t)
+
+        return a
+
+    # run through a gamebook and build a list of token lists
+    def parse_tactical_gamebook(self, tgb):
+        logging.debug("validating actions contained in tactical gamebook")
+        al = []
+        for a in tgb.actions:
+            t = self.parse(a, tgb.actions[a])
+            al.append(t)
+                
+        return al
+
+    # parse a gamebook
+    def validate(self, tgb):
+        al = self.parse_tactical_gamebook(tgb)
+
+        for a in al:
+            print(a.name)
+            pprint(a.tokens)
+
         
 
 class para:

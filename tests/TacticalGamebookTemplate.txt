@@ -71,14 +71,14 @@ A0101. Action Check (+4)? S16 : None
 S1315 [s1] Player hears birds to the North.
 U0106.1 Unit 14 spawns at hex 1,6.
 U0106.2 If s1 enter hex 4, 9.
-U0409.1 If Bot present and s1 fire on any unit within 3 hexes of 13,15
+U0409.1 If Bot present and s1 fire on any unit within 3 hexes of hex 13,15.
 S0106 [s1] A flare appears overhead illuminating the area around you.
 P0104 Pilot Check (+3) ? P0104.2 : P0104.3
 P0104.2 A soldier reports a tank seen in the direction of hex 5,12.
 P0104.3 Must have been the wind.
 U0503 Activate unit 3 in hex 5,13.
 A0205 Activation Check (+2) ? A0205.2 : A0205.3
-A0205.2 Activate unit 3 in hex 5.13. Unit 3 advantage x2 turns.
+A0205.2 Activate unit 3 in hex 5,13. Unit 3 advantage x2 turns.
 A0205.3 Activate unit 3 in hex 5,13. Player advantage x2 turns.
 U1012.5 If unit 10 has no line of sight on player units. Clear s1 and take unit 10 off the map. You've lost track of it.
 P0306.1 If s1 Pilot Check (+2) ? P0306.2 : P0306.3
