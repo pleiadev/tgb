@@ -110,9 +110,10 @@ from pprint import pprint
 DESC = 'Ambush! like scenario generator'
 
 PARSER_HEADERS = 1
-PARSER_MAP = 2
-PARSER_ACTIONS = 3
-PARSER_FINISHED = 4
+PARSER_SECTION = 2
+PARSER_MAP = 3
+PARSER_ACTIONS = 4
+PARSER_FINISHED = 5
 PARSER_SECTION_DELIMITERS = 2
 PARSER_SECTION_DELIMITER = '\n'
 
@@ -121,38 +122,57 @@ class TacticalGamebookFileParserState:
     def __init__(self):
         self.state = PARSER_HEADERS
         self.blanklines = 0
+        self.lineno = 0
         self.section = PARSER_HEADERS
+        self.section_name = None
         self.mapx = 0
         self.mapy = 0
         self.mapline = 0
         self.actionline = 0
         
+    def state_name(self, state = None):
+        if (None == state):
+            state = self
+            
+        if (PARSER_HEADERS == state.state):
+            return "headers"
+        elif (PARSER_MAP == state.state):
+            return "map"
+        elif (PARSER_ACTIONS == state.state):
+            return "actions"
+        elif (PARSER_FINISHED == state.state):
+            return "finished"
+        elif (PARSER_SECTION == state.state):
+            return "section"
+        else:
+            raise Exception("Unknown section %d" % (state.state))
+
+        
     # switch sections when '\n\n' detected
     def section_update(self):
 
-        logging.debug("state %d %d" % (self.blanklines, self.state))
+        logging.debug("state %s %d" % (self.state_name(), self.blanklines)) 
 
         # line has non whitespace content, check section transitions
         if PARSER_SECTION_DELIMITERS <= self.blanklines:
+            
             if (PARSER_HEADERS == self.state):
-                logging.debug("state1 %d %d %d" % (self.blanklines, self.state, PARSER_MAP))
+                logging.debug("new state=map state_prev=%s %d" % (self.state_name(), self.blanklines))
                 self.state = PARSER_MAP
                 self.blanklines = 0
             elif (PARSER_MAP == self.state):
-                logging.debug("state2 %d %d %d" % (self.blanklines, self.state, PARSER_ACTIONS))
+                logging.debug("new state=action state_prev=%s %d" % (self.state_name(), self.blanklines))
                 self.state = PARSER_ACTIONS
                 self.blanklines = 0
             elif (PARSER_ACTIONS == self.state):
-                logging.debug("state3 %d %d %d" % (self.blanklines, self.state, PARSER_FINISHED))
+                logging.debug("new state=finished state_prev=%s %d" % (self.state_name(), self.blanklines))
                 self.state = PARSER_FINISHED
                 self.blanklines = 0
             else:
                 raise Exception("Invalid file parser state")
         else:
             # line has non whitespace, reset blank line count
-            logging.debug("clear %d %d %d" % (self.blanklines, self.state, PARSER_FINISHED))
-            
-            logging.debug("state4 %d %d %d" % (self.blanklines, self.state, 0))
+            logging.debug("state %s clear %d" % (self.state_name(), self.blanklines))
             self.blanklines = 0
 
 
@@ -223,7 +243,7 @@ class TacticalGamebookFile:
         self.corrections[ t ] = k
 
     def parse_tg_headers(self, state, line):
-        logging.debug("hdr %s " % (line))
+        logging.debug("header %s " % (line))
         if ":" in line:
             k,v = line.split(':', 1)
             
@@ -231,6 +251,22 @@ class TacticalGamebookFile:
             self.header_append(kk, v.strip())
         else:
             pass
+            
+    def parse_tg_section(self, state, line):
+        logging.debug("section %s " % (line))
+        
+        # clear section name
+        state.section_name = None
+
+        if '[' in line and ']' in line:
+            b = line.find('[')
+            e = line.find(']')
+            state.section_name = line[b+1:e].upper()
+
+        #self.blanklines = 0   
+
+        logging.debug("section name=%s state=%s" % (state.section_name, state.state_name()))
+            
 
     def parser_tg_map_bookend(self, be):
         s = ""
@@ -321,27 +357,33 @@ class TacticalGamebookFile:
 
         switches = {}
         switches[PARSER_HEADERS] = self.parse_tg_headers
+        switches[PARSER_SECTION] = self.parse_tg_section
         switches[PARSER_MAP] = self.parser_tg_map
         switches[PARSER_ACTIONS] = self.parser_tg_actions
         switches[PARSER_FINISHED] = self.parser_tg_finished
         
         for rl in contents.splitlines():
+            state.lineno = state.lineno + 1
             line = rl.strip()
-            logging.debug(line)
+            logging.debug("line %s" % (line))
 
             # handle blank lines
             if not line:
                 state.blanklines = state.blanklines + 1
                 continue
+            # handle section
+            elif '[' == line[0]:
+                self.parse_tg_section(state, line)
+                state.section_update()
+                continue
+            # handle comments
+            elif ('#' == line[0] or ';' == line[0]):
+                self.parse_tg_comments(state, line)
+                state.section_update()
+                continue
             else:
                 state.section_update()
-            
-            # handle comments
-            if ('#' == line[0] or ';' == line[0]):
-                state.blanklines = 0
-                self.parse_tg_comments(state, line)
-                continue
-
+                
             #print(line)
             sub = switches[state.state]
             sub(state, line)
@@ -583,13 +625,15 @@ class ActionParser:
     def action_tokens_generate(self, name, action):
         logging.info("processing %s for tokens" % (name))
 
-        keywords = {'ACTION', 'PILOT', 'CHECK', 'EVENT', 'SIGHTING', 'IF', 'THEN', 'ELSE', 'WHILE', 'RETURN', 'GOTO', }
+        keywords = {'ACTION', 'ACTIVATION', 'PILOT', 'CHECK', 'EVENT', 'SIGHTING', 'IF', 'THEN', 'ELSE', 'WHILE', 'RETURN', 'GOTO', }
         token_specification = [
             ('NUMBER',   r'\d+(\.\d*)?'),  # Integer or decimal number
 
-            ('SIGHTING',   r's\d{1,2}'),   # action, label, or address
-            ('LABEL',   r'[APSEU]\d{2}\d{2}(?:\.\d{1,2})?'),  # action, label, or address
+            ('SIGHTING',   r'\[?s\d{1,2}\]?'),   # action, label, or address
+            ('LABEL',      r'[APSEU]\d{2}\d{2}(?:\.\d{1,2})?'),  # action, label, or address
             ('LOCATION',   r'[h]\d{2}\d{2}(?:\.\d{1,2})?'),  # action, label, or address
+            ('UNIT',       r'u\d{2}'),     # action, label, or address
+
             ('ID',       r'[A-Za-z]+'),    # Identifier
             
             #('ACTION_CHECK',  r'[Aa]ction [Cc]heck'),   #  operator
@@ -608,7 +652,7 @@ class ActionParser:
             ('NOT',      r'!'),           # unary operator
             
             ('ASSIGN',   r'='),           # assignment operator
-            ('TERNARY',  r'\?'),           # ternary conditional
+            ('FORK',  r'\?'),             # ternary conditional
             ('BRANCH',   r':'),           # ternary conditional branch 
             
             ('PLUS',     r'\+'),           # unary operator
@@ -644,6 +688,7 @@ class ActionParser:
         switch['ID'] = state.tokenize_id
         switch['LABEL'] = state.tokenize_nop
         switch['LOCATION'] = state.tokenize_nop
+        switch['UNIT'] = state.tokenize_nop
 
         switch['NE'] = state.tokenize_nop
         switch['EQ'] = state.tokenize_nop
@@ -657,7 +702,7 @@ class ActionParser:
         switch['OR2'] = state.tokenize_nop
         switch['NOT'] = state.tokenize_nop
         switch['ASSIGN'] = state.tokenize_nop
-        switch['TERNARY'] = state.tokenize_nop
+        switch['FORK'] = state.tokenize_nop
         switch['BRANCH'] = state.tokenize_nop
         switch['PLUS'] = state.tokenize_nop
         switch['MINUS'] = state.tokenize_nop
