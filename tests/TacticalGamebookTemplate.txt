@@ -25,7 +25,6 @@
 # Check, or Unit Behavior. Piloting and Activation checks are may by the player. 
 # Unit Behaviors are steps the AI Bot should perform if an AI unit is present. 
 #
-[HEADERS]
 
 title: Test Bot #1 
 author: Michael Lambert
@@ -69,7 +68,6 @@ CCXCCCCCCCCCCCC
 #  123456789012345
 
 
-[ACTION]
 # Action text is written in Markdown format.
 A0101. Action Check (+4)? S16 : None
 S1315 [s1] Player hears birds to the North.
