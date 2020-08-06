@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Door Generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="dnd.css" />
+<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.ejs" TYPE="text/jscript.encode"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+function generator() 
+{
+	// Read Inputs
+	var nvalue = document.form1.number_value.value; 
+	
+	var generate_list = RGGenerate(generate, "doors.xml", nvalue);
+
+	var theList = "<table><tr><td><ol>";
+	for( i in generate_list)
+	{
+		theList += "<li>";
+		theList += generate_list[i];
+		theList += "</li>";
+	}
+	theList += "</ol></td></tr></table>";
+	
+	display("theResult", theList);
+}
+
+
+// <!-- Begin Display Text Functions-->
+function Msg( s )
+{
+	display("theResult", s);
+}
+
+var NS = (document.layers) ? 1 : 0;
+var NS6 = (document.getElementById) ? 1 : 0;
+var IE = (document.all) ? 1 : 0;
+
+function display(id, str) 
+{
+	if (NS) 
+	{
+    	with (document[id].document) 
+		{
+			open();
+    		write(str);
+			close();
+		}
+	}
+	else if (NS6)
+	{
+    	document.getElementById(id).innerHTML = str;
+	}
+	else
+	{
+		document.all[id].innerHTML = str;
+	}
+}
+
+// <!-- Begin Display Text Functions-->
+</SCRIPT>
+
+</head>
+<BODY>
+
+<H1 align="center">Door Generator</H1>
+<H4 align="center"><A href="email:michaellambert@email.com">by Michael Lambert</A></H4>
+<H4 align="center">Copyright 2002</H4>
+<H4 align="center">Version 1.0</H4>
+<P>
+This utility generates random doors for a dungeon setting.  This utility is 
+distributed at no cost and comes with no guarantee or warranty. Feel 
+free to use this in your campaign and pass it along to your friends.  Hopefully, 
+it will add a little flair to your campaign.
+
+To randomly generate an entry just hit the generate button.  If you 
+have a particularly interesting modification or just plain old comments send 
+it to me via email.
+</P>
+
+<form method="post" action="" name="form1">
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	<tr> <td width="20%" valign="top">
+						
+	<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	<tr align="center"> 
+	<td>Number</td>
+	<td><input type="text" name="number_value" maxlength="2" value="15"> </td>
+	<td><div><input type=button value="Generate" onClick="generator()" /></div></td>
+	</tr>
+	</table>
+	</td>
+	</tr> 
+	<tr align="left">
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe" width="80%" valign="middle">
+	<p><span id="theResult">Press the Generate button to start.</span></p>
+
+	</td>
+	</tr>
+	</table>
+</form>
+
+<xml id="generate"> </xml>
+
+</BODY>
+</HTML>

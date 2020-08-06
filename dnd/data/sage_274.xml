@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="sage.xsl" type="text/xsl"?>
+<sage issue="274">
+<sage-advice>
+<question>
+<p>
+How does a multiclassed character add skill points? All of the examples use single-classed characters. What happens when Leopold, a rogue with an Intelligence score of 14, switches to a fighter after 1st level? This would make Leopold a 1st-level fighter/1st-level rogue, right? Does he get 2 skill points for being a fighter, plus 2 points for Intelligence? Does he get 4 skill points for being a warrior-type character (as barbarians and rangers do)? Does he get quadruple skill points for being first level? And if Leopold is a human, does he get his +1 skill point for being human again? How do I determine how much a skill costs a multiclassed character, and how do I figure out a multiclassed character's maximum rank in a skill?
+</p>
+</question>
+<answer>
+<p>
+Leopold gets 2 skill points for gaining a fighter level, +2 skill points for his 14 Intelligence (and +1 point if Leopold is human). You multiply a character's allotment of skill points by four only when the character chooses his initial set of skills at 1st level, as a 1st-level fighter/1st-level rogue, Leopold is a 2nd-level character. When adding a class level, you always add the allotment of skill points for that class, as shown on Table 4-1 in the Player's Handbook, plus any adjustments for race and Intelligence scores. If Leopold had added a level of ranger or barbarian, he would have added 4 skill points for his class, plus 2 points for Intelligence (and 1 point if he's human).
+</p><p>
+When a multiclassed character gains skill points from a newly added class level, he must spend those skill points as if he were any other member of that class. For example, if Leopold adds a fighter level, he purchases ranks in the Hide skill as a cross-class skill, and he can't purchase any ranks in Use Magic Device (because that skill is exclusive to rogues, and Leopold is buying skills as a fighter). Leopold can, however, purchase Handle Animal as a class skill, even though it was a cross-class skill for him as a rogue. A skill's maximum rank depends on a multiclassed character's character level (not on his level in any particular class). If a skill is a class skill for at least one of the character's classes, the character maximum rank in the skill is his character level + 3; if a skill is not a class skill for any of the character's classes, the maximum rank is half that.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+I have a multiclassed dwarf who is a 6th-level fighter and a 1st-level rogue. I want to pick up a level of cleric. Am I correct in thinking that my character doesn't incur any XP penalties because fighter is her favored class and her other two classes are within a level of each other?
+</p>
+</question>
+<answer>
+<p>
+Yes, you are correct. The levels a character has in a favored class don't count when determining if the character suffers an XP penalty for multiclassing.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Why do half-orcs suffer a net penalty of -2 to their initial ability rolls?
+</p>
+</question>
+<answer>
+<p>
+You refer, I presume, to the half-orc's racial ability adjustments of +2 Strength, -2 Intelligence, and -2 Charisma. (Those numbers do indeed add up to a net total of -2). The game's designers decided that a +2 bonus to Strength more than outweighs the -2 penalty to Intelligence and Charisma, especially considering the half-orc's 60-foot darkvision and favored class of barbarian. Numbers alone don't always tell the whole story.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Is the refocus action intended for the next combat round only? Do you reroll initiative the next round? I can see this being abused by most all characters who do not gain a very good initiative for the combat session: They can refocus and possibly win initiative for the rest of the combat.
+</p>
+</question>
+<answer>
+<p>
+When you refocus, you spend your entire round refocusing. You cannot act or move (not even a 5-foot step). You do not reroll initiative next round; your initiative is treated as though you've rolled a 20 on your initiative check. Though many people seem to think refocus is great option, it's seldom-if ever-worth doing. (See the next question.)
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+What's the use of the refocus action when you can ready an action and go at the highest person's initiative?
+</p>
+</question>
+<answer>
+<p>
+If you ready an action and then act when a person with a higher initiative acts, you're effectively giving up your action so you can go earlier in a later round, which is pretty much the same as refocusing. In some rare instances, refocus could be better, because it can set your initiative number even higher than the highest other initiative, and that could be an advantage if new foes enter the fight. Also, you can only ready a partial action. If you refocus, you can make a full attack at your new initiative. If you ready an attack, you get to make a single attack only when it's finally your turn. 
+</p><p>
+In general, you're right, though. Refocus is mostly a "feel good" option, as in: "I've refocused-now look at what a great initiative number I have!" In the D&amp;D game's cyclical initiative system, it's almost always to your advantage to act as soon as you can, and refocus actually delays your action by forcing it into the next round. Using delay or ready is just about always smarter than refocusing. About the only time refocus isn't a foolish thing to do is when you've got absolutely nothing useful to do anyway.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+The 2nd-Edition D&amp;D game had a rule that allowed characters with multiple attacks to attack before foes who were entitled only to single attacks, but the rule also made them wait to make the second and later attacks until their foes had acted at least once. The full attack action seems to break that rule. Does it?
+</p>
+</question>
+<answer>
+<p>
+Yes, it does. If you choose the full attack action, you make all your attacks during your turn, no matter how many attacks you have or what your position in the initiative order is. Your multiple attacks do not change your initiative number. Note that full attack does not allow a move (except for a 5-foot step), which means that a character with a high initiative number can usually not use it until the second round of a combat, when she has moved into position.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+How can I get away from someone without provoking an attack of opportunity?
+</p>
+</question>
+<answer>
+<p>
+Once you factor in the effects of skills and spells, the game offers a plethora of ways to escape a foe unharmed. Even if you don't have a spell or skill to get you out of trouble, you can disengage from an opponent and not provoke an attack of opportunity just by moving. If all you do during your turn is move (not run), the space you start in (generally considered a 5-foot square) is not considered threatened and nobody can get attacks of opportunity against you. If you later move through another threatened area, however, you are subject to attacks of opportunity. (If your opponent has reach, you can forget about getting away without drawing an attack of opportunity.) Even if you take advantage of this rule, you'll need to have a better movement rate than your opponent or move someplace where your opponent can't follow to get away clean.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If I want to disrupt someone's spell, do I have to deal damage on the same initiative number as the caster (by using a readied action), or can I disrupt the spell by dealing damage to the enemy spellcaster anytime during the round before the spell is cast?
+</p>
+</question>
+<answer>
+<p>
+Damage a spellcaster takes before his turn doesn't affect his spellcasting unless the damage came in the form of a continuing effect, such as from Melf's acid arrow. (See the "Concentration" section of Chapter 10 in the Player's Handbook and the description of the Concentration skill in Chapter 4.) Note that there's nothing special about the point in time that happens to be the start of a round. You can disrupt a spellcaster with Melf's acid arrow even if you hit him with it last round. You don't have to hit the spellcaster with it "before" his turn on the round he's being disrupted. You can use a readied action to try to disrupt the spellcaster, but you might not need to. Spellcasting provokes an attack of opportunity unless the spellcaster successfully casts on the defensive. (See the "Magic Actions" section of Chapter 8.) Perhaps the best way to disrupt an opponent's spells is to grapple him, preventing him from casting spells with somatic components or material components he didn't already have in hand.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+My wizard cast a spell in combat and drew an attack of opportunity. The attack missed. Does my wizard still have to make a Concentration check to cast the spell?
+</p>
+</question>
+<answer>
+<p>
+No, the attack of opportunity must deal damage to force a Concentration check. Damage that is completely negated by a special defense, such as damage reduction or energy resistance, does not cause a Concentration check. If a special defense only partially negates damage, only the damage that actually gets through to the target contributes to a Concentration check's DC.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If I'm fighting with two weapons and I have multiple attacks (say, two at +6/+1), do I then have three attacks per round, or do I use the second weapon for the +1 attack? How do I calculate the bonuses (assuming I don't have Ambidexterity or Two-weapon Fighting)? Do I use the +6 or the +1 for calculating the penalty for the additional attack?
+</p>
+</question>
+<answer>
+<p>
+A second weapon gives you one extra attack each round at your best attack bonus. You make your normal number of attacks with your primary hand and one attack with your other hand. When you use an extra weapon, however, all the attacks you make suffer a penalty. If you don't have the Two-Weapon Fighting or Ambidexterity feats and you're not using a light weapon in your off hand, all the attacks you make with your primary hand suffer a -6 penalty, and the attack you make with your other hand suffers a -10 penalty. Assuming no other bonuses, the character in your example would make two attacks with her primary hand at +0/-5 and one attack with her off hand at -4. If you use a light weapon in your other hand, the attack penalties are slightly lower. See Table 8-2 in the Player's Handbook (and the text accompanying it) for details.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Is a natural 20 always a hit and natural 1 always a miss when attacking? Is a natural 20 always a success and natural 1 always a failure when rolling a saving throw, an ability check, or a skill check?
+</p>
+</question>
+<answer>
+<p>
+On an attack, a roll of 20 on the die is always a success and a roll of 1 is always a failure. This represents the inherently chancy nature of combat, and the innumerable variables that are completely beyond the character's control. In the case of attack rolls, common sense prevails. A roll of 20 can't produce a hit when a hit isn't possible (such as when a target is beyond a melee attack's reach or a ranged attack's maximum range). Some circumstances always produce a hit or a miss no matter what the attack roll is. 
+</p><p>
+For example, an attack against a concealed target has a flat chance to miss (see Table 8-10 in the Player's Handbook), no matter what the attack roll is. Likewise if you perform a coup de grace or take a full round to line up a melee attack on an unattended object, you always hit. Saving throws are similar to attack rolls in that there's always a little something beyond the character's control. Like combat, there are cases where the roll is irrelevant, even if it's a 1 or 20. Creatures that are immune to an attack form never have to roll saving throws against that attack. Likewise, if a spell or attack form doesn't allow a saving throw in the first place, you can't roll a saving throw and hope to get a 20. 
+</p><p>
+Skill checks are not subject to automatic success or failure. Some tasks are just too easy for failure or too hard for success. (Most people don't fail once on every 20 attempts to tie their shoes.) Ability checks are likewise not subject to automatic failure or success. (No matter how lucky you are, you're just not going to kick down a castle wall.) If the DM feels that chance might affect the outcome, a saving throw or an attack roll is probably more appropriate.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+We've noticed a number of instances in which you can divide a number and round the quotient up or down, but the rules don't say what to do. Is there a general rule that we've overlooked?
+</p>
+</question>
+<answer>
+<p>
+Indeed there is. You'll find it on the first page of the appendix (page 275) in the Player's Handbook. Always round a fraction down (even if it is bigger than one half) unless the rules specifically tell you to round up.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Since an Empowered spell affects half again as many targets as its normal version, why doesn't a 5th-level wizard's Empowered magic missile fire off more than three missiles?
+</p>
+</question>
+<answer>
+<p>
+It doesn't fire more missiles because the Empower Spell feat increases a spell's variable, numeric effects. In the case of magic missile, that's the spell's damage, not the number of missiles. A spell such as sleep, on the other hand, affects a variable number of targets (2d4 HD worth of creatures). An Empowered sleep spell affects 2d4 X 1.5 HD worth of creatures.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Is it possible to use a spell such as detect magic or detect evil to detect an invisible foe?
+</p>
+</question>
+<answer>
+<p>
+Yes, but not efficiently. Let's say a character uses a detect magic spell, though the following example applies to any detection spell. The spell reveals nothing about the invisible opponent unless the character happens to aim the spell at the area containing his foe. If the enemy is using an invisibility spell, a spell-like invisibility power, or a supernatural invisibility power, the detect magic spell merely reveals that there is magic somewhere in the area. The detect magic caster has no idea where the magical aura is, what sort of creature or object bears the aura, or whether the aura is in motion. One round later, the detect magic user can search for magical auras again. If the user manages to aim the spell at the invisible foe once more, the detect magic spell reveals the number of magical auras on the foe and the strength of the strongest aura (because the user has scanned the same subject for 2 consecutive rounds). The detect magic user still has no idea exactly where the foe is, what the foe is like, or whether the foe is moving. After another round goes by, the detect magic user can scan for magical auras once again. If the user is lucky enough to catch the invisible foe for a third time, she will have scanned the same subject for 3 consecutive rounds. The detect magic spell now reveals the strength and location of each aura. 
+</p><p>
+The detect magic user still does not "see" the foe and does not know whether the target is moving. (She knows only the strength and locations of magical auras during her turn in the initiative order.) In this case, a "location" is the 5-foot square that contains the aura. If the creature or item bearing the aura takes up more than one square, the detect magic user can get some idea of its size. (See "Big and Little Creatures in Combat" in Chapter 8 of the Player's Handbook.) It is possible for the detect magic user to attack the location of one of the auras the spell has revealed. If the spell revealed auras in different locations, the detect magic user still might not choose the right location to attack. Even if she does, the foe has total concealment, and the attack has a 50% chance to miss no matter what the attack roll is. 
+</p><p>
+Remember that all of the foregoing depends on the detect magic spell user scanning the invisible foe for 3 consecutive rounds. If the detect magic user guesses incorrectly about where to scan even once, she'll have to start the process of zeroing in on her invisible opponent all over again. Use a similar procedure when a character tries to locate an invisible creature with any other "detect" spell.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can I use spell immunity to make myself immune to the detect magic spell? How about other spells such as see invisibility or dispel magic?
+</p>
+</question>
+<answer>
+<p>
+No. Spell immunity gives the subject an unbeatable spell resistance versus the specified spell. Since none of these spells are subject to spell resistance, spell immunity is useless against them.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can characters choose "unarmed strike" as the focus of the Improved Critical feat?
+</p>
+</question>
+<answer>
+<p>
+Yes. An unarmed strike or another natural weapon is a "weapon" for purposes of the Improved Critical feat (and for most other purposes).
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If you go from a medium load to a heavy load, your movement doesn't change. Why is this? Everything else changes.
+</p>
+</question>
+<answer>
+<p>
+A really heavy load just doesn't affect your speed that much. It affects your ability to accelerate, maneuver, or stop, which is why a heavily loaded creature's maximum Dexterity bonus goes down, and its skill check penalty goes up. Essentially, the creature can lumber along at a pretty good clip once it gets going, but has a hard time keeping its balance or making sudden moves.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Do magic weapons have to be masterwork weapons first? If so, why don't the masterwork and magic bonuses stack?
+</p>
+</question>
+<answer>
+<p>
+Yes, you have to have a masterwork weapon before you can enchant it. Masterwork and enhancement bonuses don't stack because they're the same basic type of bonus (an enhancement bonus): They both make a weapon more effective.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can a normal weapon be used for awhile, then be made into a masterwork weapon?
+</p>
+</question>
+<answer>
+<p>
+No. If a weapon is not created as a masterwork weapon, it will never be one. I suppose a 
+used weapon could be melted down to provide materials for a new masterwork weapon, though. The resulting masterwork weapon would not be any cheaper to make.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+At what spellcaster level do potions, wands, and the like operate?
+</p>
+</question>
+<answer>
+<p>
+At whatever caster level the character who made the item decided to set the level. An item's caster level can be no higher than its creator's level at the time the item was made, and no lower than the minimum level required to cast the spell effect the item generates or the spell used to create the item. The DUNGEON MASTER's Guide, which will be released in September, has default caster levels for magic items. Until then, just assume that an item's caster level is the minimum required to cast the effect the item generates.  For example, casting fireball requires a 5th-level wizard, so a wand of fireball casts the spell at 5th level. Note that the 2nd Edition AD&amp;D game used preset caster levels for all magic items. If you're converting from that set of rules to the new rules, use the old caster levels. Those caster levels are as follows: wand 6th-level; staff 8th-level; potion 12th-level; other item 12th-level; artifact DM's discretion, but usually 20th-level.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+We're confused as to which skills you can take 10 and take 20 on. Can we take 10 or take 20 on a Hide check, for example?
+</p>
+</question>
+<answer>
+<p>
+Taking 10 is a way to eliminate chance from a skill check; you can take 10 pretty much anytime you're using a skill and there are no distractions. Taking 20 represents using a skill over and over again until you succeed. (That's why taking 20 uses up so much time.) You can't take 20 if there's a consequence for failure. Since failing a Hide check means you've been spotted, you can't take 20 on a Hide check. In general, you can't take 20 on any check that is resolved with an opposed roll. It might be possible to take 10 on a Hide check. For example, suppose a sentry looks around for a suitable place to hide at the beginning of his watch and then settles in. Since the sentry is not trying to hide from anyone in particular, the DM might very well allow the sentry to take 10 on the Hide check.
+</p>
+</answer>
+</sage-advice>
+</sage>

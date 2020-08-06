@@ -1,0 +1,78 @@
+!IF 0
+# 
+# Copyright (c) 2001 Michael Lambert
+# 
+# Module Name:
+# 
+#     makefile
+# 
+# Abstract:
+# 
+#     This makefile is for building web pages with Transform.js command. 
+# 
+# Targets:
+# 
+# 		ALL			- Builds all targets ending with .xml
+# 
+# Useful Settings:
+# 
+# Optional Controls Variables (partial list), these are environment variables,
+# remember they can be set with env=value on the command line as well:
+# 
+# EXAMPLE:  
+# 
+# If you are having problems with the makefile file, make sure you have 
+#  Transform.js installed in the build directory
+#
+# Usage:  nmake
+#
+#
+!ENDIF
+
+.SUFFIXES: .xml
+
+#
+# Project Configuation
+#
+!IF "$(CFG)" == "NOFORCE"
+_CONFIG_=
+!ELSE
+_CONFIG_=/F
+!ENDIF
+
+#
+# Build Command
+#
+!IFDEF BUILDENV
+BUILD_CMD="$(BUILDENV)\Transform.js"
+!ELSE
+BUILD_CMD="..\build\Transform.js"
+!ENDIF
+
+#
+# Source Files
+#
+STYLESHEET1=feats.xsl
+SOURCES1=\
+feats \
+
+STYLESHEET2=sage.xsl
+SOURCES2=\
+sage_274 \
+sage_275 \
+sage_276 \
+sage_277 \
+sage_278 \
+sage_279 \
+sage_280 \
+
+#
+# Inference Rules
+#
+
+.xml.html:
+	cscript $(BUILD_CMD) $*.xsl $*.xml $*.html $(_CONFIG_)
+
+ALL: 
+	@for %i in ($(SOURCES1)) do @cscript $(BUILD_CMD) $(STYLESHEET1) %i.xml %i.html $(_CONFIG_)
+	@for %i in ($(SOURCES2)) do @cscript $(BUILD_CMD) $(STYLESHEET2) %i.xml %i.html $(_CONFIG_)

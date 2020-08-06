@@ -1,0 +1,358 @@
+
+
+<generator start-xpath="//lookup-table[@key = 'K']/lookup-entry">
+
+	<!-- Description H, R, C, F-->
+	<lookup-table key="K">
+		<lookup-entry>%P% %H%.</lookup-entry>
+		<lookup-entry>%P% %R%.</lookup-entry>
+		<lookup-entry>%P% %C%.</lookup-entry>
+		<lookup-entry>%P% %F%.</lookup-entry>
+	</lookup-table>
+
+	
+	<!-- Sentenance Prefix -->
+	<lookup-table key="P">
+		<lookup-entry>On the north side</lookup-entry>
+		<lookup-entry>To the north</lookup-entry>
+		<lookup-entry>Towards the north</lookup-entry>
+		<lookup-entry>On the east side</lookup-entry>
+		<lookup-entry>To the east</lookup-entry>
+		<lookup-entry>Towards the east</lookup-entry>
+		<lookup-entry>On the south side</lookup-entry>
+		<lookup-entry>To the south</lookup-entry>
+		<lookup-entry>Towards the south</lookup-entry>
+		<lookup-entry>On the west side</lookup-entry>
+		<lookup-entry>To the west</lookup-entry>
+		<lookup-entry>Towards the west</lookup-entry>
+	</lookup-table>
+
+	<!--
+	<lookup-table key="P">
+		<lookup-entry>By the path</lookup-entry>
+		<lookup-entry>Near the path</lookup-entry>
+		<lookup-entry>Close to the path</lookup-entry>
+		<lookup-entry>Neighboring the path</lookup-entry>
+
+		<lookup-entry>By the road</lookup-entry>
+		<lookup-entry>Near the road</lookup-entry>
+		<lookup-entry>Close to the road</lookup-entry>
+		<lookup-entry>On the opposite road</lookup-entry>
+
+		<lookup-entry>On the right side</lookup-entry>
+		<lookup-entry>To the right</lookup-entry>
+		<lookup-entry>Towards the right</lookup-entry>
+		<lookup-entry>On the left side</lookup-entry>
+		<lookup-entry>To the left</lookup-entry>
+		<lookup-entry>Towards the left</lookup-entry>
+		<lookup-entry>Ahead</lookup-entry>
+		<lookup-entry>In front</lookup-entry>
+		<lookup-entry>To the front</lookup-entry>
+		<lookup-entry>Further on</lookup-entry>
+		<lookup-entry>Visible</lookup-entry>
+		<lookup-entry>Noticeable</lookup-entry>
+		<lookup-entry>Seen here</lookup-entry>
+		<lookup-entry>Located here</lookup-entry>
+		<lookup-entry>Featured here</lookup-entry>
+		<lookup-entry>Appearing here</lookup-entry>
+		<lookup-entry>Here</lookup-entry>
+
+		<lookup-entry>In the area</lookup-entry>
+		<lookup-entry>In this area</lookup-entry>
+		<lookup-entry>Within the area</lookup-entry>
+		<lookup-entry>Towards the center of the area</lookup-entry>
+		<lookup-entry>Almost in the middle of the area</lookup-entry>
+
+		<lookup-entry>In the middle</lookup-entry>
+	</lookup-table>
+	-->
+
+	<!-- Danger level -->	
+	<lookup-table key="D">
+		<lookup-entry>potentially dangerous</lookup-entry>
+		<lookup-entry>dangerous</lookup-entry>
+		<lookup-entry>potentially treacherous</lookup-entry>
+		<lookup-entry>treacherous</lookup-entry>
+		<lookup-entry>potentially hazardous</lookup-entry>
+		<lookup-entry>hazardous</lookup-entry>
+	</lookup-table>
+	
+	<!-- Lost prefixes -->
+	<lookup-table key="L">
+		<lookup-entry>a discarded</lookup-entry>
+		<lookup-entry>the remains of a</lookup-entry>
+		<lookup-entry>a lost</lookup-entry>
+		<lookup-entry>an abandoned</lookup-entry>
+		<lookup-entry>some overgrown foliage covering a</lookup-entry>
+		<lookup-entry>a neglected</lookup-entry>
+		<lookup-entry>a derelict</lookup-entry>
+		<lookup-entry>a deserted</lookup-entry>
+		<lookup-entry>a forsaken</lookup-entry>
+	</lookup-table>
+
+	<!-- Scattered items -->
+	<lookup-table key="I">
+		<lookup-entry>a deep well</lookup-entry>
+		<lookup-entry>a pit</lookup-entry>
+		<lookup-entry>a sinkhole</lookup-entry>
+		<lookup-entry>some large mud patches</lookup-entry>
+		<lookup-entry>%L% wagon wheel</lookup-entry>
+		<lookup-entry>%L% horse shoe</lookup-entry>
+		<lookup-entry>a sign post</lookup-entry>
+		<lookup-entry>an abandoned blanket</lookup-entry>
+		<lookup-entry>a discarded boot</lookup-entry>
+		<lookup-entry>a mile marker</lookup-entry>
+		<lookup-entry>%L% animal bones</lookup-entry>
+		<lookup-entry>several dung heaps</lookup-entry>
+		<lookup-entry>some claw marks</lookup-entry>
+		<lookup-entry>animal nests</lookup-entry>
+		<lookup-entry>the remains of a campfire</lookup-entry>		
+		<lookup-entry>a shrine</lookup-entry>
+		<lookup-entry>a cemetery</lookup-entry>
+		<lookup-entry>%L% burial ground</lookup-entry>
+		<lookup-entry>%L% graveyard</lookup-entry>
+		<lookup-entry>a ruin</lookup-entry>
+	</lookup-table>
+
+	<!-- Bridges -->
+	<lookup-table key="B">
+		<lookup-entry>a stone bridge</lookup-entry>
+		<lookup-entry>a wooden bridge</lookup-entry>
+		<lookup-entry>a suspension bridge</lookup-entry>
+		<lookup-entry>a log bridge</lookup-entry>
+	</lookup-table>
+
+	<!-- Mountainous hazards -->	
+	<lookup-table key="MH">
+		<lookup-entry>some fallen timbers</lookup-entry>
+		<lookup-entry>some fallen trees</lookup-entry>
+		<lookup-entry>some collapsed rock</lookup-entry>
+		<lookup-entry>some fallen stones</lookup-entry>
+		<lookup-entry>a precipice</lookup-entry>
+		<lookup-entry>a ravine</lookup-entry>
+		<lookup-entry>a gorge</lookup-entry>
+		<lookup-entry>a fissure</lookup-entry>
+		<lookup-entry>a crevice</lookup-entry>
+	</lookup-table>
+	
+	<!-- Mountainous features -->
+	<lookup-table key="M">
+		<lookup-entry>an overhang</lookup-entry>
+		<lookup-entry>an outcropping</lookup-entry>
+		<lookup-entry>some falls with rushing water</lookup-entry>
+		<lookup-entry>a set of rapids</lookup-entry>		
+		<lookup-entry>a hollow place</lookup-entry>
+		<lookup-entry>some caves</lookup-entry>
+		<lookup-entry>a mine entrance</lookup-entry>
+
+		<lookup-entry>a rise</lookup-entry>
+		<lookup-entry>a cleft</lookup-entry>
+		<lookup-entry>a ledge</lookup-entry>	
+		<lookup-entry>a soft shoulder</lookup-entry>	
+		<lookup-entry>a crag</lookup-entry>
+	</lookup-table>
+	
+	<!-- Hilly terrain features -->
+	<lookup-table key="H">
+		<lookup-entry>is a region that grows more hilly. Moving along the hills reveals additional features. %P% %F%</lookup-entry>
+		<lookup-entry>a cluster of of mounds. %P% %F%</lookup-entry>
+		<lookup-entry>is a steep incline. Further up the incline becomes %D% because of %MH%. At a few points are %M%, %M%, and %M%</lookup-entry>
+		<lookup-entry>is a steep decline. Further up the decline becomes %D% because of %MH%. At a few points are %M%, %M%, and %M%</lookup-entry>
+		<lookup-entry>is a high cliff face.  The area around the cliff is dominated by %MH% and has several features including %M%, %M%, and %M%</lookup-entry>
+		<lookup-entry>is the start of a low ridge where the terrain begins to slope. The ridge is %D% because of %MH% nearby. Moving along the ridge reveals two features %M% and %M%  </lookup-entry>
+		<lookup-entry>is the edge of a canyon and the edge is %D% because of %MH%. This side of the canyon's feature %M%, %M%, and %M%</lookup-entry>
+		<lookup-entry>is the edge of a canyon and the edge is %D% because of %MH%. This side of the canyon's feature %M%, %M%, and %M% The canyon is spanned by %B%</lookup-entry>
+		<lookup-entry>is a region defined by a large crater from a meteor impact long ago. The crater walls are %D% because of %MH%. Inside the crater are several features. %P% %F%</lookup-entry>
+		<lookup-entry>is a wide chasm. This edge of the chasm is %D% because of %MH%. This side of the chasm has %M%, %M%, and %M%</lookup-entry>
+		<lookup-entry>is a wide chasm. This edge of the chasm is %D% because of %MH%. This side of the chasm has %M%, %M%, and %M%. The chasm is spanned by %B%</lookup-entry>
+		<lookup-entry>is an entrace to a valley.  The sides of the valley have several features that include %M%, %M%, and %M%</lookup-entry>
+	</lookup-table>
+
+	<!-- Waterway hazards -->	
+	<lookup-table key="WH">
+		<lookup-entry>a set of rapids</lookup-entry>		
+		<lookup-entry>a series of rapids</lookup-entry>		
+		<lookup-entry>some slippery rock near the edge</lookup-entry>		
+		<lookup-entry>some sharp rocks in the water</lookup-entry>		
+		<lookup-entry>a soft shoulder near the edge</lookup-entry>	
+		<lookup-entry>a rushing waterfall</lookup-entry>
+		<lookup-entry>a long drop before the water</lookup-entry>
+		<lookup-entry>a strong current</lookup-entry>
+		<lookup-entry>its depth</lookup-entry>
+	</lookup-table>
+
+	<!-- Waterway location -->
+	<lookup-table key="WL">
+		<lookup-entry>upstream</lookup-entry>
+		<lookup-entry>downstream</lookup-entry>
+	</lookup-table>
+
+	<!-- Waterway tail -->
+	<lookup-table key="WT">
+		<lookup-entry> running by.</lookup-entry>
+		<lookup-entry> that winds its way through.</lookup-entry>
+		<lookup-entry> winding its way through.</lookup-entry>
+		<lookup-entry> that runs through the terrain.</lookup-entry>
+		<lookup-entry> running through the terrain.</lookup-entry>
+		<lookup-entry> that cuts through the terrain.</lookup-entry>
+		<lookup-entry> cutting through the terrain.</lookup-entry>
+		<lookup-entry> that runs through the surroundings.</lookup-entry>
+		<lookup-entry> running through the surroundings.</lookup-entry>
+	</lookup-table>
+	
+	<!-- Waterway features -->
+	<lookup-table key="W">
+		<lookup-entry>a raft floating in the water</lookup-entry>
+		<lookup-entry>a canoe sitting near the shoreline</lookup-entry>
+		<lookup-entry>a %L% kayak at the water's edge</lookup-entry>
+		<lookup-entry>an overhang near the bank</lookup-entry>
+		<lookup-entry>an outcropping of rock running out over the water</lookup-entry>
+		<lookup-entry>a dam %WL%</lookup-entry>
+		<lookup-entry>a reservoir %WL%</lookup-entry>
+		<lookup-entry>a lake %WL%</lookup-entry>
+		<lookup-entry>a pond %WL%</lookup-entry>
+		<lookup-entry>a levy %WL%</lookup-entry>
+		<lookup-entry>a lagoon %WL%</lookup-entry>	
+		<lookup-entry>a ferry</lookup-entry>	
+		<lookup-entry>a shallow ford</lookup-entry>	
+		<lookup-entry>a mill</lookup-entry>	
+	</lookup-table>
+	
+	<!-- River terrain features -->
+	<lookup-table key="R">
+		<lookup-entry>is a river %WT% The river is %D% because of %WH%. This stretch of river has %W% and %W%</lookup-entry>
+		<lookup-entry>is a river %WT% The river is %D% because of %WH%. This stretch of river has %W% and %W%. The river is spanned by %B%</lookup-entry>
+
+		<lookup-entry>is a channel that is %D% because of %WH%. This stretch of channel has %W% and %W%</lookup-entry>
+		<lookup-entry>is a canal %WT% This stretch of canal has %W% and %W%</lookup-entry>
+		<lookup-entry>is a canal %WT% This stretch of canal has %W% and %W%. The river is spanned by %B%</lookup-entry>
+		<lookup-entry>is a creek %WT% Near the creek is %W% and %W%</lookup-entry>
+		<lookup-entry>is a watercourse %WT% The watercourse is %D% due to %WH%. Intersecting the watercourse are %W% and %W%</lookup-entry>
+		<lookup-entry>is a watercourse %WT% The watercourse is %D% due to %WH%. Intersecting the watercourse are %W% and %W%.  The watercourse is spanned by %B%</lookup-entry>
+		<lookup-entry>a stream %WT% The stream is %D% due to %WH% and features %W% and %W%</lookup-entry>
+		<lookup-entry>is a stream %WT% The stream is %D% due to %WH% and features %W% and %W%.  The stream is spanned by %B%</lookup-entry>
+
+		<lookup-entry>is a rivulet %WT% The rivulet is dominated by %W% and is %D% due to %WH%</lookup-entry>
+		<lookup-entry>is an acqueduct</lookup-entry>
+		<lookup-entry>is a brook %WT%</lookup-entry>
+	</lookup-table>
+
+	<!-- Flat terrain items -->	
+	<lookup-table key="CI">
+		<lookup-entry>an animal path</lookup-entry>
+		<lookup-entry>a winding trail</lookup-entry>
+		<lookup-entry>%L% road</lookup-entry>
+		<lookup-entry>some overgrown bushes</lookup-entry>
+		<lookup-entry>thickets and brambles</lookup-entry>
+		<lookup-entry>plenty of wildflowers</lookup-entry>
+		<lookup-entry>a stand of trees</lookup-entry>
+		<lookup-entry>a natural spring</lookup-entry>
+		<lookup-entry>a small pond</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+	</lookup-table>
+
+	<!-- Flat terrain types -->
+	<lookup-table key="CT">
+		<lookup-entry>clearing </lookup-entry>
+		<lookup-entry>pasture</lookup-entry>
+		<lookup-entry>meadow</lookup-entry>
+		<lookup-entry>field</lookup-entry>
+		<lookup-entry>dry basin</lookup-entry>
+		<lookup-entry>glade</lookup-entry>
+	</lookup-table>
+	
+	<!-- Flat terrain features -->
+	<lookup-table key="C">
+		<lookup-entry>is a %CT% featuring %CI%, %CI%, and %CI%</lookup-entry>
+		<lookup-entry>is a %CT% containing %CI% and %CI%</lookup-entry>
+		<lookup-entry>is a %CT% inside of which is %CI% and %CI%</lookup-entry>
+		<lookup-entry>is a %CT% that features %CI%</lookup-entry>
+		<lookup-entry>is a %CT% holding %CI% and %CI%</lookup-entry>
+	</lookup-table>
+
+	<!-- Forest Items -->	
+	<lookup-table key="FI">
+		<lookup-entry>several scattered burrows</lookup-entry>	
+		<lookup-entry>a large web</lookup-entry>
+		<lookup-entry>lots of overgrown foliage</lookup-entry>
+		<lookup-entry>many fallen timbers</lookup-entry>
+		<lookup-entry>many fallen trees</lookup-entry>
+		<lookup-entry>very thick foliage</lookup-entry>
+		<lookup-entry>a covered pit trap</lookup-entry>
+		<lookup-entry>a net snare trap</lookup-entry>
+		<lookup-entry>several snare traps</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+		<lookup-entry>%I%</lookup-entry>
+	</lookup-table>
+
+	
+	<!-- Forest terrain types -->
+	<lookup-table key="FT">
+		<lookup-entry>forested grotto</lookup-entry>
+		<lookup-entry>forest path</lookup-entry>
+		<lookup-entry>clearing with a forest canopy</lookup-entry>
+		<lookup-entry>forested vale</lookup-entry>
+		<lookup-entry>forested dale</lookup-entry>
+		<lookup-entry>forested dell</lookup-entry>
+		<lookup-entry>forested hollow</lookup-entry>
+		<lookup-entry>forested gulch</lookup-entry>
+	</lookup-table>
+	
+
+	<!-- Forest terrain features -->
+	<lookup-table key="F">
+		<lookup-entry>is a %FT% featuring %FI%, %FI%, and %FI%</lookup-entry>
+		<lookup-entry>is a %FT% containing %FI% and %FI%</lookup-entry>
+		<lookup-entry>is a %FT% inside of which is %FI% and %FI%</lookup-entry>
+		<lookup-entry>is a %FT% that features %FI%</lookup-entry>
+		<lookup-entry>is a %FT% holding %FI% and %FI%</lookup-entry>
+	</lookup-table>
+
+
+	<!-- Structures -->	
+	<lookup-table key="S">
+		<lookup-entry>a fountain</lookup-entry>
+		<lookup-entry>a garden</lookup-entry>
+
+		<lookup-entry>an outpost</lookup-entry>
+		<lookup-entry>an orchard</lookup-entry>
+
+		<lookup-entry>a road fork</lookup-entry>
+		<lookup-entry>an animal den</lookup-entry>
+
+		<lookup-entry>a camping ground</lookup-entry>
+		<lookup-entry>a small hamlet. Just outside the hamlet there is %I% and %I%</lookup-entry>
+		<lookup-entry>a farming village.</lookup-entry>
+		<lookup-entry>a settlement. Outside the settlement is %I% and %I%</lookup-entry>
+		<lookup-entry>a crossroads. At the intersection is %I%</lookup-entry>
+		<lookup-entry>a ranch</lookup-entry>
+		
+	</lookup-table>
+
+	<!-- -->
+	<lookup-table key="Fass">
+		<lookup-entry>is a small arroyo</lookup-entry>
+		<lookup-entry>is a gulf</lookup-entry>
+		<lookup-entry>are some hills</lookup-entry>
+		<lookup-entry>is where the terrain slopes significantly. On the slope is %I%</lookup-entry>
+		<lookup-entry>is a bute</lookup-entry>
+
+	</lookup-table>
+	
+	
+</generator>
+
+

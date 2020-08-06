@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Name Generator Source Compiler</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="dnd.css" />
+<SCRIPT LANGUAGE="JavaScript" SRC="namegeneratorcompiler.ejs" TYPE="text/jscript.encode"> </SCRIPT>
+
+</head>
+<BODY>
+
+<H1 align="center">Name Generator Source Compiler</H1>
+<H4 align="center"><A href="email:michaellambert@email.com">by Michael Lambert</A></H4>
+<H4 align="center">Copyright 2002</H4>
+<H4 align="center">Version 1.6</H4>
+<P>
+Designed to be useful for DMs working on adventures or encounters for 
+<A href="http://www.wizards.com/dnd/main.asp?x=dnd/welcome,3">3rd Edition Dungeons and Dragons</A>
+game from Wizards of the Coast.  Feel free to use this in your campaign 
+and pass it along to your friends.  Hopefully, it will add a little flair 
+to your dungeon that you just didn't have time to spend detailing.  
+</P>
+<P>
+This utility compiles a name source for the random name generator. Use it to 
+create customized lists of random names sources for use in your campaign.  It 
+is inspired by <a mailto="pound@rice.edu,">Chris Pound's</a> name generator at 
+<a href="http://www.ruf.rice.edu/~pound">http://www.ruf.rice.edu/~pound</a> 
+who did the real work of coming up with the algorithms.  I highly suggest you 
+visit his site to obtain a dataset to use with this file.
+
+If you have a particularly interesting modification or just plain old 
+comments send it to me via email.
+</P>
+
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	
+	<tr> <td valign="top">
+						
+	<form method="post" action="" name="form1">
+	<table border="1" cellpadding="1" cellspacing="1" width="100%">
+	<tr align="center"> 
+	<td>Name Source File</td>
+	<td> <input type="text" name="names_source" maxlength="256" value="name_sample.txt"> </td>
+	<td> <div><input type=button value="Compile" onClick="compileNames()" /></div> </td>
+	</table>
+	</form>
+	
+	</td>
+	<tr>
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe"  valign="middle">
+	<p><span id="statusArea">&nbsp;</span></p>
+	</td>
+	</tr>
+	<tr>
+	</tr>
+	</table>
+
+	<xml id="compiled_names"></xml>
+
+</BODY>
+</HTML>

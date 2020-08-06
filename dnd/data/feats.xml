@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="feats.xsl" type="text/xsl"?>
+<feats>
+<category name="General">
+<feat>
+<name>Knock-Down</name>
+<description>Your mighty blows can knock foes off their feet.</description>
+<prerequisites>Str 15+, BAB +2, Improved Trip</prerequisites>
+<benefits>
+<p>Whenever you deal 10 or more points of damage 
+to your opponent in melee with a single attack, you may make 
+a trip attack as a free action against the same target. Use 
+of this feat cannot be combined with Improved Trip to 
+generate an extra attack, and successful use of this feat 
+does not grant an extra attack through the Cleave or Great 
+Cleave feats. If you fail your opponents can attempt a 
+Strength check to try and trip you.</p>
+</benefits>
+</feat>
+<feat>
+<name>Improved Great Cleave</name>
+<description>A character may take a 5' step while cleaving.</description>
+<prerequisites>BAB +9, Great Cleave</prerequisites>
+<benefits>
+<p>As Great Cleave, except that you may take a 
+5' step before making the Cleave attack. You can only take one 
+5' step in between Cleave attacks. If you have already 
+taken a 5' step you may not take another in the same round.
+</p>
+</benefits>
+</feat>
+<feat>
+<name>Flexible Reach</name>
+<description>
+You may choke up or down on a hafted polearm 
+to threaten and attack adjacent foes.</description>
+<prerequisites>Dex 13+, BAB +4, Combat Reflexes</prerequisites>
+<benefits>
+<p>You can choke up or down on a hafted polearm as 
+a free action. This allows you to attack adjacent 
+foes and still threaten areas the polearm could normally 
+reach. You cannot perform this action while flanked.</p>
+</benefits>
+</feat>
+<feat>
+<name>Polearm Grapple</name>
+<description>
+You are trained in not only striking opponents but 
+also in pinning the foe where they stand.
+</description>
+<prerequisites>Int 13+, Expertise</prerequisites>
+<benefits>
+<p>
+Whenever you hit with a polearm and deal damage you may 
+initiate a grapple as a free action without provoking 
+an attack of opportunity from that opponent. If you succeed 
+you have pinned you opponent with your polearm. If you fail 
+your grapple check you may drop your polearm to avoid 
+being grappled.
+</p>
+</benefits>
+</feat>
+<feat>
+<name>Weapon Mastery</name>
+<description>
+Over years of study you have mastered the use of a particular weapon.
+</description>
+<prerequisites>BAB +9, Weapon Specialization</prerequisites>
+<benefits>
+<p>
+Your familiarity with your weapon of choice is so great that 
+you can strike with incredible accuracy and ferocity. You 
+receive an additional +2 hit and +1 damage with it. This effect
+stacks with Weapon Specialization.
+</p>
+</benefits>
+</feat>
+<feat>
+<name>Quick Sheath</name>
+<description>
+You are skilled at quickly handling your weapons.
+</description>
+<prerequisites>BAB +1</prerequisites>
+<benefits>
+<p>
+You can sheath a weapon as a free action instead of as a 
+move-equivalent action. You may apply this ability on any 
+weapon that you have taken the Weapon Focus or Weapon Finesse 
+feats.  You need only take this feat once. This feat stacks 
+with Quickdraw allowing you to switch weapons instantaneously.
+</p>
+</benefits>
+</feat>
+<feat>
+<name>Defensive Study</name>
+<description>
+You are skilled at observing your opponents fighting and 
+creating openings in combat.
+</description>
+<prerequisites>Int 13+, BAB +4, Dodge</prerequisites>
+<benefits>
+<p>
+When executing the Total Defense action you may subtract a
+number from your AC for the round and apply the same number 
+to your attack rolls in the following round.  This number
+may not exceed your total dodge bonus for the round.  This 
+attack bonus is not applied to your damage rolls.
+</p>
+</benefits>
+</feat>
+<feat>
+<name>Improved Defensive Study</name>
+<description>
+You are an expert in observing combatants.
+</description>
+<prerequisites>Int 13+, BAB +9, Defensive Study</prerequisites>
+<benefits>
+<p>
+As the Defensive Study feat, except you no longer need to
+execute the Total Defense action when applying the Defensive
+Study feat.  The attack bonus still occurs in the following
+round.
+</p>
+</benefits>
+</feat>
+</category>
+</feats>

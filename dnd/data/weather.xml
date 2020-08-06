@@ -1,0 +1,133 @@
+
+<generator start-xpath="//lookup-table[@key = 'T']/lookup-entry">
+
+	<lookup-table key="S">
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#70R95#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#50R75#F. Winds %M% #2R10# mph.</lookup-entry>		
+		<lookup-entry>#60R85#F. Winds %M% #2R10# mph. %P%</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #30R50# mph. Strong thunderstorms for the next #2R7# hours. %F%</lookup-entry>
+		<lookup-entry>#60R85#F. Winds %M% #51R74# mph. Dangerous windstorms for the next #2R6# hours. %F%</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="A">
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#50R70#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#30R50#F. Winds %M% #2R10# mph.</lookup-entry>		
+		<lookup-entry>#40R60#F. Winds %M% #2R10# mph. %P%</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #30R50# mph. Strong thunderstorms for the next #2R7# hours. %F%</lookup-entry>
+		<lookup-entry>#40R60#F. Winds %M% #51R74# mph. Dangerous thunderstorms for the next #2R6# hours. Tornado alert #175R300# mph winds lasting #10R60# minutes.</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="W">
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#10R50#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#-10R30#F. Winds %M% #2R10# mph.</lookup-entry>		
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph. %P%</lookup-entry>
+		<lookup-entry>#2R30#F. Winds %M% #30R50# mph. Snowstorms likely for the next #2R7# hours. Expect #2R6# inches of snow.</lookup-entry>
+		<lookup-entry>#-20R0#F. Winds %M% #51R74# mph. Blizzard like conditions for the next #2R3# days. Expect #2R6# feet of snow.</lookup-entry>
+	</lookup-table>
+
+
+	<lookup-table key="C">
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#0R40#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#10R50#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#-10R30#F. Winds %M% #2R10# mph.</lookup-entry>		
+		<lookup-entry>#-10R30#F. Winds %M% #2R10# mph.</lookup-entry>		
+		<lookup-entry>#-10R30#F. Winds %M% #2R10# mph.</lookup-entry>		
+		<lookup-entry>#-10R30#F. Winds %M% #2R10# mph. %I%</lookup-entry>		
+		<lookup-entry>#2R30#F. Winds %M% #30R50# mph. Snowstorms likely for the next #2R7# hours. Expect #2R6# inches of snow.</lookup-entry>
+		<lookup-entry>#-20R0#F. Winds %M% #51R74# mph. Blizzard like conditions for the next #2R3# days. Expect #2R6# feet of snow.</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="H">
+		<lookup-entry>#90R110#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #2R10# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #10R30# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #10R30# mph.</lookup-entry>
+		<lookup-entry>#90R110#F. Winds %M% #30R50# mph. %D%</lookup-entry>
+		<lookup-entry>#80R100#F. Winds %M% #51R74# mph. Dangerous downpours expected for the next #2R7# hours.</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="P">
+		<lookup-entry>Foggy for the next #2R8# hours. </lookup-entry>
+		<lookup-entry>Rainy for the next #2R8# hours. </lookup-entry>
+		<lookup-entry>Expect #2R20# minutes of hail and #2R8# hours of rain.</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="I">
+		<lookup-entry>Foggy for the next #2R8# hours.</lookup-entry>
+		<lookup-entry>Snowy for the next #2R8# hours.</lookup-entry>
+		<lookup-entry>Expect sleet for the next #2R8# hours.</lookup-entry>
+	</lookup-table>
+	
+	<lookup-table key="D">
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Duststorms likely for the next #2R7# hours. Expect #2R6# inches of sand.</lookup-entry>
+		<lookup-entry>Greater duststorm expected for the next #2R7# hours. Expect #2R5# feet of sand.</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="F">
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry></lookup-entry>
+		<lookup-entry>Tornado alert #175R300# mph winds lasting #10R60# minutes.</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="M">
+		<lookup-entry>W</lookup-entry>
+		<lookup-entry>NNW</lookup-entry>
+		<lookup-entry>N</lookup-entry>
+		<lookup-entry>NNE</lookup-entry>
+		<lookup-entry>E</lookup-entry>
+		<lookup-entry>SSE</lookup-entry>
+		<lookup-entry>S</lookup-entry>
+		<lookup-entry>SSW</lookup-entry>
+	</lookup-table>
+	
+</generator>
+	

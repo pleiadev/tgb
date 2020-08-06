@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="sage.xsl" type="text/xsl"?>
+<sage issue="278">
+<sage-advice>
+<question>
+<p>
+The section on alignment in the cleric class description (pages 29-30 in the Player's Handbook) says most clerics of Heironeous, the lawful good god of valor, are lawful good themselves, but some are lawful neutral or neutral good. This seems to conflict with the statement that a cleric cannot be neutral unless his deity is neutral. I don't understand this restriction.
+</p></question><answer><p>
+In this case, "neutral" means "true neutral," or neutral on both the good-evil
+axis and on the law-chaos axis. (See page 89 in the Player's Handbook.) A
+cleric's alignment must be the same as his deity's alignment or within one
+step of his deity's alignment; that is, adjacent (but not on a diagonal) to
+the deity's alignment on the alignment chart. See Table 6-1. The true neutral
+alignment is an exception. You can't have a true neutral cleric of a deity who
+is not true neutral.
+</p><p>
+Note that St. Cuthbert, a lawful neutral deity, allows only lawful good or lawful neutral clerics, even though the lawful evil alignment is within one step of St. Cuthbert's alignment. The Player's Handbook says ex-clerics lose all class features; presumably clerics don't lose their armor and shield proficiencies, or their weapon proficiencies (except those granted as domain powers), both of which are listed as class features. Armor, shield, and weapon proficiencies are indeed class features for clerics and for any other class. 
+</p><p>
+Nevertheless, you're correct. Ex-clerics lose spells, domain powers (including domain-based weapons), spontaneous casting, and power over the undead. They retain proficiency in simple weapons and all types of armor and shields.
+</p></answer></sage-advice><sage-advice><question><p>
+Can true neutral clerics of true neutral deities, such as Fharlanghn, cast any Chaos, Evil, Good, or Law spell? Does a true neutral cleric's choice of whether to turn or rebuke undead affect what spells she can cast?
+</p></question><answer><p>
+True neutral clerics can cast any spell of Chaos, Evil, Good, or Law, provided the spell in question is on the cleric spell list (see pages 160-163 in the Player's Handbook) or in one of the cleric's chosen domains. The cleric's choice of whether to turn or rebuke undead affects does not affect what spells she can prepare, but it does affect what spells she can cast spontaneously, as noted on page 32 of the Player's Handbook.
+</p></answer></sage-advice><sage-advice><question><p>
+Does the Extra Turning feat work for a neutral or evil cleric who has the power to rebuke undead?
+</p></question><answer><p>
+Yes, clerics who rebuke undead can use the Extra Turning feat to gain four more uses of the rebuke power each day. Note that true neutral clerics either turn or rebuke undead; they cannot have it both ways. 
+</p><p>
+For example, a true neutral cleric who has chosen to rebuke undead can choose the Extra Turning feat to gain four extra uses of the rebuke power each day, but he cannot use Extra Turning to get four uses of the turn power.
+</p></answer></sage-advice><sage-advice><question><p>
+Can a monk get an extra unarmed attack each round by making an off-hand attack? The monk class description says making an off-hand strike makes no sense for a monk fighting unarmed. Presumably, this means that monks are always considered to be using their primary hand when striking unarmed, regardless of which arm (or leg) is used. The wording in the book suggests that off-hand strikes are possible for an unarmed monk, just unwise. How would making an off-hand unarmed attack affect the monk's flurry of blows ability?
+</p></question><answer><p>
+There's no such thing as a monk making an off-hand unarmed attack (because monks are already using pretty much their whole bodies for unarmed combat). For unarmed monks, the flurry of blows ability replaces off-hand unarmed attacks.
+</p></answer></sage-advice><sage-advice><question><p>
+Can monks deal subdual damage with unarmed strikes without grappling? If so, do they suffer a -4 attack penalty as with any other attack that deals normal damage?
+</p></question><answer><p>
+A monk's unarmed strikes usually deal normal damage, but a monk can choose to deal subdual damage instead with no penalty to her attack roll. A monk has the same choice to deal normal or subdual damage while grappling. (See Grapple on page 137 of the Player's Handbook.)
+</p></answer></sage-advice><sage-advice><question><p>
+Does a monk or other character with the Improved Unarmed Strike feat provoke an attack of opportunity when starting a grapple?
+</p></question><answer><p>
+Yes. Grabbing and holding on to a foe is a tad more risky than just hitting the foe. Does the monk's Wisdom-based bonus to Armor Class prevent a rogue from using the sneak attack ability against him (like the uncanny dodge ability)? No. If monks got uncanny dodge or the equivalent of that ability the class description would say so.
+</p></answer></sage-advice><sage-advice><question><p>
+A monk doesn't get to add his base attack bonus to his unarmed attack bonus does he? I was a little confused when reading the section in the monk class description about flurry of blows. It talks about a 6th-level monk with two unarmed attacks at +7 and +4. The chart shows a monk at 6th level that gets two attacks at +4 and +1.
+</p></question><answer><p>
+No. You don't add a monk's base attack bonus to the monk's unarmed attack bonus. Use the Base Attack column on Table 3-10 when a monk uses a weapon and use the Unarmed Attack column when the monk attacks without a weapon. 
+</p><p>
+The flurry of blows example is erroneous; actually it's based on an unpublished version of Ember, our iconic monk, who has some extra bonuses figured into her attack values. A 6th-level monk with no extra bonuses normally gets two unarmed attacks at +4/+1 (not +5/+2 as shown in the example). If she uses flurry of blows, she gets an extra unarmed attack at her highest attack bonus, but all her unarmed attacks suffer a -2 penalty, which gives her three unarmed attacks at +2/+2/-1.
+</p></answer></sage-advice><sage-advice><question><p>
+I can find no mention in the Player's Handbook of a monk's unarmed strike having a critical of x2. However, on the monk character sheet it lists it that way. What is the correct value? Also, when does an unarmed attack score a threat? 
+</p></question><answer><p>
+Any weapon (including an unarmed strike and a monster's natural weapon) threatens a critical on an attack roll of 20 and inflicts x2 damage on a confirmed critical hit unless some other value is listed.
+</p></answer></sage-advice><sage-advice><question><p>
+How long does it take a monk to use the wholeness of body ability? Is it treated as a spell-like ability for use in combat? Does it function in antimagic fields?
+</p></question><answer><p>
+Wholeness of body is a supernatural ability. Supernatural abilities don't work in antimagic fields and using them does not provoke attacks of opportunity. Using wholeness of body is a standard action. (Using any supernatural ability is a standard action unless its description specifically says otherwise.)
+</p></answer></sage-advice><sage-advice><question><p>
+The shocking grasp spell's description says you get a +3 attack bonus if you use the spell to attack a foe who is wearing metal armor. Isn't this a bit illogical since the spellcaster ignores the armor for the purpose of hitting the foe with this kind of spell? Doesn't this take the armor out of the equation?
+</p></question><answer><p>
+No. The metal attracts the electrical discharge from the spell and makes the target even easier to hit than normal. The target still does not get the benefit of armor, natural armor, or a shield.
+</p></answer></sage-advice><sage-advice><question><p>
+Can a spellcaster, arcane or divine, cast a spell requiring somatic or material components if he has a weapon in one hand and a buckler in the other? A small shield? A large shield?
+</p></question><answer><p>
+No in all cases. You must have at least one free hand to cast a spell with a somatic component. (See page 151 in the Player's Handbook.) You could drop the weapon (or the buckler or shield) as a free action and then cast the spell.
+</p></answer></sage-advice><sage-advice><question><p>
+Can you raise a skill as a cross-class skill if you have it already as a class skill or vice-versa? For example, can a 3rd-level wizard with 6 ranks of Concentration take a level as a fighter and raise Concentration as a cross-class skill? If the skill wasn't maxed out would it matter? Is a skill's maximum rank dependant on the character's class level or the character level?
+</p></question><answer><p>
+A multiclass character's maximum rank in a skill is based on character level; character level plus three if the skill is a class skill for any of the character's classes, or half that if the skill is cross class for all the character's classes. (See page 56 in the Player's Handbook.)
+</p><p>
+A 3rd-level wizard/1st-level fighter has a maximum rank of 7 (4+3) in Concentration or in any other skill that's a class skill for a fighter or for a wizard. The character in your example would have to pay two skill points for one rank of Concentration since he's buying the rank with fighter skill points.
+</p></answer></sage-advice><sage-advice><question><p>
+How are feats handled for multiclass characters? Say I have a character who is a fighter/wizard. I understand that every character, regardless of class, receives a new feat every three levels. What about bonus feats from a class? 
+</p><p>
+A fighter gets a bonus feat at 1st level and every two levels. Wizards receive Scribe Scroll at 1st level and a bonus feat every five levels. Would all these bonus feats stack up? Would the afore-mentioned fighter/wizard receive all these feats?
+</p></question><answer><p>
+Every character gets one feat for every three character levels. (Your character level is the sum of all your class levels.) Characters get bonus feats from their classes according to their class level. 
+</p><p>
+For example, a 5th-level fighter/5th-level wizard would have 4 feats for her character level (you get a feat at 1st, 3rd, 6th, and 9th levels), plus 3 extra fighter feats (at 1st, 2nd, and 4th level), plus 2 wizard feats (Scribe Scroll at 1st level and a bonus feat at 5th level), for a total of 9 feats.
+</p></answer></sage-advice><sage-advice><question><p>
+The descriptions for light and heavy crossbows in the Player's Handbook say a character can fire one of them with each hand. The hand crossbow description, however, makes no mention of such an action. Is this penalty the same for hand crossbows, or is such an action implicitly prohibited (which seems extremely odd)?
+</p></question><answer><p>
+Heavy and light crossbows are two-handed weapons that can be fired (but not loaded) with one hand at an extra penalty (-4), provided the wielder is of sufficient size. Firing a crossbow in each hand is even more difficult  (-10 for the primary hand and -14 for the off hand, or -10 for each hand if the shooter has Ambidexterity). 
+</p><p>
+Note that for a creature of medium size or larger, a light crossbow is a light weapon, which reduces the two-weapon penalty by 2 (-8 for the primary and -12 for the offhand or -8 for each hand with Ambidexterity). The hand crossbow is a one-handed weapon, and there is no penalty for using a hand crossbow in one hand. Note that since a hand crossbow is Tiny, a Diminutive creature would need two hands to use it. In such a case, treat one-handed use just like a light crossbow used in one hand. 
+</p><p>
+Small or Medium-size characters can fire hand crossbows from each hand according to the normal rules for attacking with two-weapons. Usually the shooter suffers a -4 penalty for the primary hand and a -8 penalty for the off hand (-4/-4 with Ambidexterity)  because a hand crossbow is a light weapon for most characters, see pages 124-125 in the Player's Handbook. Note that the Two-Weapon Fighting feat is for melee and does not reduce the penalties for using two ranged weapons.
+</p></answer></sage-advice><sage-advice><question><p>
+The 1st-level sorcerer/wizard spell true strike gives a +20 attack bonus on
+the user's next attack, but only for the duration of the spell, which is 1
+round. First off, is +20 correct? Even if for only one attack, +20 seems like
+a major bonus for a 1st-level spell. 
+</p><p>
+Also, if I'm understanding initiative properly the spell would expire on your initiative the following round; would you be able to gain the bonus on that attack then? For example, If I have a wizard who moves his 30-foot speed and casts true strike, would he get the +20 attack bonus the next round when he moves another 30 feet and stabs a foe with his dagger?
+</p></question><answer><p>
+Yes. True strike grants a +20 bonus to your next attack.
+</p><p>
+In the D&amp;D game, a "round" begins on your turn and ends when it's your turn again. The true strike spell actually lasts until the end of the caster's next turn or until the caster attacks, whichever comes first. The duration entry for true strike should read "See text," and the spell description should read: You gain temporary, intuitive insight into the immediate future during your next attack. Your next single attack roll (if it is made before the end of the next round) gains a +20 insight bonus. Additionally, you are not affected by the miss chance that applies to attacks against a concealed target. 
+</p></answer></sage-advice><sage-advice><question><p>
+If you use the true strike spell and you roll a critical threat, does the +20 bonus from the spell apply to the critical confirmation roll? Would the +20 bonus apply to the extra attacks you get from the Cleave, Great Cleave, or Whirlwind attack feats?
+</p></question><answer><p>
+When you make a critical roll, you use whatever bonuses apply to the attack roll that made the threat, no matter where those bonuses came from. True strike affects only one attack; a critical roll is not a separate attack for this purpose. If you make multiple attacks in a round, your bonus from true strike applies only to the first attack you make, no matter how you managed to get multiple attacks. 
+</p></answer></sage-advice><sage-advice><question><p>
+When you attack with two weapons, how do you figure out the attack bonus for the second weapon? The Improved Two-Weapon Fighting feat gives you two extra attacks with your second weapon, how do you figure out the attack bonus for those attacks? 
+</p></question><answer><p>
+An attack with a second weapon uses the wielder's base attack bonus, plus all applicable modifiers; some penalty for attacking with two weapons always applies. (See pages 124-125 in the Player's Handbook.) If you're using Improved Two-Weapon Fighting, you figure the attack bonus for your first attack exactly as for regular two-weapon fighting; the attack bonus for the second attack is made with a -5 penalty from the first attack.
+</p></answer></sage-advice><sage-advice><question><p>
+How many attacks would a character with the Whirlwind Attack feat strike if she were attacking with two weapons? What if she has Ambidexterity and Two-Weapon Fighting? What if she also as Improved Two-Weapon Fighting?
+</p></question><answer><p>
+If you don't have Improved Two-Weapon Fighting, you get one attack against every foe within 5 feet, plus one attack for the second weapon. The Ambidexterity and Two-Weapon Fighting feats reduce your penalties, but they don't give you any extra attacks. If you also have Improved Two-Weapon Fighting, you get one attack against every foe within 5 feet, plus two attacks with the second weapon.In either case, you must use your primary weapon for Whirlwind Attack (although you can decide which weapon is "primary"). Note that your two-weapon attack penalties apply to every attack you make during the Whirlwind Attack.
+</p></answer></sage-advice><sage-advice><question><p>
+I can't find any rules on a partial charge. I would assume that it is just a charge at half the speed of normal, but I don't know where I can find that information. What exactly is a partial charge?
+</p></question><answer><p>
+A partial charge is a charge you take as a partial action. It works just like a regular charge, except you can move only your speed-not up to twice your speed as in a regular charge.
+</p></answer></sage-advice><sage-advice><question><p>
+Are bonus spells for high ability scores cumulative in the new edition of D&amp;D as they were in the 2nd Edition AD&amp;D game?
+</p></question><answer><p>
+No. Each line on Table 2-1 gives you all the bonus spells you get for a particular ability score. 
+</p></answer></sage-advice><sage-advice><question><p>
+The description of the ranger class says rangers cannot use double-headed weapons when using their two-weapon fighting ability. What, exactly, is a double-headed weapon? The glossary has an entry for a double weapon, but not for a double-headed weapon. Is a quarterstaff a double-headed weapon?
+</p></question><answer><p>
+Though the ranger class description refers to a double-headed weapon, the correct term is "double weapon." (A "double-ended" weapon also is a double weapon.) All double weapons are shown on Table 7-4. If the weapon has two damage ratings separated by a slash it is a double weapon. A quarterstaff is a double weapon. One can use both ends of a double weapon just as if they were two weapons, or just one end. (If you use one end in two hands, you get one and half times your Strength bonus to damage.) Rangers, however, cannot use double weapons with their special two-weapon fighting abilities, not even quarterstaffs.
+</p></answer></sage-advice><sage-advice><question><p>
+Does moving away from an opponent who threatens you (which is a move action) to load a crossbow (which is a move-equivalent action) provoke an attack of opportunity (assuming you complete your initial move action in a space that isn't threatened)?
+</p><p>
+I realize the act of loading a light crossbow alone provokes an attack of opportunity (assuming someone threatens the loader). I would think that if a character moves away from a threatened area to load a crossbow, that character would be taking a double move action and not suffer an attack of opportunity.
+</p></question><answer><p>
+In this case, you do indeed provoke an attack of opportunity when you leave the first threatened space if you move more than 5 feet. Taking a move plus a move-equivalent action is not a double move action; a double move action is moving up to twice your speed and doing nothing else. Move-equivalent actions are so named not because they're exactly the same as moving but because you can perform them and still do something that you normally would combine with a move, such as firing the crossbow you have just reloaded.  
+</p></answer></sage-advice><sage-advice><question><p>
+First, suppose I don't have Ambidexterity and I attack with my off hand. Do I lose half my Strength bonus to my attack roll and my damage roll, or just to my damage roll? Second, please tell me that Ambidexterity negates the damage penalty for off-hand attacks. If not, why not?
+</p></question><answer><p>
+Your full Strength bonus applies to off-hand melee attack rolls, only your damage bonus is reduced for the off hand. (See the definition of "off-hand" on p. 280 of the Player's Handbook.) Your damage bonus from Strength is always reduced with your off hand, even if you have the Ambidexterity feat. 
+</p><p>
+Ambidexterity negates the penalties for making off-hand attacks, but the damage reduction is not a "penalty," it's a rule that governs how a Strength bonus to damage works. 
+</p><p>
+If you use two hands to attack, you get one and half times your Strength bonus to damage. In the case of a two-handed weapon, you multiply your Strength bonus by 1.5 (and round down to the nearest whole number). If you're using two weapons, you apply the full damage bonus to the primary hand and half the bonus (rounded down to the nearest whole number) to the secondary hand. 
+</p><p>If the game did not have this rule you'd actually get more benefit from a high Strength score from using two small, lighter weapons that you would for using a really big heavy weapon in two hands.
+</p>
+</answer>
+</sage-advice>
+</sage>

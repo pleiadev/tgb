@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Name Generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="dnd.css" />
+<link id="compiled_names-link" type="text/xml" href="name_sample.xml" />
+<SCRIPT LANGUAGE="JavaScript" SRC="namegenerator.js" TYPE="text/jscript"> </SCRIPT>
+
+</head>
+<BODY>
+
+<H1 align="center">Name Generator</H1>
+<H4 align="center"><A href="email:michaellambert@email.com">by Michael Lambert</A></H4>
+<H4 align="center">Copyright 2002</H4>
+<H4 align="center">Version 1.6</H4>
+<P>
+If you have a particularly interesting modification or just plain old 
+comments send it to me via email. The documentation for this generator
+can be found <a href="index.html">here</a>.
+</P>
+
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	
+	<tr> <td width="20%" valign="top">
+						
+	<form method="post" action="" name="form1">
+	<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	<tr align="center"> 
+	<td>Source File</td>
+	<td> 
+    <input type="text" name="names_source" maxlength="256" value="name_sample.xml" size="20"> </td>
+	</tr> 
+	<tr align="center"> 
+	<td>Word Maximum</td>
+	<td> 
+    <input type="text" name="word_maximum" maxlength="2" value="7" size="20"> </td>
+	</tr> 
+	<tr align="center">
+	<td>Word Minimum</td>
+	<td> 
+    <input type="text" name="word_minimum" maxlength="2" value="3" size="20"> </td>
+	</tr> 
+	<tr align="center">
+	<td>Number of Words</td>
+	<td> 
+    <input type="text" name="word_count" maxlength="2" value="100" size="20"> </td>
+	</tr> 
+	<tr align="center">
+	<td>Max Vowels</td>
+	<td> 
+    <input type="text" name="vowel_maximum" maxlength="2" value="3" size="20"> </td>
+	</tr> 
+	<tr align="center">
+	<td>Number of Names</td>
+	<td> 
+    <input type="text" name="name_count" maxlength="2" value="18" size="20"> </td>
+	</tr> 
+	<tr align="center">
+		<td colspan="2">
+			<div><input type=button value="Generate" onClick="generateWords()" /></div> 
+		</td>
+	</tr>
+	</table>
+	</form>
+	
+	</td>
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe" width="80%" valign="middle">
+	<p><span id="statusArea">&nbsp;</span></p>
+	<p><span id="theNames">Press the logo to create a room.</span></p>
+
+	</td>
+	</tr>
+	<tr>
+	</tr>
+	</table>
+
+	<xml id="compiled_names"></xml>
+
+</BODY>
+</HTML>

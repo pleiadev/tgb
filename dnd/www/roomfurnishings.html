@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Room Furnishing Generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="dnd.css" />
+<SCRIPT LANGUAGE="JavaScript" SRC="roomfurnishings.ejs" TYPE="text/jscript.encode"></SCRIPT>
+
+</head>
+<BODY>
+
+<H1 align="center">Room Furnishing Generator</H1>
+<H4 align="center"><A href="email:michaellambert@email.com">by Michael Lambert</A></H4>
+<H4 align="center">Copyright 2002</H4>
+<H4 align="center">Version 1.5</H4>
+<P>
+To randomly generate a room description just hit the generate button.  
+Documentation for this utility can be found <a href="index.html">here</a>. If you 
+have a particularly interesting modification or just plain old comments send 
+it to me via email.
+</P>
+
+<form method="post" action="" name="form1">
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	<tr> <td width="20%" valign="top">
+						
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	<tr align="center"> 
+	<td>Room</td>
+	<td> 
+		<select name="room_value">
+			<option value="wizard">Wizard</option>
+			<option value="dungeon">Dungeon</option>
+			<option value="temple">Temple</option>
+			<option value="tavern">Tavern</option>
+			<option value="torture">Torture Chamber</option>
+			<option value="bedroom">Bedroom</option>
+			<option value="outdoor">Outdoor</option>
+			<option value="storeroom">Storeroom</option>
+			<option value="random" selected>Random</option>
+		</select>
+	</td>
+	</tr> 
+	<tr align="center"> 
+	<td>Age</td>
+	<td> 
+		<select name="age_value">
+			<option value="young">Young</option>
+			<option value="mature">Mature</option>
+			<option value="old">Old</option>
+			<option value="ancient">Ancient</option>
+			<option value="random" selected>Random</option>
+		</select>
+	</td>
+	</tr> 
+	<tr align="center"> 
+	<td>Length</td>
+	<td> 
+    <input type="text" name="length_value" maxlength="2" value="50" size="20"> </td>
+	</tr> 
+	<tr align="center"> 
+	<td>Width</td>
+	<td> 
+    <input type="text" name="width_value" maxlength="2" value="50" size="20"> </td>
+	</tr> 
+	<tr align="center">
+	<td>Height</td>
+	<td> 
+    <input type="text" name="height_value" maxlength="2" value="12" size="20"> </td>
+	</tr> 
+	<tr align="center">
+	<td>Furniture</td>
+	<td> 
+    <input type="text" name="furniture_value" maxlength="2" value="4" size="20"> </td>
+	</tr> 
+	<tr align="center">
+		<td colspan="2">
+			<div align="center"><input type="button" value="Generate" onClick="generateRoom()" /></div> 
+		</td>
+	</tr>
+	</table>
+	
+	</td>
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe" width="80%" valign="middle">
+<p><span id="theRoom">Press the logo to create a room.</span></p>
+
+	</td>
+	</tr>
+	</table>
+</form>
+
+
+
+</BODY>
+</HTML>

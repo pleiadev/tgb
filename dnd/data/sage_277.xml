@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="sage.xsl" type="text/xsl"?>
+<sage issue="277">
+<sage-advice>
+<question>
+<p>
+Do I have to make an attack in order to use the Expertise feat to improve my Armor Class?
+</p></question><answer><p>
+No, you don't have to attack, but you do have to choose the attack or full attack action. That is, you can declare an attack or full attack, claim the AC bonus, and then not make the attacks to which you are entitled. You cannot use Expertise with the total defense action (or any other action except attack or full attack).
+</p></answer></sage-advice><sage-advice><question><p>
+Does the Armor Class bonus from Expertise apply to the whole round, or just from the moment when I start swinging? For example, I want to use a standard action to run past some bugbears and hit the bugbear shaman behind them. Can I apply the Expertise bonus against the bugbears' attacks of opportunity?
+</p></question><answer><p>
+The AC bonus-and the attack penalty -applies from the moment you use it (on your turn) until it's your turn again. If the character in the example above chooses to allocate 3 points of attack bonus to AC, the character gets a +3 bonus to AC against the bugbears' attacks of opportunity and suffers a -3 penalty to attacks against the bugbear shaman. If the bugbear shaman chooses to cast a spell later in the round (before it's the character's turn to act again) and provokes an attack of opportunity from the character, the character also suffers a -3 penalty to the attack of opportunity.
+</p></answer></sage-advice><sage-advice><question><p>
+Do you have to actively wield a weapon of defending to use its power? Or could you hold a longsword of defending in your off hand, not use it to attack (so you are not actually using the two weapons), and still wield a sword in you right hand without penalties? Or is the defending bonus considered part of the normal parrying that happens during the exchange of blows in a battle?
+</p></question><answer><p>
+Using a weapon of defending works just like the Expertise feat. (You have to use an attack or full attack action. See the previous questions.) You can't use the weapon like a shield; if you hold the weapon in your off hand and claim an AC bonus for it, you suffer all the penalties for fighting with two weapons, even if you don't actually attack with the weapon.
+</p></answer></sage-advice><sage-advice><question><p>
+Can you use the Weapon Finesse feat while fighting with two weapons? If so, can both weapons benefit from the feat (provided, of course, the feats were taken as needed)? The text seems to indicate a free hand is needed for balance. But then it turns around and gives a specific penalty for having a shield in the hand.
+</p></question><answer><p>
+Yes, you can use Weapon Finesse when fighting with two weapons. If you have Weapon Finesse with both weapons, you get the benefit for both weapons.
+</p><p>
+A shield throws you off balance when fighting with Weapon Finesse; you have to apply the shield's check penalty to your attack rolls. Note that a masterwork buckler has no check penalty and you can use it with Weapon Finesse and suffer no attack penalty. Weapons don't have check penalties either, and they don't interfere with Weapon Finesse. Of course, if one of your weapons is a shield (such as a spiked shield), then you'll suffer the shield's armor check penalty to all your attacks-even the ones you make with the shield.
+</p><p>
+Some DMs might want to use a house rule that imposes a check penalty for holding something really heavy in your off hand, perhaps -1 per 5 pounds.
+</p></answer></sage-advice><sage-advice><question><p>
+A sorcerer can only have so many spells. What if the sorcerer is also a wizard? Would she be able to use the spells from her spellbook as sorcerer spells? Or can she only use her sorcerer spell slots to cast spells she knows as a sorcerer? Can she transcribe spells she knows as a sorcerer into her wizard spellbook?
+</p></question><answer><p>
+You keep a separate list of spells for each class. A sorcerer/wizard could not use a spell from her wizard spellbook in a sorcerer spell slot unless she also had the spell in question as part of her sorcerer repertoire. The same holds true for any other multiclassed spellcaster. Likewise, the character must use spells from her spellbook to fill her wizard spell slots, and she cannot use a spell she knows as a sorcerer as a wizard spell unless that spell is also recorded in her spellbook.</p><p>
+A wizard/sorcerer cannot simply transcribe spells from her sorcerer repertoire into her spellbook. The character must find the spell on a scroll or in another spellbook, pick it up when she gains a new level, or research the spell from scratch.
+</p></answer></sage-advice><sage-advice><question><p>
+Suppose Odo is an 11th-level conjurer and 3rd-level bard, with 18 Intelligence and 16 Charisma. He finds a ring of wizardry that doubles 1st-level spells. How many 1st-level spells can he prepare?
+</p></question><answer><p>
+The ring doubles the 1st-level arcane spells from each class. Bonus spells from school specialization or high ability scores are not doubled. (See the last sentence of the first paragraph in the item description.)</p><p>
+Note that Odo does not prepare his bard spells (but the ring still doubles his 1st-level spells because bards are arcane spellcasters). As a 3rd-level bard, Odo has two 1st-level spell slots. The ring doubles that to four slots. Odo's 16 Charisma gives him one bonus 1st-level spell, for a total of five 1st-level bard spell slots.</p><p>
+As an 11th-level wizard, Odo has four 1st-level spell slots, which the ring doubles to eight. As a conjurer, Odo gains a bonus 1st-level Conjuration spell, and his 18 Intelligence gives him another 1st-level spell of any school, for a total of ten 1st-level wizard spell slots.</p><p>
+As noted in the previous question, Odo's bard and wizard spell slots are not interchangeable.
+</p></answer></sage-advice><sage-advice><question><p>
+I've noticed in the new DUNGEON MASTER's Guide that a ring of regeneration can regenerate lost body parts or organs, but the description does not specifically say it brings the wearer back from the dead. The description does say that the ring can regenerate any organ or body part, so presumably it could regenerate the wearer's head or heart. If it can do that, why can't it bring the wearer back from the dead?
+</p></question><answer><p>
+The ring only works for a living wearer (See the first line of the item description.) The ring can regenerate a head or heart, but only if the wearer is still living after losing the head or heart. (For example, a multi-headed creature could survive the loss of a single head.)
+</p></answer></sage-advice><sage-advice><question><p>
+The rules on page 153 of the Player's Handbook say a character who is resurrected immediately loses a level of experience or a point of Constitution if the character is 1st level. If a multiclassed character is brought back to life (for instance, a 5th-level fighter/4th-level wizard), does the character get to choose which level is removed? Or is it the highest level that the character has attained? Would this level loss immediately result in the -20% XP loss if the levels differed by more than 1?
+</p></question><answer><p>
+You lose the highest level; this might actually remove an XP penalty (by making the character's class levels more even).
+</p></answer></sage-advice><sage-advice><question><p>
+When a character loses a level, how do you lose levels in an abandoned class? For example, what happens to an ex-paladin or an ex-bard? Can you lose levels of experience in a class whose abilities you no longer have access to?
+</p></question><answer><p>
+Yes, you can lose these levels. The loss works just like any other level loss (hit points, skills, saves, attack bonuses, and any other benefits the level grants are reduced accordingly). In most cases, the character is not able to regain the lost class level by earning experience (to gain a level in a class, you have to meet any requirements the class might have), though the character could earn a level in another class instead.
+</p></answer></sage-advice><sage-advice><question><p>
+I've noticed that it is possible for some races to obtain a Strength, Dexterity, or Constitution score of 20, yet there are no modifiers for that particular score. What would they be respectively?
+</p></question><answer><p>
+An ability score 20 or 21 has an ability modifier of +5 (see Table 2-1). Note that in the current rules all ability scores use the same chart for bonuses and penalties.
+</p></answer></sage-advice><sage-advice><question><p>
+Thanks for the update on the continual flame spell last month. Dancing lights is also an Illusion (figment), and is described as providing illumination like a torch. This seems to raise the same issue.
+</p></question><answer><p>
+Yes, dancing lights is also an Evocation (light) spell, not an Illusion (figment).
+</p></answer></sage-advice><sage-advice><question><p>
+Since undead are immune to critical hits, I assume a ranger whose favored enemy is undead never gets a damage bonus against undead. I had been leaning toward giving the damage bonus anyway. All undead are critical proof, most are also immune to Bluff checks, and the Wilderness Lore skill wouldn't be too useful against undead, either. ("Flee! These are zombie squirrels!") In my opinion, choosing undead as a favored enemy just seems exceptionally weak compared to other choices.
+</p></question><answer><p>
+Undead are indeed immune to critical hits, and they are also immune to sneak attacks and the ranger's favored enemy bonuses. (The same holds true for constructs, elementals, and oozes.) Rangers who choose these types of creatures as favored enemies are giving up some power. (The designers did this intentionally.) Oozes probably are the weakest choice, since these creatures are mindless and thus darn hard to Bluff (Sense Motive against an ooze tends to be pointless, too), but the ranger still gets a bonus to Listen, Spot, and Wilderness Lore checks against the creature-keep in mind that you make Wilderness Lore checks to track a creature.
+</p></answer></sage-advice><sage-advice><question><p>
+When a spell description, such as divine favor or greater magic weapon, says the spell gives a bonus for every three levels (or some other number of levels), do you round up or down? For example, divine favor gives a +1 luck bonus per three caster levels; do you get +2 at caster level 4 or caster level 6?
+</p></question><answer><p>
+If a spell gives a bonus per X caster levels, divide the caster's level by X and round down to determine the bonus. (You always round down in the D&amp;D game unless you're specifically told to round up.) You'd have to be a 6th-level caster to get a +2 bonus from divine favor. (Note that the spell always gives a bonus of at least +1.)
+</p></answer></sage-advice><sage-advice><question><p>
+The rules say you can use a double weapon as if fighting with two weapons. It does not clearly state whether or not Two-Weapon Fighting and Ambidexterity bonuses apply to these weapons. Could you please clarify this for me?
+</p></question><answer><p>
+They do. Using both ends of a double weapon works just like fighting with a one-handed weapon in your primary hand and a light weapon in your off hand (see Double Weapons on page 125 in the PH), except that rangers cannot use them with their special two-weapon fighting ability. (See page 45 in the PH.)
+</p></answer></sage-advice><sage-advice><question><p>
+There's a footnote for the "draw a weapon" action on table 8-4 (in the PH) that says you can combine this action with a regular move. Correct me if I'm wrong, but I assume that means you can draw your weapon at the same time your character moves. If so, does that mean that drawing your weapon becomes a free action and you can still make your attack when you reach your destination, or does it take the place of your attack?
+</p></question><answer><p>
+If you have a base attack of +1, you can move and draw a weapon as part of that same move action. This lets you move, draw, and attack once at the end of your move. Note that the draw is technically not a free action, it's a bonus action that you can take as part of your move action, so you also could take at least one free action (see Table 8-4) in addition to moving, drawing, and attacking.
+</p></answer></sage-advice><sage-advice><question><p>
+Would you tell me what the restrictions are for making a partial charge? I can't find the information anywhere.
+</p></question><answer><p>
+You can make a charge as a partial action (such as when you surprise a foe and would like to dash in for a quick attack). See the footnotes to Table 8-3 in the PH for more information.
+</p></answer></sage-advice><sage-advice><question><p>
+What if a bard or sorcerer used two or more metamagic feats on a single spell? Does the delay for using the metamagic feats keep stacking and make the spell go off several rounds later, or is this penalty for any number of metamagic feats used in a round?
+</p></question><answer><p>
+No, the delay is for one or more metamagic feats applied to a single spell, not for each metamagic feat applied to a spell.
+</p></answer></sage-advice><sage-advice><question><p>
+The whip is considered a ranged weapon. As far as I can tell, that means that striking with a whip provokes an attack of opportunity! Surely that's not correct! I have a hard time believing that swinging a whip opens up my defenses that much more than, say, swinging a spiked chain. That also means that a whip wielder can't use the whip (as an attack or opportunity) to trip that orc when it tries to run past.
+</p></question><answer><p>
+Using a whip does indeed provoke an attack of opportunity. It takes more time and effort to crank up a whip attack than it does to, say, pull a crossbow trigger. (With the exception of the sling, most ranged weapons are a tad handier and quicker than a whip more than 15 feet long.) A spiked chain is a melee weapon and considerably less ponderous than a whip (mostly because it's much shorter).</p><p>
+No, you can't make an attack of opportunity with a whip, but you could prepare a whip attack or delay attacking until a foe comes within range.
+</p></answer></sage-advice><sage-advice><question><p>
+Does a character with a low Strength score really deal more damage with his off hand? The rules say you apply half your Strength bonus to an off-hand attack. Also, you get one-and-a-half times your Strength bonus when using a two-handed weapon. So does a character with a Strength penalty deal even less damage with a two-handed weapon? I am similarly confused over Dexterity modifiers and Armor Class.
+</p></question><answer><p>
+A "bonus" is a positive modifier and a "penalty" is a negative modifier. (There are no negative bonuses or positive penalties in the game.) When attacking with an off hand or with a two-handed weapon, PCs suffer their full Strength penalties. When surprised, PCs lose their Dexterity bonuses, but retain their Dexterity penalties.
+</p></answer></sage-advice><sage-advice><question><p>
+Is it true that a paladin without a positive Charisma modifier cannot use lay on hands?
+</p></question><answer><p>
+Yes. A paladin's Charisma bonus governs the lay on hands ability. If you don't have a Charisma bonus, you don't lay on hands, so be sure to assign good Charisma scores to your paladin characters.
+</p></answer></sage-advice><sage-advice><question><p>
+How come when you dispel the fly spell the user doesn't drop like a stone? If it's dispelled, shouldn't it be dispelled?
+</p></question><answer><p>
+A fly spell is "dispelled when dispelled." Dispel magic ends a spell just as if its duration had run out. (See the first paragraph of the dispel magic spell description, second sentence on page 196 in the PH.) When a fly spell's duration runs out, the user falls gently to the ground.
+</p></answer></sage-advice><sage-advice><question><p>
+Is lowering your spell resistance a free action? If yes, can you lower it automatically when your ally the priest comes over to you to cure you, or should you have done this at your last initiative?
+</p></question><answer><p>
+It's a standard action (see page 82 of the DMG); you must wait until your turn to take a standard action (though you or your ally can use a prepared action or a delay to deliver a cure spell in a timely fashion).
+</p></answer></sage-advice><sage-advice><question><p>
+Since spellcasters can now score a critical hit with all rays and touch spells that cause damage, what about Melf's acid arrow? Assuming that you score a critical hit, does the spell cause 4d4 points of damage every round or only on the first round? What about rays that cause ability damage, such as ray of enfeeblement? Can you score a critical hit with that spell as well, thus causing the target to lose a lot of Strength? Can I take the Improved Critical feat for touch attacks or ranged touch attacks and expand my critical range for such spells?
+</p></question><answer><p>
+Any spell that requires an attack roll and deals damage (in this case "damage" is normal damage, subdual damage, ability damage, or energy drain) can score a critical hit. You can't score a critical hit with a ray of enfeeblement, because it does not deal damage; it deals an enhancement penalty to Strength.</p><p>
+If you score a critical hit with Melf's acid arrow, only the initial damage gets boosted with a critical hit. So, the critical hit deals 4d4 points of damage, and the acid deals 2d4 points each subsequent round (while the acid lasts).</p><p>
+You cannot choose Improved Critical for all ranged touch attacks, you must choose a particular weapon. You could choose Improved Critical (or Weapon Focus) for a type of attack, such as a ray.</p><p> 
+Note that Melf's acid arrow is not a ray. Melf's acid arrow is more accurately called an energy missile. This weapon type would also include spells such as produce flame. (Magic missile, by the way is not an energy missile, but a force effect, and it cannot score a critical hit in any case because it does not require an attack roll.) Likewise, you could choose Weapon Focus, Weapon Finesse, or Improved Critical for touch spells.</p><p>
+You also could use any of the "spell weapons" (ray, energy missile, touch spell) in a sneak attack, provided that the effect in question deals regular or subdual damage; in the latter case, the sneak attack deals extra subdual damage. A sneak attack does not increase ability damage or energy drain.
+</p></answer></sage-advice><sage-advice><question><p>
+The description of the identify spell says you only get the weakest power of each item. But what if you cast identify more than once? What if you have fewer items than your caster level would allow you to identify? Can you never identify more than the basic enchantment?
+</p></question><answer><p>
+You get the same result (the item's weakest power) with each use of the identify spell on a particular item. Other spells, such as analyze dweomer, give you more information.
+</p></answer></sage-advice><sage-advice><question><p>
+Most poisons, including the poison spell, cause ability damage once, then again a minute later. Do you have to make the second saving throw even if the first was successful? Is this the general rule for poisons-always two saves?
+</p></question><answer><p>
+Yes, a character must always make two saves vs. poison: one save when the creature is poisoned and one save at the end of the onset time (even if the first saving throw is successful). 
+</p></answer></sage-advice><sage-advice><question><p>
+Is it correct that all cones are as wide at any point as they are long at that point?
+</p></question><answer><p>
+Absolutely. (This makes cones much easier to adjudicate in play.)
+</p></answer></sage-advice><sage-advice><question><p>
+Do the Whirlwind Attack and Cleave feats stack? For example, can I use Cleave to get extra attacks if a Whirlwind Attack kills one of my targets?
+</p></question><answer><p>
+You can Cleave only once a round. 
+If you have the Great Cleave feat, however, you can cleave each time you drop an opponent, even when the opponent drops in a Whirlwind Attack. (When a foe drops, resolve the extra Cleave attack before finishing the rest of the attack rolls for the Whirlwind Attacks.)
+</p>
+</answer>
+</sage-advice>
+</sage>

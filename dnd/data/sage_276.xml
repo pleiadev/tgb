@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="sage.xsl" type="text/xsl"?>
+<sage issue="276">
+<sage-advice>
+<question>
+<p>
+If you successfully trip an opponent during an overrun, do you get a free attack if you have the Improved Trip feat?
+</p>
+</question>
+<answer>
+<p>
+No. The Improved Trip feat gives you a free attack only if you use a melee attack to trip a foe and you succeed. (In effect, this feat replaces the attack you used to make the trip with an attack that can deal damage.) When you're overrunning, you're making a trip as part of the move portion of a charge, not as a melee attack. You can, however, end your charge and use your normal attack against an opponent you've knocked down during an overrun.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>What, exactly, is a bard's countersong effective against? Will it work on effects that don't allow saving throws? Will it work against a thunderstone?
+</p>
+</question>
+<answer>
+<p>
+Countersong works on sonic magical effects; that is, any spell, supernatural ability, or spell-like effect that has the sonic or language-dependent designator. But countersong does not work against extraordinary abilities and nonmagical sound, such as a thunderstone.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>Since countersong allows you to use the bard's Perform check result as your saving throw result, it is not effective against spells or effects that have no saving throw to begin with.
+Do you need to be able to hear a bard's countersong to benefit from it?
+</p>
+</question>
+<answer>
+<p>
+No, you have to be within 30 feet of the bard (the countersong follows the rules for a spread) and be subjected to an effect that the countersong can counter. (See previous question.) Note that if you're deafened, you probably aren't subject to anything the countersong can counter.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>Do I have to roll three times when attacking with three shuriken, or just once? If I have to roll three times, are there penalties on the second and third attacks? If I only have to roll once, is there any reason why I would throw fewer than three shuriken?
+</p>
+</question>
+<answer>
+<p>
+When you throw three shuriken, make a separate attack roll for each, even though it counts as one attack. There's no attack penalty for the extra two shuriken.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+I don't see any limit on the number of sneak attacks a rogue can make in a round. Suppose a high-level rogue is hiding. Two villains walk within 5 feet of her. Can the rogue use an attack of opportunity as a sneak attack and then, assuming she beats the villain's initiative, make as many sneak attacks as she has attacks? Can she sneak attack each of the villains? What if the rogue has a bow? If she has Rapid Shot, does this increase the number of sneak attacks she can make?
+</p>
+</question>
+<answer>
+<p>
+A rogue deals extra damage with a sneak attack any time the target is denied Dexterity bonus to AC or anytime the rogue flanks the target, no matter how many attacks the rogue makes. These conditions are not likely to occur during an attack of opportunity, but, if they do (such as when the rogue is unseen), the rogue gets her sneak attack bonus damage. The same holds true for ranged weapons (but see the next question), provided that the rogue is within 30 feet of her target. Note that sneak attacks are never possible when the rogue cannot see her target.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can a rogue sneak attack with three shuriken if he is within 30 feet of a target? If each hits, does each gain the sneak attack bonus?
+</p>
+</question>
+<answer>
+<p>
+You apply sneak attack damage only once per attack. If you use one attack to throw three shuriken, you get to apply sneak attack bonus damage only once. Sneak attack damage-and a ranger's favored enemy bonus damage-applies only to one of three shuriken that you throw. You do not have enough precision with the extra shuriken to get bonus sneak attack or favored enemy damage.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Mighty bows give a Strength bonus to damage, but what happens when a character with insufficient Strength tries to use one? Can the character use the bow without a damage bonus? Can the character even draw the bow? What about stringing the bow? Can a person without sufficient Strength to use a mighty bow even string it?
+</p>
+</question>
+<answer>
+<p>
+For any bow damage, you apply either your Strength modifier or the bow's maximum Strength, whichever is lower. Anyone can string or use a mighty bow, regardless of Strength.
+DMs who recall the tale of Ulysses vs. Penelope's suitors might wish to implement a house rule that limits a weak character's ability to string or fire a mighty bow, but there is no official rule that keeps weak characters from stringing or using one.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If I have Martial Weapon Proficiency, Weapon Focus, or Weapon Specialization with a longbow, can I also use a composite longbow?
+</p>
+</question>
+<answer>
+<p>
+Officially, any weapon that gets its own entry in Table 7-4: Weapons in the Player's Handbook requires a separate proficiency, focus, or specialization. For example, the game has four kinds of bows: shortbows, composite shortbows, longbows, and composite longbows. Individual DMs might want to experiment with weapon groups, but such house rules are appropriate only for proficiency, not focus or specialization.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Is it possible to prepare a partial charge, move, turn, and then execute the charge? Do I get a 5-foot step in between my move and my charge? Can I squeeze an extra 5 feet of movement out of each round by moving as a partial action, then taking a 5-foot step and attacking as a partial action? Can I move and ready an attack, and then take a 5-foot step before that attack? If I don't move at all when I ready my attack, can I take a 5-foot step before or after that attack?
+</p>
+</question>
+<answer>
+<p>
+You can make a 5-foot step if you don't otherwise move. In all the cases you mention, the answer is no.
+</p>
+<p>
+When you charge, all your movement must be in a straight line (and in the same direction), any movement you make before a partial charge counts against you.
+</p>
+<p>
+As with a charge, the movement you make as part of the ready standard action counts normally as part of your action. In this case, it prevents you from taking the 5-foot step, which you can only take if you don't actually move.
+</p>
+<p>
+You don't get a move-equivalent action plus a partial action as your turn. You get either a standard action (which does not allow a 5-foot step), a full-round action (which allows a 5-foot step if the action itself doesn't include movement), or a partial action (which also allows a 5-foot step if the action doesn't include movement).
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>Can a monk or another character use an unarmed strike to deliver a spell with touch range? If so, how do you resolve the attack?
+</p>
+</question>
+<answer>
+<p>
+Yes, you can use an unarmed strike to deliver a touch spell. Since casting a spell is a standard action, you usually have to wait until your next turn to make the unarmed attack. Resolve the unarmed attack exactly the same way you resolve any other unarmed strike. The attacker has to beat the defender's Armor Class with all adjustments, including armor and shield, added in. (The attacker is trying to land a damaging blow, not just touch the opponent.) If the attacker doesn't have the Improved Unarmed Strike feat, the attack draws an attack of opportunity (striking for damage exposes the attacker to more risk than merely touching the opponent to deliver a spell). If the attack is a hit, the attacker deals unarmed damage and discharges the spell. If the attack is a miss, the attacker is still holding the charge.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>All the item creation feats have prerequisites of "x spellcaster level." Do spellcaster levels from different spellcasting classes stack? In other words, is a Wiz4/Sor4 an 8th-level or 4th-level spellcaster?
+</p>
+</question>
+<answer>
+<p>
+Spellcasting levels don't stack; if a prerequisite is "x spellcaster" level, you need "x levels" in a spellcasting class to meet the prerequisite.
+</p>
+<p>
+Say an 11th-level wizard has an Intelligence of 15. Can the wizard prepare a teleport spell (a 5th-level spell) enhanced with the Silent Spell metamagic feat and thus use a 6th-level spell slot that the character (thanks to low Intelligence) could not use to prepare a 6th-level spell?
+</p>
+<p>
+Using a metamagic feat makes the spell occupy a spell slot of higher level, but it does not actually change the spell's level (except for Heighten Spell, which does increase the spell's level). So long as the wizard in question has enough Intelligence to cast the spell at its actual level (15 for the 5th-level teleport spell), the character can cast the metamagic spell. Note that the character doesn't have to use metamagic to use the 6th-level spell slot; the character can simply prepare any lower level spell in the slot.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>If a character is paralyzed, but recovers during the same encounter, do you keep the same initiative or roll a new one?
+</p>
+</question>
+<answer>
+<p>
+If by "the same encounter" you mean the same battle in which the character was paralyzed, the character must delay if she's paralyzed during her turn, but her initiative number does not actually change until she recovers. The same is true for a magically held character or a character reduced to negative hit points. The character hasn't actually left the battle, she just didn't get to do anything when her turns came up.
+</p>
+<p>
+If the character recovers before her turn in the initiative order, she can act normally during her turn, using her original initiative number. If the character recovers after her turn, she still can act, but she has delayed and her initiative drops accordingly.
+</p>
+<p>
+There might be cases when a character really has effectively left the battle. For example, say a character fails a saving throw against a hold person spell and the rest of the combatants keep moving while fighting, leaving the held character behind. If the held character decides to rejoin the fray after the spell wears off, treat her as a new combatant. (See New Combatants Enter the Fray in Chapter 3 of the DUNGEON MASTER's Guide.) 
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>What happens when I'm using a personal range spell, such as stoneskin, and I take over a body using magic jar? What happens if I take over a body with magic jar and then cast a personal range spell?
+</p>
+</question>
+<answer>
+<p>
+A personal range spell goes where you go. When you take over a body with magic jar, any personal range spell you had running before the takeover goes with you and you can continue to use it in the body you have taken over. When you leave the body, all your personal range spell effects go with you, including any you might have cast while in the body you've taken over.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>How many hit points do you have when you take over another body with a magic jar spell? What if the body you take over is damaged?
+</p>
+</question>
+<answer>
+<p>
+In the case of magic jar, hit points go with the body. When you possess a body, you have whatever hit points that body has at the time.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>Why does bull's strength have a saving throw (albeit the harmless kind) when cat's grace and endurance don't?
+</p>
+</question>
+<answer>
+<p>
+It's an error. All three of these spells should have the same saving throw entry: Will negates (harmless).
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>Can a creature with a gaze attack-say, for purposes of discussion, a medusa-use its gaze attack when under the influence of a change self spell? Alter self? (The answer is obviously "no" when polymorphed, as the gaze is a supernatural ability.)
+</p>
+</question>
+<answer>
+<p>
+Change self and alter self do not prevent the use of supernatural abilities. Nevertheless, glamers can disrupt gaze attacks. You've got to be able to see a medusa's eyes or face to be subject to its gaze. An invisible medusa can't petrify you, and neither can a medusa who has assumed a form that's no longer recognizable as a medusa. Of course, if the medusa assumes a form that has a petrifying gaze attack of its own, the gaze still works. (A medusa masquerading as a basilisk can still petrify you.) You are correct about a polymorphed medusa; polymorphed creatures cannot use their supernatural abilities.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>Dragon #268, page 25, says that a wall of force spell remains in place regardless of the caster's wishes unless he or she uses dispel magic. The description of the wall of force spell in the Player's Handbook, however, says wall of force is dismissable and that it is not subject to dispel magic. Which is right?
+</p>
+</question>
+<answer>
+<p>
+The Player's Handbook is right on both counts. Wall of force is dismissable, and it is impervious to dispel magic, even dispels from the wall of force caster. While you automatically succeed on dispel checks against spells you have cast yourself, a successful dispel check has no effect on a wall of force.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>When using the granted power from the Luck domain, do you have to decide to make the reroll before you find out what the result is, or do you get to know whether you've failed or not before deciding to reroll? For example if I roll an 18, but I need at least 19, do I get to know that an 18 is a failure, or do I have to decide before then?
+</p>
+</question>
+<answer>
+<p>
+Technically, you must decide to reroll before you know whether you've succeeded or failed; that's why the power description says you've got to keep the reroll even if it's worse than the original roll. It's incumbent on the DM to allow a player at least a moment to decide whether to use the ability. If the DM accidentally blurts out the result immediately, it's okay to let the player reroll.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>Can a stoneskin spell keep you from being poisoned? Say a giant scorpion stings me when I have a stoneskin spell, am I poisoned if the attack doesn't deal any damage because of the damage reduction from the spell?
+</p>
+</question>
+<answer>
+<p>
+Whenever damage reduction from any source completely negates the damage from an attack, it also negates most special effects that accompany the attack, such as injury-type poison (which is what a scorpion has), a monk's stunning ability, and injury-type disease. Damage reduction does not negate touch attacks, energy damage dealt along with an attack (such as fire damage from a fire elemental), or energy drains. Nor does it affect poisons or diseases delivered by inhalation, ingestion, or contact. See the section on damage reduction in Chapter 3 of the DUNGEON MASTER's Guide for more details.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>The continual flame spell is listed as an Illusion (Figment). It provides real light. However, page 158 of the Player's Handbook says figments and glamers are unreal and cannot produce real effects. Specifically, they cannot illuminate darkness. Am I missing something, or is there an error?
+</p>
+</question>
+<answer>
+<p>
+There's an error. The continual flame spell is an Evocation [Light] spell, not an Illusion (Figment). The rest of the spell description is still accurate, however. The flame from a continual flame spell doesn't generate any heat, doesn't consume oxygen, cannot burn anything, and cannot be smothered or quenched.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>I can use locate object to find a general item, such as a jewel. I can use it to find specific items. Can I use it to find particular types of items, such as an emerald worth at least 1,000 gp? The spell says that I need a clear mental image of a specific item to find it. Then it says I must have seen a unique item in person in order to locate it. Is there a difference between a specific item (requiring only a mental image) and a unique item (requiring one to have seen it with one's own eyes)?
+</p>
+</question>
+<answer>
+<p>
+The spell allows you to look for three different classes of objects: General objects (Platonic objects): You can look for something such as a chair, a stairway, or a gem. If you do, you get the nearest object of the specified type.
+</p>
+<p>
+Specific objects: The monetary value of a gem is somewhat arbitrary, and it won't suffice for a locate object spell. You can search for an emerald, or an emerald of a specific size and weight, and if you have the Knowledge (gems) skill, the Craft (gemcutting) skill, or maybe even the Appraise skill you probably know enough to specify the size or weight that corresponds to the gem value you want. If you just search for an emerald, you'll get the closest emerald, no matter what its size or weight. If you specify a size or weight, and you have a clear mental image of such an emerald, you'll get the closest emerald of that size or weight, but the spell will not find any other emeralds that might be within range. You cannot specify a range of sizes and weights, because that will not allow you to develop a clear mental picture of a single emerald.
+</p>
+<p>
+Unique objects: You can look for a particular emerald (such as the one in the king's ring, for example), provided you've seen that particular emerald before.
+</p>
+</answer>
+</sage-advice>
+</sage>

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="sage.xsl" type="text/xsl"?>
+<sage issue="279">
+<sage-advice>
+<question>
+<p>
+The description of the Scribe Scroll feat says the base price of a scroll is its spell level multiplied by its caster level multiplied by 25 gp. It goes on to say that a character must spend 1/25 of the base price in XP and 1/2 the base price in raw materials. My question is, are 0-level spells off limits, or are they free due to the fact that any number multiplied by 0 equals 0?
+</p></question><answer><p>
+Treat any 0-level spell as level 1/2 for purposes of assigning a cost to a magic item (this makes the base price of creating a scroll of one 0-level spell 1/2 X 25 X caster level). For more information on creating magic items and the cost for doing so, see pages 241-246 in the DUNGEON MASTER's Guide.
+</p></answer></sage-advice><sage-advice><question><p>
+On page 148 of the Player's Handbook, under Casting Time, it says you must make all pertinent decisions about a spell (range, target, area, effect, version, and so on) when you begin casting. However, on the same page under Aiming a Spell, it says you do not have to select your target until the moment you finish casting the spell. Which is it?
+</p></question><answer><p>
+You have to make all the decisions required to complete the spell when you begin the spell, just as noted under the Casting Time heading-except the spell's target. The process is analogous to loading a gun. You have to decide what kind of ammunition to load before you can aim and pull the trigger, but you don't have to pick a target until you're ready to pull the trigger.
+</p></answer></sage-advice><sage-advice><question><p>
+The Player's Handbook says the sorcerer class casts arcane spells by virtue of raw magical talent or a gift, as opposed to the wizard's academic, systematic approach. If this is the case, can a sorcerer cast a spell that requires a material component or a focus without using the component or focus?
+</p></question><answer><p>
+No. A sorcerer has a natural talent or gift for arcane spells, but that talent or gift only allows the sorcerer to cast a spell without preparing it ahead of time. If you were to watch a wizard and a sorcerer casting the same spell, you could not tell just by looking which was the sorcerer and which was the wizard (not even a successful Spellcraft check would reveal that). The sorcerer uses all the components the spell requires (verbal, somatic, and material) and uses them the same way a wizard does. Of course, either spellcaster can use a feat to make a component unnecessary, such as Still Spell to eliminate a spell's somatic component.
+</p></answer></sage-advice><sage-advice><question><p>
+Are sorcerers, bards, and clerics using spontaneous casting able to use the Quicken Spell metamagic feat?
+</p></question><answer><p>
+They can, but there is no point in their doing so. A sorcerer or bard who uses a metamagic feat on a spell must cast the spell as a full-round action (or the normal casting time plus an extra full-round action if the spell's casting time normally is longer than 1 action). Clerics using spontaneous casting must follow the same rule. This rule makes Quicken Spell worthless for these characters.
+</p></answer></sage-advice><sage-advice><question><p>
+If my character casts a sleep spell, do I get to decide who is affected? For example, if friendly characters are in the area the spell effects, can I opt to only affect enemies? Do I ever get to decide who is affected by my character's spells? In spell descriptions where it is not specifically spelled out, is there a way to adjudicate whether or not a caster can choose to affect just his enemies?
+</p></question><answer><p>
+A sleep spell affects 2d4 Hit Dice worth of creatures within a 15-foot burst; creatures with fewer Hit Dice are affected before creatures with more Hit Dice. The caster can place the burst so friendlies are not inside, but that's the only control the caster has over who is affected.
+</p><p>
+To determine how much control the caster has over a spell's targeting, start by looking at the header information for the spell. If the spell has an "Effect" or "Area" entry, it affects creatures within the area of effect, and the caster can't influence who the spell hits (except by choosing the spell's area or point of origin).
+</p><p>
+If the spell has a "Target" entry, the caster usually can decide who receives the spell (see pages 148 and 149 in the Player's Handbook), but read the target entry carefully-sometimes it specifies something about the target that you can't control. For example, the teleport spell targets the caster and all objects and willing creatures the caster touches. If the teleport caster is touching something, that something is automatically a target of the spell (unless it is a creature or a creature's equipment and that creature is unwilling to take the trip).
+</p></answer></sage-advice><sage-advice><question><p>
+The Player's Handbook says a spell's range is the maximum distance from the caster that the spell's effect can occur. It also says that if any portion of the spell's area would extend beyond the range, that area is wasted. Does that mean that if a character casts fireball so that its point of origin is at the spell's maximum range, the area that would be affected by the fireball would only be the hemisphere from the point of origin back toward the caster? Would half the spell's volume be wasted?
+</p></question><answer><p>
+Yes. Part of the fireball is wasted. No portion of the fireball's spread can be out of the spell's range. You can't squeeze a few extra feet of range out of a spell by placing the spell's point of origin at maximum range. Note that this is a departure from the way previous editions of the game did things.
+</p></answer></sage-advice><sage-advice><question><p>
+Many spells in the Player's Handbook list areas of effect by saying something like, "one target per level, no two of which can be more than x feet apart." What exactly does this mean? The description of the mass invisibility spell really confuses me. This spell says there can be no less than 180 feet between any target and the nearest other target. That makes the spell's area of effect potentially very large. 
+</p></question><answer><p>
+When a spell has a target entry that says no two targets can be more than x feet apart, it means no more than x feet can separate any two targets (all the targets also must be within range-see previous question). For example, the magic missile spell has a target entry that says the spell effects up to 5 creatures, no two of which can be more than 15 feet apart. That means that no more than 15 feet can separate any two creatures affected by the spell. 
+</p><p>
+It might be helpful to think of a sphere with a diameter (not a radius) equal to the listed distance. For example, all creatures targeted by a magic missile must fit within a sphere with a diameter of 15 feet or less. The rules don't describe spells like magic missile this way because that tends to make people think of it as an area spell rather than a targeted spell. (The design team learned this the hard way during playtesting.)
+</p><p>
+In any case, the mass invisibility spell has a target entry and a special condition for maintaining the spell's effect once a target has received the spell. These two things seem to be confusing you. When the spell is cast, no two targets can be more than 180 feet apart. Once you have received the spell, however, you must remain within 180 feet of some other spell recipient (any other recipient, not the most distant other recipient) or you break the effect for yourself. This allows all the spell's recipients to spread out after receiving the spell. 
+</p></answer></sage-advice><sage-advice><question><p>
+If a spellcaster is casting a full-round or longer spell, does she provoke an attack of opportunity only when she begins casting or does anyone who gets near her get an attack of opportunity? What happens when a new round starts?
+</p></question><answer><p>
+Taking the cast spell action while threatened provokes an attack of opportunity. The character takes that action at the start of the spell's casting time, during her turn in the initiative order. Foes who did not threaten the caster when she took the action don't get attacks of opportunity, even if they subsequently threaten the character. Note, however, that any damage the caster suffers during the casting time requires a Concentration check, so foes who move up and attack can still disrupt the spell.
+</p></answer></sage-advice><sage-advice><question><p>
+Suppose a wizard is in melee with a fighter. If the wizard takes a move and casts a spell, the fighter gets an attack of opportunity as the wizard leaves. Would that cause a Concentration check for the spell?
+</p></question><answer><p>
+No. The wizard is not casting the spell when the attack of opportunity occurred.
+</p></answer></sage-advice><sage-advice><question><p>
+Suppose the fighter in the previous question had readied an action to follow the wizard, could the fighter skip the first attack of opportunity to make one when the wizard actually casts the spell?
+</p></question><answer><p>
+Yes, but note that the wizard could opt to cast defensively and would not provoke an attack of opportunity if the attempt succeeds. (If the attempt failed, the wizard would lose the spell.)
+</p></answer></sage-advice><sage-advice><question><p>
+Is it possible to ready an action as follows: If the wizard casts a spell, I attack him; if he leaves I follow-or is that condition not specific enough?
+</p></question><answer><p>
+It's actually too specific, because you're really specifying two different conditions and two different actions. The ready action allows you to specify one partial action and the condition under which you will perform the action. You could simply ready an attack on the wizard whenever he casts a spell, and this would allow you to do any number of things, including attack, take a 5-foot step and attack, or even make a partial charge and attack. In such a case, you would not get an opportunity attack on the wizard when he cast the spell, but you would force a Concentration check if you damage the wizard.
+</p></answer></sage-advice><sage-advice><question><p>
+Good clerics can lose a prepared spell to spontaneously cast any cure wounds spell. Can any good cleric do this even if Healing is not one of his chosen domains? If so, why is there even a Healing domain?
+</p></question><answer><p>
+A cleric's domains have nothing to do with spontaneous casting; only the cleric's alignment matters (in the case of neutral clerics, it's the deity's alignment that matters). See page 32 in the Player's Handbook.
+</p><p>
+There's a Healing domain because many deities concern themselves with healing. Extra cure spells aren't the only benefit clerics with the Healing domain get. They get a caster level boost when casting their healing spells (making them slightly better healers than other clerics). Also, their 5th-level and higher domain spells are not cure wounds spells, so other clerics cannot spontaneously cast them.
+</p></answer></sage-advice><sage-advice><question><p>
+Can a diviner prepare detect magic as a bonus spell, because it's a detection spell, or is it a Universal spell and therefore not a divination?
+</p></question><answer><p>
+The detect magic spell belongs to the Universal school, not the Divination school, so diviners can't claim it as a bonus school spell.
+</p></answer></sage-advice><sage-advice><question><p>
+When you cast Nystul's undetectable aura, what spells does it protect against? Does it only protect the targeted item against detect magic, or will it also protect a sentient item against detect thoughts? What about invisible items? If the spell is cast on an item enchanted with the invisibility spell, is it impossible to detect the item? 
+</p><p>
+I have a friend who believes that if you cast Nystul's undetectable aura on an invisible item, spells such as see invisibility cannot locate the item since its aura, and therefore the item, remain beyond the means of detection. For that matter, what does the magical aura consist of? Is a sentient weapon's intelligence located within the aura? Lastly, will Nystul's undetectable aura protect the targeted item from spells such as detect evil?
+</p></question><answer><p>
+Nystul's undetectable aura masks an item's magical aura, which is the aura a detect magic spell detects. The spell does not block any other aura. The only Divination spell (detect magic is a Universal spell, see previous question) Nystul's undetectable aura affects is identify; the identify user must make a Will save to determine the item's actual power.
+</p><p>
+Note that detect magic reveals active or residual magical auras, not the effects magic produces. An invisible character or object has a magical aura, but it does not have an invisibility aura. Such a character or item can be detected with detect magic, but not very efficiently (see "Sage Advice" in issue #274).
+</p><p>
+Note also that many "sentient objects" are not objects at all, but creatures of the construct type. The intelligent items described in the DUNGEON MASTER's Guide, for example, have Intelligence, Wisdom, and Charisma scores and are therefore creatures (see Abilities on page 10 of the Monster Manual), and spells that only work on items, such as Nystul's undetectable aura, don't work on them.
+</p></answer></sage-advice><sage-advice><question><p>
+If a wizard casts shocking grasp, grabs at his target, and misses, is the spell still active or does it dissipate harmlessly?
+</p></question><answer><p>
+Once you cast a touch spell, the spell effect remains, untriggered, until you touch something with your hand or until you cast another spell (see Touch Spells and Holding the Charge on page 151 of the Player's Handbook).
+</p></answer></sage-advice><sage-advice><question><p>
+When a character casts chill touch, the caster's hand glows blue, and a successful touch attack with the hand causes damage and perhaps Strength damage, too. Could a character have chill touch in effect and use a weapon in the other hand? If so, would the normal penalties for attacking with two weapons apply?
+</p></question><answer><p>
+Chill touch follows all the rules for holding the charge on a touch spell (see previous question) except that a chill touch spell has one "charge" per caster level. Each time you touch anything with your hand, you lose one charge off the chill touch, but anything you already had in your hand when you cast the spell doesn't count as being touched. You can't have two chill touch spells running at once, because if you cast a spell while holding a charge the whole spell you're holding dissipates.
+</p><p>
+Otherwise, you can indeed use the hand bearing the chill touch effect as a weapon. When you're using the two-weapon fighting rules, your own hand is a light weapon for you.
+</p></answer></sage-advice><sage-advice><question><p>
+My new Player's Handbook shows the range for the fireball spell as a base 400 yards! Shouldn't this be base 100 yards, like lightning bolt?
+</p></question><answer><p>
+No. Fireball is a long-range spell, so its range is 400 feet + 40 feet per caster level (not yards). This is longer than the range for a lightning bolt, which is a medium-range spell (100 feet + 10 feet per caster level). 
+</p><p>
+Older versions of the game listed ranges in yards, but the current rules list all ranges in feet.
+</p><p>
+Note that a lightning bolt spell creates a stroke of electricity that extends from the caster to the maximum range of the spell (space permitting). This is very different from the way the spell worked in older versions of the game. In the previous edition, a lightning bolt worked much like a fireball; it produced a small missile that detonated and generated a stroke of electricity 40 or 80 feet long. The new version of the spell has a shorter overall range, but produces a much longer bolt (300 feet long for a 20th-level caster).
+</p></answer></sage-advice><sage-advice><question><p>
+Does the fireball spell expand in confined spaces as it did in previous versions of the game? If not, how does it interact with creatures in total cover or around corners? According to table 8-9 on page 133 of the Player's Handbook, total cover affords no saving throw bonus. But if a fireball expands around a corner like the diagram on page 204, what sort of save bonus would a creature around the corner get?
+</p></question><answer><p>
+A fireball does have a fixed volume that fills up a confined space as it did in older version of the game. It does follow the rules for a spread (see page 149 in the Player's Handbook), which means it can reach around corners.
+</p><p>
+In general, you use Table 8-9 in the Player's Handbook to determine saving throw bonuses from cover. Trace the line of effect from the spell's point of origin to determine what sort of cover might be available, and use the diagrams on page 133 of the Player's Handbook to determine the degree of cover. There's no saving throw bonus listed for total cover because if you have total cover against a spell, the spell can't affect you at all.
+</p><p>
+When you're hit by a spread, you cannot claim total cover if the spell's effect can reach you somehow. Determine the degree of cover by how small a constriction the spread has to pass through to reach you. For example, if you're peering around the corner when a fireball hits, the best you can claim is one-quarter cover. If you're completely behind the corner, but otherwise in the open, the best you can claim is one-half cover. If you're around a corner and halfway behind a door, you can claim three-quarters cover. If the fireball comes at you through an arrow slit, you can claim nine-tenths cover.
+</p></answer></sage-advice><sage-advice><question><p>
+Older editions of the game listed the silence spell in the Alteration school, but now silence is part of the Illusion school. Does this mean that anyone in the area of effect can try to disbelieve the spell, negating most of its effect for enemy spellcasters?
+</p></question><answer><p>
+If you could disbelieve a silence spell, its save listing would be "Will disbelief." Silence removes all noise in its area and nobody gets a save against that. If the spell is actually targeted on a creature or on a creature's equipment, that creature gets a Will save to negate the spell. If the save succeeds, the spell fails and the area is not silenced.
+</p>
+</answer>
+</sage-advice>
+</sage>

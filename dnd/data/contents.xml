@@ -1,0 +1,28 @@
+
+<generator start-xpath="//lookup-table[@key = 'D']/lookup-entry" escape="%">
+	<lookup-table key="D">
+	<lookup-entry> Monster only </lookup-entry>
+	<lookup-entry> Monster and features </lookup-entry>
+	<lookup-entry> Monster and hidden treasure </lookup-entry>
+	<lookup-entry> Monster and trap </lookup-entry>
+	<lookup-entry> Monster, features, and hidden treasure </lookup-entry>
+	<lookup-entry> Monster, features, and trap </lookup-entry>
+	<lookup-entry> Monster, hidden treasure, and trap </lookup-entry>
+	<lookup-entry> Monster, features, hidden treasure, trap </lookup-entry>
+	<lookup-entry> Features only </lookup-entry>
+	<lookup-entry> Features and hidden treasure </lookup-entry>
+	<lookup-entry> Features and trap </lookup-entry>
+	<lookup-entry> Features, hidden treasure, and trap </lookup-entry>
+	<lookup-entry> Hidden treasure only </lookup-entry>
+	<lookup-entry> Hidden treasure and trap </lookup-entry>
+	<lookup-entry> Trap only </lookup-entry>
+	<lookup-entry> Nothing </lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="S">
+	<lookup-entry> </lookup-entry>
+	</lookup-table>
+	
+</generator>
+
+

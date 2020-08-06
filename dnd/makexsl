@@ -1,0 +1,30 @@
+SOURCES = \
+$O\adventureoutline.html \
+$O\adventures.html \
+$O\alignment.html \
+$O\campaignoutline.html \
+$O\consequences.html \
+$O\encounters.html \
+$O\environments.html \
+$O\equipment.html \
+$O\fearthedm.html \
+$O\foreshadowing.html \
+$O\glory.html \
+$O\houserules.html \
+$O\index.html \
+$O\mapping.html \
+$O\mappingtips.html \
+$O\monsters.html \
+$O\npcs.html \
+$O\ogl.html \
+$O\poisons.html \
+$O\puzzles.html \
+$O\QuickSpellsPerDay.html \
+$O\spells.html \
+$O\traps.html \
+$O\tricks.html \
+
+#
+# INCLUDE FILE FOR BUILDING THIS PROJECT!!!
+#
+!INCLUDE <makexsl.def>

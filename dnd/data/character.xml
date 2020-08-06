@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v3.0 (http://www.xmlspy.com) by Richard O'Doherty-Gregg (Private) -->
+<?xml-stylesheet type="text/xsl" href="Character.xsl"?>
+<pc>
+	<name>Crucible</name>
+	<player>Richard O'Doherty-Gregg</player>
+	<classes totallevel="8">
+		<class name="Rogue" abbr="Rog" level="3"/>
+		<class name="Wizard" abbr="Wiz" level="5"/>
+	</classes>
+	<race>Elf</race>
+	<alignment abbr="NG">Neutral Good</alignment>
+	<deity>Pug</deity>
+	<size category="Medium" height="5'1&quot;" weight="95" acmodifier="0"/>
+	<age>113</age>
+	<gender>Male</gender>
+	<eyes>Brown</eyes>
+	<hair>Black</hair>
+	<abilities>
+		<stat name="Strength" abbr="Str" base="12" mod="1"/>
+		<stat name="Dexterity" abbr="Dex" base="18" mod="4"/>
+		<stat name="Constitution" abbr="Con" base="16" mod="3"/>
+		<stat name="Intelligence" abbr="Int" base="17" mod="3"/>
+		<stat name="Wisdom" abbr="Wis" base="13" mod="1"/>
+		<stat name="Charisma" abbr="Cha" base="12" mod="1"/>
+	</abilities>
+	<damagereduction/>
+	<speed>30 ft.</speed>
+	<misschance/>
+	<arcanespellfailure/>
+	<armorcheckpenalty/>
+	<spellresistance/>
+	<savingthrows>
+		<savingthrow name="Fortitude" stat="Constitution" base="3" statmod="3" magmod="" miscmod=""/>
+		<savingthrow name="Reflex" stat="Dexterity" base="6" statmod="4" magmod="" miscmod=""/>
+		<savingthrow name="Will" stat="Wisdom" base="6" statmod="1" magmod="" miscmod=""/>
+	</savingthrows>
+	<hp total="33">6,3,5,2,1,4,3,3</hp>
+	<ac natural="" misc="">
+		<armor name="Bracers of Armor" type="" bonus="4" maxdex="8" checkpenalty="0" spellfailure="" speed="30" weight="5" special=""/>
+		<shield name="Ring of Protection+1" bonus="1" checkpenalty="0" spellfailure="" weight="1/2" special="+1 to all saving throughs"/>		
+	</ac>
+	<initiative dex="4" misc="0">4</initiative>
+	<attacks sizemodifier="0">
+		<baseattack base="6"/>
+		<baseattack base="1"/>
+		<weapon name="Longsword +2" damage="1d8" critical="19-20/x2" range="" weight="15" type="S" size="med" special=""/>
+		<weapon name="Shortbow +2" damage="1d6" critical="20/x2" range="60" weight="5" type="P" size="med" special=""/>
+		<weapon name="Dart" damage="1d4" critical="20/x2" range="10" weight="1/2" type="P" size="tiny" special=""/>
+	</attacks>
+	<skills>
+		<skill name="Alchemy" stat="Int" rank="3" misc=""/>
+		<skill name="Animal Empathy" stat="Cha" rank="" misc=""/>
+		<skill name="Appraise" stat="Int" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Balance" stat="Dex" rank="" misc="" crossclass="true" untrained="true" armorcheck="true"/>
+		<skill name="Bluff" stat="Cha" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Climb" stat="Str" rank="" misc="" crossclass="true" untrained="true" armorcheck="true"/>
+		<skill name="Concetration" stat="Con" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Craft" sub="___________" stat="Int" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Decipher Script" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Diplomacy" stat="Cha" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Disable Device" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Disguise" stat="Cha" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Escape Artist" stat="Dex" rank="" misc="" crossclass="true" untrained="true" armorcheck="true"/>
+		<skill name="Forgery" stat="Int" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Gather Information" stat="Cha" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Handle Animal" stat="Cha" rank="" misc="" crossclass="true"/>
+		<skill name="Heal" stat="Wis" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Hide" stat="Dex" rank="" misc="" crossclass="true" untrained="true" armorcheck="true"/>
+		<skill name="Innuendo" stat="Wis" rank="" misc="" crossclass="true"/>
+		<skill name="Intimidate" stat="Cha" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Intuit Direction" stat="Wis" rank="" misc="" crossclass="true"/>
+		<skill name="Jump" stat="Str" rank="" misc="" crossclass="true" untrained="true" armorcheck="true"/>
+		<skill name="Knowledge" sub="Arcana" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="Architecture &amp;Engineering" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="Geography" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="History" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="Local" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="Nature" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="Nobility &amp; Royalty" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="The Planes" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Knowledge" sub="Religion" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Listen" stat="Wis" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Move Silently" stat="Dex" rank="" misc="" crossclass="true" untrained="true" armorcheck="true"/>
+		<skill name="Open Lock" stat="Dex" rank="" misc="" crossclass="true"/>
+		<skill name="Perform" sub="_________" stat="Cha" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Pick Pocket" stat="Dex" rank="" misc="" crossclass="true" armorcheck="true"/>
+		<skill name="Profession" sub="________" stat="Wis" rank="" misc="" crossclass="true"/>
+		<skill name="Read Lips" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Ride" stat="Dex" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Scry" stat="Int" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Search" stat="Int" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Sense Motive" stat="Wis" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Spellcraft" stat="Int" rank="" misc="" crossclass="true"/>
+		<skill name="Spot" stat="Wis" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Swim" stat="Str" rank="" misc="" crossclass="true" untrained="true" swim="true"/>
+		<skill name="Tumble" stat="Dex" rank="" misc="" crossclass="true" armorcheck="true"/>
+		<skill name="Use Magic Device" stat="Cha" rank="" misc="" crossclass="true"/>
+		<skill name="Use Rope" stat="Dex" rank="" misc="" crossclass="true" untrained="true"/>
+		<skill name="Wilderness Lore" stat="Wis" rank="" misc="" crossclass="true" untrained="true"/>
+	</skills>
+</pc>

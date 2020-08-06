@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+
+    Module:
+
+        global.xml
+
+    Abstract:
+
+        This the global navigation file for the site. It maps out the
+        navigation bar links for each page.
+
+    Tags:
+
+        navbar - This element corresponds to a page that begins a new category
+                 for the web site. Examples include Products, Contact, Links.
+
+        global - This is an element that will appear in every page on the site.
+                 Usually reserved for top level pages.
+
+    Attributes:
+
+        name - Display name for the navbar category. It appears on the 
+               navigation bar in the page. Example: Contacts
+        
+        link - Hyperlink setting for the navbar category.
+
+        file - File name of the build file that will be this page.
+
+
+-->
+
+
+
+<navigation>
+  <global name="Home" link="index.html" file="index" />
+  <global name="Spells Per Day" link="QuickSpellsPerDay.html" file="QuickSpellsPerDay" />
+  <global name="d20-xml Monster Manual" link="d20_xml_mm.html" file="d20_xml_mm" />
+  <global name="Room Furnishings" link="roomfurnishings.html" file="roomfurnishings" />
+  <global name="Alignment" link="alignment.html" file="alignment" />
+
+  <global name="The Wizard" link="index.html" file="index" >
+    <navbar name="Campaign Outline" link="campaignoutline.html" file="campaignoutline" />
+    <navbar name="Adventure Outline" link="adventureoutline.html" file="adventureoutline" />
+    <navbar name="Mapping" link="mapping.html" file="mapping" />
+	<navbar name="Glory" link="glory.html" file="glory" />
+    <navbar name="Foreshadowing" link="foreshadowing.html" file="foreshadowing" />
+	<navbar name="NPCs" link="npcs.html" file="npcs" />
+    <navbar name="Consequences" link="consequences.html" file="consequences" />
+    <navbar name="Traps" link="traps.html" file="traps" />
+    <navbar name="Encounters" link="encounters.html" file="encounters" />
+    <navbar name="Monsters" link="monsters.html" file="monsters" />
+    <navbar name="" link=".html" file="" />
+    <navbar name="" link=".html" file="" />
+  </global>
+
+
+  <!-- global name="" link=".html" file="" >
+    <navbar name="" link=".html" file="" />
+  </global -->
+
+
+  
+</navigation>

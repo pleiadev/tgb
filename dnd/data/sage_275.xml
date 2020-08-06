@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="sage.xsl" type="text/xsl"?>
+<sage issue="275">
+<sage-advice>
+<question>
+<p>
+Does someone who readies a weapon against a charge get his Strength modifier to attack and damage?
+</p>
+</question>
+<answer>
+<p>
+Yes. Attacking a charging opponent with a readied weapon is a melee attack, and all the rules for melee attacks apply. 
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can someone who charges get an attack of opportunity if someone moves through his threatened area later that round?
+</p>
+</question>
+<answer>
+<p>
+Yes. Charging imposes an Armor Class penalty, but it doesn't keep you from threatening an area or making attacks of opportunity.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can someone who has been tripped or is otherwise prone get an attack of opportunity if someone moves through his threatened area?
+</p>
+</question>
+<answer>
+<p>
+Being prone doesn't prevent you from threatening the area around you or making attacks of opportunity. Any attacks of opportunity a prone creature makes suffer the -4 attack penalty for being prone.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can someone take an action and then ready an action to move instead of moving right after the action? A typical use for this would be the wizard who casts her spell and then readies an action to run away if someone comes after her.
+</p>
+</question>
+<answer>
+<p>
+You can ready any partial action. You can't take a standard action, such as casting a spell, and also ready an action. (Readying is a standard action all by itself.) Note that you can take a move after any standard action, so you can cast a spell and then move away. So, in the above example, you've got to get the heck out of Dodge right after you finish the spell.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can you ready an action to perform a coup de grace?
+</p>
+</question>
+<answer>
+<p>
+No. A coup de grace is a full round action, and you can ready only partial actions.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Just how much temporary ability damage can a character heal in a day? Suppose my character has fought a battle with a couple of shadows and has been poisoned a few times. The character has suffered 4 points of Strength damage, 3 points of Constitution damage, and 1 point of Wisdom damage. The character regains 1 point of ability damage per day, so what do the character's ability scores look like after 1 day? If my character gets bed rest and regains 2 points of ability damage, what happens then?
+</p>
+</question>
+<answer>
+<p>
+In one day of light activity (no combat or spellcasting), the character heals 1 point of damage in each ability. After one day of bed rest, the character heals 2 points of damage in each ability.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+What happens when a character who has received a freedom of movement spell jumps or falls into water? My DM seems to think that the character falls straight through the water and goes "splat" on the bottom. My DM explains that the spell eliminates all water resistance, which prevents the character from swimming or floating.
+</p>
+</question>
+<answer>
+<p>
+While the DM is always right, he's followed a faulty line of reasoning here. "Sage Advice" has always warned against using scientific-or pseudo-
+scientific-reasoning to adjudicate spells. In this case, your DM has erroneously 
+supposed that water resistance has something to do with buoyancy. Buoyancy depends on the water literally pushing something up toward the surface, and a freedom of movement spell doesn't prevent that any more than it prevents a floor from pushing up against a character's feet and keeping him from falling through it. (You might not be in the habit of thinking of floors as "pushing" anything, but that is the way modern physics describes any object or body resting on any surface; the object pushes down and the surface pushes back with equal force.)
+</p>
+<p>
+In any case, the freedom of movement spell (and its cousin from earlier editions, the free action spell) has nothing to do with eliminating water resistance or friction; it allows normal movement and attacks even under conditions in which normal movement and attacks are not possible, such as underwater or when webbed, held, or entangled. Exactly how the spell accomplishes that is unrevealed-that's what makes it magic. Your DM would have been on firmer ground (as it were) if he had claimed that falling is a form of "normal movement" that water usually prevents. That, however, is not the case. "Normal movement" in water is swimming or walking along the bottom. When a character under a freedom of movement effect enters water, he makes a Swim check; if he fails, he cannot move, and he sinks if he fails by 5 or more. Note that failing to make progress or sinking are both "normal movement" in this instance.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+I have a multiclassed character with the uncanny dodge class ability and the Deflect Arrows feat. Can she deflect arrows on a surprise round if she's the one surprised?
+</p>
+</question>
+<answer>
+<p>
+No. You're flat footed when you're surprised, and you can't deflect arrows when you're flat footed. Uncanny dodge lets you use your Dexterity bonus while flat footed, but it doesn't keep you from becoming flat footed. Note that uncanny dodge also does not allow you to make attacks of opportunity while flat footed.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If my PC spots a mold that causes damage, what is the DC for me to figure out what kind of mold it is? Would it be Wilderness Lore or Knowledge (nature)? What is the difference between these two skills? It seems that anything Wilderness Lore can do, Knowledge (nature) can do better, since it's such a broader field to reference. With Wilderness Lore, you can avoid getting lost-but it seems that with Knowledge (Nature), you would know what the procedure is for getting out of trouble in a natural setting.
+</p>
+</question>
+<answer>
+<p>
+Neither Wilderness Lore nor Knowledge (nature) lets you recognize monsters. At one time, the D&amp;D design team discussed adding a Knowledge (monsters) skill, but we decided not to. Some DMs like their players to "play dumb" when their characters encounter a new monster, but others consider such pretense to be a nuisance, so the game doesn't have rules for recognizing monsters (which would imply rules for being ignorant about monsters).
+</p>
+<p>
+In any case, Wilderness Lore might let you recognize the area containing the mold as hazardous (by spotting bones or by noticing that the local animals seem to avoid it). The Wilderness Lore DC for recognizing such a hazard is 15, and the mold would have to be in a wilderness setting for the Wilderness Lore skill to be of any use in recognizing the mold as a hazard.
+</p>
+<p>
+It's possible that a character with the Knowledge (nature) skill might happen to know something about a killer mold. Noting a killer mold (or any other harmful creature that is not obviously dangerous) has a DC in the 20 to 30 range-the rarer the creature, the higher the DC.
+</p>
+<p>
+Knowledge (nature) is not a substitute for the Wilderness Lore skill. Indeed, even today the great outdoors is sprinkled with the broken, frozen, starved, or dehydrated bodies of folks who thought they knew what they were doing outside, but really didn't. A character with the Knowledge (nature) skill might have some book learning that suggests the proper course of action in a wilderness setting, but a Knowledge skill does not impart much in the way of practical know-how. (See the next question.) At best, five ranks of Knowledge (nature) will grant a +2 synergy bonus to Wilderness Lore checks.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+What are the differences between a Craft skill, a Profession skill, and a Knowledge skill?
+</p>
+</question>
+<answer>
+<p>
+A Craft skill involves a character making something with her hands (usually also with tools, but not always). The relevant ability for a Craft skill is Intelligence, mostly because one must remember the right materials, procedures, and techniques, as well as apply them in the proper manner.
+</p>
+<p>
+A Profession skill also involves specialized knowledge and techniques, but usually does not involve the character working with his hands. The relevant ability for a Profession skill is Wisdom, because it usually requires the character to apply her skills in an abstract, indirect, or speculative manner. Stonemasonry is a Craft, but architecture is a Profession. A Profession skill also implies a broader, less concrete knowledge than a Craft skill does; a stonemason can build a stone house, but not a wooden one. An architect can design a house made out of almost anything. Note that the Wilderness Lore skill could be called Profession (outdoorsman), but the design team decided to break it out into its own skill because it was much more likely to see use in play than other Profession skills.
+</p>
+<p>
+A Knowledge skill involves academic learning, usually with little practical training. The relevant ability for a Knowledge skill is Intelligence, because it involves the memorization and recall of facts. A character with Knowledge (geology) knows her stones, but she would be hard pressed to carve a statue, build a stone bridge, or dig a mine. A Knowledge skill allows a character to recall facts that might be relevant in a particular time and place but does not impart any special ability to put those facts to practical use. For example, a character lost in the woods might use a Knowledge (nature) skill to recall that moss often grows the thickest on the north side of trees. But Knowledge (nature) probably will not reveal when moss does not grow thickest on the north sides of trees (which is most of the time, actually). Nor will the Knowledge (nature) skill help the character remember the direction to the nearest settlement or allow the character to make sure she walks in a straight line when moving cross country.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Does death touch, the granted power of the Death domain, have a saving throw?
+</p>
+</question>
+<answer>
+<p>
+No, it does not. The power is similar to the power word, kill spell-your hit points are effectively your saving throw.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Why would a fighter ever take the Quickdraw feat?
+</p>
+</question>
+<answer>
+<p>
+So he can draw a weapon quickly. Actually, this feat is particularly useful to fighters of 6th level or higher because the feat makes drawing a weapon a free action. That means the fighter can draw a weapon and still make a full attack action.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+I plan on playing a multiclassed character. Does it matter which class I pick first?
+</p>
+</question>
+<answer>
+<p>
+Not really, but the class you start with strongly affects the character's hit points and skills. For example, a character gets the maximum result for her first Hit Die, so sometimes it is advisable to make that first die as large as possible, especially if you plan to have the character fight often. (A few extra hit points also makes it more likely that the character will live to see 2nd level.) On the other hand, a character's initial allotment of skill points is quadrupled for his first character level, so if you're interested in having a lot of skills, put the class that has the most skill points first.
+</p>
+<p>
+Consider these two versions of a human 1st-level fighter/1st-level rogue: Assuming the character has Intelligence and Constitution scores of 12, the character would have 26 skill points and 13 to 18 hit points (average of 15-16) if he was a fighter first. If the same character began play as a rogue, he would have 44 skill points and 9 to 18 hit points (average of 13-14).
+</p>
+<p>
+If one of your character's classes is paladin or monk, you'll face multiclassing restrictions. Once you quit the paladin or monk class, you can't go back. Don't put the paladin or monk class first unless you're willing to either wave the class goodbye or stick with it for a good while. (Either option is slightly easier with a human character.)
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Are elves treated differently than the other races when it comes to raise dead and resurrection spells?
+</p>
+</question>
+<answer>
+<p>
+No. In previous versions of the D&amp;D game, elves were hard to bring back from the dead, but that is no longer the case. Note that spells such as raise dead can now bring any living creature back from the dead, not just humans and humanlike creatures.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can a paralyzed person voluntarily stop breathing to avoid drowning if submerged?
+</p>
+</question>
+<answer>
+<p>
+Yes. A paralyzed creature is unable to move or take physical actions, but holding one's breath is not a physical action for game purposes.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Most touch-range spells have instantaneous durations. So how do they work? Is the action that you use to cast the spell the same action that you use to touch someone? The chill touch spell is particularly hard to use. If it has an instantaneous duration, there is no way the caster could get multiple attacks; however, it is obvious that you are supposed to get more than one touch with it because of the number of targets.
+</p>
+</question>
+<answer>
+<p>
+In the case of touch-range spells, the duration refers to how long the magic lasts once you touch the target (though there are one or two oddballs, such as shocking grasp, which are described in a slightly different way). When you cast a spell with touch range, you can try to touch a recipient on the same round you cast the spell. See Touch Spells in Combat on page 125 of the Player's Handbook.
+If you do not touch a recipient on the round you cast the spell, you hold the charge until you do touch a recipient or until you cast another spell. See Touch Spells and Holding the Charge on page 151 of the Player's Handbook.
+</p>
+<p>
+In the case of the chill touch spell, the spell remains until you make your allowed number of touches (you lose one charge each time you touch something) or until you cast another spell.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If the duration of a chill touch spell is instantaneous, how long does the damage and Strength loss from the spell last?
+</p>
+</question>
+<answer>
+<p>
+The effects of a chill touch spell are instantaneous, but they have lasting consequences. There are many such examples in the rules. A fireball spell, for example, creates an instantaneous burst of fire, but the damage it causes remains behind after the spell's magical effect is gone. Normal damage from a chill touch (or a fireball) spell remains until healed or cured. The Strength damage heals at the rate of 1-2 points each day or until restored, just like any other kind of temporary ability damage. See Healing Ability Damage on page 129 of the Player's Handbook, as well as the question on healing ability damage above.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If I'm caught in a web spell, but I'm at the edge of the area of effect, can someone else outside the web engage in melee combat with me without getting entangled? What if they stick a spear at me? Does the spear get caught automatically, or just if it misses me?
+</p>
+</question>
+<answer>
+<p>
+I'm assuming that by the "edge" of a web effect, you mean that there is not 5 or more feet of webbing between you and your opponent, leaving you sort of embedded in one side of the mass of webbing. In this situation, you are subject to attack, you get no cover from the webbing, and you are entangled (with a -4 penalty to your effective Dexterity score).
+</p>
+<p>
+Only creatures that are in the spell's area of effect when the web is cast can become stuck, and then only if they fail their Reflex saving throws. Creatures moving into the web area of effect after the spell is cast must still make Strength checks to move through the webbing. The Strength checks are full-round actions, so your opponents probably won't cut through the web to attack you, but they can do so without fear of getting stuck themselves.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+You're poisoned with something that causes ability loss, then you're healed by a heal spell. Since all the poison does is cause ability damage, was the poison cured by the heal or will it continue to cause damage, since heal doesn't cure poison?
+</p>
+</question>
+<answer>
+<p>
+Actually, a heal spell does remove poison; see the third sentence in the spell description. Poison, however, deals damage until its onset time (usually 1 minute) is over or the poison is removed, even when all the damage from the poison is somehow removed. For example, a character suffers 2 points of temporary Strength damage from a poison and is then the target of a lesser restoration spell before the poison's onset time is over. Even if the spell cures all the Strength damage, the character still has to make a another saving throw against the poison when the onset time expires, because lesser restoration doesn't remove poison, just its effects.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If a melee attack causes a saving throw every time it damages an opponent (a monster with a poisonous bite, for example), and the attack is a confirmed critical hit, are two saving throws required because damage is rolled twice?
+</p>
+</question>
+<answer>
+<p>
+A critical hit doesn't deliver any extra poison; however, there are special attacks that do have extra effects with critical hits. These include energy drains, ability drains, and most kinds of ability damage that are not dealt through poison. See the introduction to the Monster Manual (coming next month) or Chapter 3 of the DUNGEON MASTER's Guide.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+Can a monster's spell-like ability counterspell a character's spell?
+</p>
+</question>
+<answer>
+<p>
+A spell-like ability cannot be counterspelled, nor can it be used as a counterspell.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+According to the text of the new version of the sepia snake sigil spell, I can write the sigil and read it myself. The "snake" will then attack the nearest creature, right?
+</p>
+</question>
+<answer>
+<p>
+Wrong. The letter of the current spell description is on your side, but the text is incorrect. Replace the first two sentences of the spell description with the following:
+</p>
+<p>
+When you cast sepia snake sigil, a small symbol appears in the text of one written work such as a book, scroll, or map. The text containing the symbol must be at least 25 words long. When anyone reads the text containing the symbol, the sepia snake springs into being and strikes the reader, provided there is line of effect between the symbol and the reader. Simply seeing the enspelled text is not sufficient to trigger the spell. The subject must deliberately read the text.
+This piece of errata is official.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+The description of the summon monster I spell states that in the last round of the duration of the spell, the monster "acts normally." Does this mean that the monster acts normally for the type of monster it is? (That is, as if it were no longer under the control of the summoner.)
+</p>
+</question>
+<answer>
+<p>
+No, it means that there are no special limits on what the creature can do during the last round of the spell. It takes a normal round's worth of actions, then disappears.
+</p>
+</answer>
+</sage-advice>
+<sage-advice>
+<question>
+<p>
+If my character has a robe of the archmagi and is in the area of effect of a holy aura spell, does my character now have a 42 spell resistance?
+</p>
+</question>
+<answer>
+<p>
+No. The general rule against stacking similar effects applies here; the character gets only the best spell resistance. Against most effects, the character uses the spell resistance of 17 that the robe of the archmagi provides. Against evil spells or effects from evil opponents, the character uses the spell resistance of 25 provided by the holy aura spell.
+</p>
+</answer>
+</sage-advice>
+</sage>

@@ -1,0 +1,223 @@
+
+
+<generator start-xpath="//lookup-table[@key = 'D']/lookup-entry" escape="%">
+<LegalInformation>
+  <Notice>
+    LEGAL INFORMATION
+    Permission to copy, modify and distribute this document is granted
+    solely through the use of the Open Gaming License, Version 1.0a.
+    All material herein is being released using the Open Gaming
+    License Version 1.0a.  You should read and understand the terms of
+    that license before using this material.  
+
+    Within this XML document, all information is Open Game Content 
+    unless noted otherwise.  Open Game Content is indicated by the 
+    LegalStatus attribute of any tag.  This can have values of 
+    &quot;open&quot;, &quot;closed&quot;, or &quot;pi&quot; 
+    (for Product Identity), where &quot;open&quot; is the 
+    default.  All child tags are assumed to share the same 
+    value as their most recent parent tag.  
+  </Notice>
+
+  <OpenGameLicense type="Wizards" version="1.0a">
+    OPEN GAME LICENSE Version 1.0a 
+    The following text is the property of Wizards of the Coast,
+    Inc. and is Copyright 2000 Wizards of the Coast, Inc
+    (&quot;Wizards&quot;).  All Rights Reserved. 
+    1. Definitions: 
+    (a) &quot;Contributors&quot; means the copyright and/or trademark
+    owners who have contributed Open Game Content; 
+    (b) &quot;Derivative Material&quot; means copyrighted material
+    including derivative works and translations (including into other
+    computer languages), potation, modification, correction, addition, 
+    extension, upgrade, improvement, compilation, abridgment or other 
+    form in which an existing work may be recast, transformed or
+    adapted; 
+    (c) &quot;Distribute&quot; means to reproduce, license, rent,
+    lease, sell, broadcast, publicly display, transmit or otherwise
+    distribute; 
+    (d) &quot;Open Game Content&quot; means the game mechanic and
+    includes the methods, procedures, processes and routines to the
+    extent such content does not embody the Product Identity and is an
+    enhancement over the prior art and any additional content clearly
+    identified as Open Game Content by the Contributor, and means any
+    work covered by this License, including translations and
+    derivative works under copyright law, but specifically excludes
+    Product Identity. 
+    (e) &quot;Product Identity&quot; means product and product line
+    names, logos and identifying marks including trade dress;
+    artifacts; creatures characters; stories, storylines, plots,
+    thematic elements, dialogue, incidents, language, artwork,
+    symbols, designs, depictions, likenesses, formats, poses,
+    concepts, themes and graphic, photographic and other visual or
+    audio representations; names and descriptions of characters,
+    spells, enchantments, personalities, teams, personas, likenesses
+    and special abilities; places, locations, environments, creatures,
+    equipment, magical or supernatural abilities or effects, logos,
+    symbols, or graphic designs; and any other trademark or registered
+    trademark clearly identified as Product identity by the owner of
+    the Product Identity, and which specifically excludes the Open
+    Game Content; 
+    (f) &quot;Trademark&quot; means the logos, names, mark, sign,
+    motto, designs that are used by a Contributor to identify itself
+    or its products or the associated products contributed to the Open
+    Game License by the Contributor; 
+   (g) &quot;Use&quot;, &quot;Used&quot; or &quot;Using&quot; means to
+    use, distribute, copy, edit, format, modify, translate and
+    otherwise create Derivative Material of Open Game Content. 
+   (h) &quot;You&quot; or &quot;Your&quot; means the licensee in terms
+    of this agreement. 
+    2. The License: This License applies to any Open Game Content that 
+    contains a notice indicating that the Open Game Content may only
+    be Used under and in terms of this License.  You must affix such a 
+    notice to any Open Game Content that you Use.  No terms may be
+    added to or subtracted from this License except as described by
+    the License itself.  No other terms or conditions may be applied
+    to any Open Game Content distributed using this License.  
+    3. Offer and Acceptance: By Using the Open Game Content You
+    indicate Your acceptance of the terms of this License. 
+    4. Grant and Consideration: In consideration for agreeing to use
+    this License, the Contributors grant You a perpetual, worldwide, 
+    royalty-free, non-exclusive license with the exact terms of this
+    License to Use, the Open Game Content. 
+    5. Representation of Authority to Contribute: If You are
+    contributing original material as Open Game Content, You represent
+    that Your Contributions are Your original creation and/or You have
+    sufficient rights to grant the rights conveyed by this License.  
+    6. Notice of License Copyright: You must update the COPYRIGHT
+    NOTICE portion of this License to include the exact text of the
+    COPYRIGHT NOTICE of any Open Game Content You are copying,
+    modifying or distributing, and You must add the title, the
+    copyright date, and the copyright holder's name to the COPYRIGHT
+    NOTICE of any original Open Game Content you Distribute. 
+    7. Use of Product Identity: You agree not to Use any Product
+    Identity, including as an indication as to compatibility, except
+    as expressly licensed in another, independent Agreement with the
+    owner of each element of that Product Identity.  You agree not to
+    indicate compatibility or co-adaptability with any Trademark or
+    Registered Trademark in conjunction with a work containing Open
+    Game Content except as expressly licensed in another, independent
+    Agreement with the owner of such Trademark or Registered
+    Trademark.  The use of any Product Identity in Open Game Content
+    does not constitute a challenge to the ownership of that Product
+    Identity.  The owner of any Product Identity used in Open Game
+    Content shall retain all rights, title and interest in and to that
+    Product Identity.   
+    8. Identification: If you distribute Open Game Content You must
+    clearly indicate which portions of the work that you are 
+    distributing are Open Game Content.  
+    9. Updating the License: Wizards or its designated Agents may
+    publish updated versions of this License.  You may use any
+    authorized version of this License to copy, modify and distribute
+    any Open Game Content originally distributed under any version of
+    this License.  
+    10. Copy of this License: You MUST include a copy of this License
+    with every copy of the Open Game Content You Distribute. 
+    11. Use of Contributor Credits: You may not market or advertise
+    the Open Game Content using the name of any Contributor unless You
+    have written permission from the Contributor to do so. 
+    12. Inability to Comply: If it is impossible for You to comply
+    with any of the terms of this License with respect to some or all
+    of the Open Game Content due to statute, judicial order, or
+    governmental regulation then You may not Use any Open Game
+    Material so affected. 
+    13. Termination: This License will terminate automatically if You
+    fail to comply with all terms herein and fail to cure such breach
+    within 30 days of becoming aware of the breach.  All sublicenses
+    shall survive the termination of this License.  
+    14. Reformation: If any provision of this License is held to be
+    unenforceable, such provision shall be reformed only to the extent 
+    necessary to make it enforceable. 
+    15. COPYRIGHT NOTICE 
+    Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc. 
+    System Rules Document Copyright 2000, Wizards of the Coast, Inc.; 
+    Authors Jonathan Tweet, Monte Cook, Skip Williams, based on
+    original material by E. Gary Gygax and Dave Arneson. 
+    Conversion of System Rules Document monster information to XML
+    format Copyright 2001 John Hanju Kim.  
+  </OpenGameLicense>
+</LegalInformation>
+
+	
+	
+	<lookup-table key="D">
+		<lookup-entry>%S%</lookup-entry>
+		<lookup-entry>%S%</lookup-entry>
+		<lookup-entry>%S%</lookup-entry>
+		<lookup-entry>%M%</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="T">
+		<lookup-entry>Door or trapdoor trigger</lookup-entry>
+		<lookup-entry>Switch or latch trigger</lookup-entry>
+		<lookup-entry>Trip wire or floor pressure plate trigger</lookup-entry>
+		<lookup-entry>Magical trigger</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="S">
+		<lookup-entry> Caltrops Trap: CR 1; +0 melee negating armor, shield, and deflection (1 pt dmg/x3 crit, reduced to 1/2 speed); Search (DC 20); Disable Device (DC 20). Note: 5-ft. reach, target passes over square.  
+		</lookup-entry>
+		<lookup-entry> Arrow Trap: CR 1; +10 ranged (1d6/x3 crit); Search (DC 20); Disable Device (DC 20). Note: 200-ft. max range, target determined randomly from those in its path.  
+</lookup-entry>
+		<lookup-entry> Spear Trap: CR 2; +12 ranged (1d8/x3 crit); Search (DC 20); Disable Device (DC 20). Note: 200-ft. max range, target determined randomly from those in its path.  
+</lookup-entry>
+		<lookup-entry> Pit Trap (20 Ft. Deep): CR 1; no attack roll necessary (2d6); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Spiked Pit Trap (20 Ft. Deep): CR 2; no attack roll necessary (2d6), +10 melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Pit Trap (40 Ft. Deep): CR 2; no attack roll necessary (4d6); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Spiked Pit Trap (40 Ft. Deep): CR 3; no attack roll necessary (4d6), +10 melee (1d4 spikes for 1d4+4 points of damage per successful hit); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Pit Trap (60 Ft. Deep): CR 3; no attack roll necessary (6d6); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Spiked Pit Trap (60 Ft. Deep): CR 4; no attack roll necessary (6d6), +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Pit Trap (80 Ft. Deep): CR 4; no attack roll necessary (8d6); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Spiked Pit Trap (80 Ft. Deep): CR 5; no attack roll necessary (8d6), +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Pit Trap (100 Ft. Deep): CR 5; no attack roll necessary (10d6); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Spiked Pit Trap (100 Ft. Deep): CR 6; no attack roll necessary (10d6), +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex save (DC 20) avoids; Search (DC 20); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Poison Needle Trap: CR 2; +8 ranged (1, plus greenblood oil poison); Search (DC 22); Disable Device (DC 20).  
+	</lookup-entry>
+		<lookup-entry> Hail of Needles: CR 1; +20 ranged (2d4); Search (DC 22); Disable Device (DC 22).  
+	</lookup-entry>
+		<lookup-entry> Crushing Wall Trap: CR 10; no attack roll required (20d6); Search (DC 20); Disable Device (DC 25).  
+</lookup-entry>
+		<lookup-entry> Scything Blade Trap: CR 1; +8 melee (1d8/x3 crit); Search (DC 21); Disable Device (DC 20).  
+</lookup-entry>
+		<lookup-entry> Falling Block Trap: CR 5; +15 melee (6d6); Search (DC 20); Disable Device (DC 25). Note: Can strike all characters in two adjacent specified squares.  
+</lookup-entry>
+		<lookup-entry> Large Net Trap: CR 1; +5 melee (see note); Search (DC 20); Disable Device (DC 25). Note: Characters in 10-ft. square are grappled by net (Str_18) if they fail a Reflex save (DC 14).  
+</lookup-entry>
+		<lookup-entry> Poison Gas Trap: CR 10; no attack roll necessary (see note below); Search (DC 21); Disable Device (DC 25). Note: Trap releases burnt othur fumes.  
+</lookup-entry>
+		<lookup-entry> Flooding Room Trap: CR 5; no attack roll necessary (see note below); Search (DC 20); Disable Device (DC 25). Note: Room floods in 4 rounds.  
+</lookup-entry>
+		<lookup-entry> Portcullis Trap: CR 2; +10 melee (3d6/x2 crit); Search (DC 20); Disable Device (DC 20). Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway.  
+</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="M">
+		<lookup-entry> Flame Jet: CR 2; 1-ft.-wide, 50-ft.-long stream of flame (3d6); Reflex save (DC 13) avoids; Search (DC 25); Disable Device (DC 26).  
+</lookup-entry>
+		<lookup-entry> Lightning Blast: CR 3; 5-ft.-wide, 50-ft.-long blast (3d6); Reflex save (DC 13) avoids; Search (DC 26); Disable Device (DC 25).  
+</lookup-entry>
+		<lookup-entry> Globe of Cold: CR 4; 20-ft.-radius sphere or hemisphere (5d6); Reflex save (DC 15) avoids; Search (DC 27); Disable Device (DC 25).  
+</lookup-entry>
+		<lookup-entry> Electrified Floor: CR 4; section of floor (3d10); Reflex save (DC 14) for half damage; Search (DC 25); Disable Device (DC 25).  
+</lookup-entry>
+		<lookup-entry> Floor Transforms into Acid: CR 6; section of floor (10d6); Reflex save (DC 16) negates; Search (DC 28); Disable Device (DC 30). Note: Successful save means character dives to safety in time.  
+</lookup-entry>
+		<lookup-entry> Illusion over Spiked Pit (20 Ft. deep): CR 3; no attack roll required (2d6), +10 melee (1d4 spike attacks for 1d4+2 points of damage per successful hit); Reflex save (DC 15) negates; Search (DC 20); Disable Device (DC 20).  
+</lookup-entry>
+		<lookup-entry> Air Sucked out of Room: CR 5; one room (see note below); Search (DC 28); Disable Device (DC 30). Note: Deals suffocation damage.  
+</lookup-entry>
+	</lookup-table>
+	
+</generator>
+
+

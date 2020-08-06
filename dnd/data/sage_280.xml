@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<?xml:stylesheet href="sage.xsl" type="text/xsl"?>
+<sage issue="280">
+<sage-advice>
+<question>
+<p>
+I'm unclear on how the tower shield works. If you crouch behind it do you get total cover against ranged attacks? If you plan to peek around and, say, throw a javelin, how much cover does it provide against ranged attacks? How much cover does a tower shield provide against melee attacks?
+</p></question><answer><p>
+The tower shield gives cover against both ranged and melee attacks. It also can provide cover against spells and other magical attacks (see the next question).
+To determine how effective a tower shield is, you have to know where it is in relation to the character trying to use it, just like any other form of cover. If you think of the tower shield user occupying a square, the user can place the shield either along one of the square's sides or at one of the square's corners. Placing the shield along a side gives total cover against attacks that come from or through the square across from that side, half cover from attacks coming from or through squares at the adjacent corners, and no cover against attacks coming from anywhere else (see the accompanying diagram).
+</p><p>
+The user also can place the shield at a corner of his square at a 45-degree or shallower angle. If placed at a 45-degree angle, the shield gives total cover against attacks coming from or through the square at the corner, half cover against attacks coming from or through the squares adjacent, and no cover against attacks from anywhere else. A shallow angle gives total cover at the corner, as described above, three-quarters cover along one side, and one-quarter cover along the other side (see the diagram).
+</p><p>
+Each turn, the tower shield user decides where to place the shield, and it stays there until the user's next turn. When the user isn't engaged in combat, he decides where the shield will be as he's walking around; when combat starts, he cannot change the shield's location until his turn in the initiative order.
+When the shield user attacks, his foes get the same cover that the shield would give him against them.
+</p><p>
+To resolve ranged attacks or melee attacks made with reach, draw a line from the center of the attacker's square to the center of the defender's square (if the defender occupies more than one square, pick one of the squares as the site of the attack). The defender gets the cover bonus of the square that the line passes through. If the line passes through more than one square the shield covers, use the highest cover bonus.
+</p></answer></sage-advice><sage-advice><question><p>
+Will a tower shield protect against dragon's breath, magical rays, and the like? Can the user automatically save against a fireball or even take no damage if he has total cover behind the shield?
+</p></question><answer><p>
+It depends on the type of magical attack. If the magical attack specifically targets the shield user (that is, it does not merely affect the area that contains the shield user but is aimed right at the shield user), the shield has no effect. All rays fall into this category, as does any spell that has a Target entry in its header and any spell that has an Effect entry and affects creatures (provided, of course, that the attacker can and does choose the shield user as a target).
+</p><p>
+Magical attacks that fill areas (bursts, cones, cylinders, emanations, lines, and spreads) are subject to all the rules for cover on page 133 of the Player's Handbook. Note that spread effects might be able to reach around the shield. If so, the shield provides one-half cover at best.
+</p></answer></sage-advice><sage-advice><question><p>
+If a character has a shield (any shield), does the character get the Armor Class bonus from the shield if flat-footed?
+</p></question><answer><p>
+Being flat-footed doesn't remove a shield bonus.
+</p></answer></sage-advice><sage-advice><question><p>
+A shield spell is supposed to protect you from attacks launched from half the battlefield, with the caster on the dividing line. How is that supposed to work in play?
+</p></question><answer><p>
+The effect is somewhat similar to a tower shield (see this month's first question), except that the spell doesn't interfere with your attacks and you are protected against attacks launched from a much larger area.
+</p><p>
+If you think of the spellcaster as standing in a square, the shield spell effect can be placed so that it lines up with one side of the caster's square and extends out infinitely to the left and right. The spell provides cover against any attack that has to cross that line. The spell effect also can be placed on a diagonal so that it covers two sides of the caster's square, in which case the line extends away like steps in a staircase (see the accompanying diagram).
+</p></answer></sage-advice><sage-advice><question><p>
+The description for the shield spell says its provides three-quarters cover. Page 132 of the Player's Handbook says an attacker can't execute an attack of opportunity against a character with one-half or better cover. So, is a spellcaster protected by a shield spell immune to attacks of opportunity, even when casting spells in melee?
+</p></question><answer><p>
+No. The character is immune from attacks of opportunity made from 
+the half of the battlefield covered by the shield, though (see the previous question).
+</p></answer></sage-advice><sage-advice><question><p>
+Can the shield spell add to the Armor Class bonus provided by the mage armor spell or a suit of armor? How about a regular shield? What about the shield spell and bracers of armor?
+</p></question><answer><p>
+A shield spell provides a cover bonus, which stacks with all other defensive bonuses except other cover bonuses, including an armor bonus from any source.
+</p></answer></sage-advice><sage-advice><question><p>
+Can you cast two shield spells and cover yourself against attacks from anywhere on the battlefield?
+</p></question><answer><p>
+No. The spell's target is you (the caster), so when you cast it you get a single disc of force you can use for defense. If you cast the spell a second time, you still have a single disc of force you can use for defense. If the spell's target was the disc (or if the spell was an area spell or effect spell) you could have more than one, just like you can summon more than one monster or create more than one wall of force. The target is you, however, so you can have only one shield spell running at a time.
+</p></answer></sage-advice><sage-advice><question><p>
+The haste and mass haste spells allow their subjects an extra partial action per turn. Spellcasting is a partial action. Does this mean that a hasted spellcaster can cast two spells in a single round?
+</p></question><answer><p>
+Yes, and a hasted cleric or wizard with the Quicken Spell feat could cast three spells in a round: one as a standard action, the quickened spell as a free action, and a third spell as an extra partial action.
+</p></answer></sage-advice><sage-advice><question><p>
+The Player's Handbook mentions that sorcerers can obtain spells from other sources, which implies that they can choose spells from beyond the sorcerer/wizard spell list. Does this mean sorcerers can access divine magic as well?
+</p></question><answer><p>
+No. The text in question (on page 50 of the first printing) is an error left over from an earlier draft of the rules. The error has since been corrected. 
+Sorcerers are limited to spells on the sorcerer/wizard list. Note that other books add spells to the sorcerer/wizard list and sorcerers certainly can 
+use those.
+</p></answer></sage-advice><sage-advice><question><p>
+Is a spellcaster who chooses to cast defensively considered to be fighting defensively with a +2 dodge bonus to AC and a -4 to attack? Does the result of the character's Concentration check before casting a spell make a difference?
+</p></question><answer><p>
+No, and no. To fight defensively, you have to use the full attack action. If 
+you cast a spell, you use the cast a spell action.
+</p></answer></sage-advice><sage-advice><question><p>
+If I cast a ray spell (ranged touch attack) at a foe who is engaged in melee with an ally of mine, do I suffer the -4 penalty for firing a ranged weapon into melee?
+</p></question><answer><p>
+Yes, and there might be an additional attack penalty if the target has cover from your ally. If your ally provides cover to your target, the ray could strike your ally (see Striking the Cover Instead of a Missed Target on page 133 of the Player's Handbook).
+</p></answer></sage-advice><sage-advice><question><p>
+Does a quickened spell still require the components it usually does (verbal, somatic, and material)? For example, can a silenced or grappled wizard still cast a quickened dispel magic?
+</p></question><answer><p>
+Quicken Spell makes a spell quick; you still need all the components normally required for a quickened spell. For casting spells while grappled, you need Still Spell. For casting spells while silenced, you need Silent Spell.
+</p></answer></sage-advice><sage-advice><question><p>
+Does casting a quickened spell provoke an attack of opportunity? Can a counterattack or counterspell be readied against a quickened spell, or is it too quick to identify or counter?
+</p></question><answer><p>
+A quickened spell still provokes an attack of opportunity (but you can cast a quickened spell defensively). A quickened spell can be counterspelled using the normal rules.
+</p></answer></sage-advice><sage-advice><question><p>
+When an opposite spell is used to negate an effect that is already in place (such as using a slow spell to counter a haste spell), is the success of the dispel automatic, or is a level check required? Does the subject or the caster of the spell being countered and dispelled get a saving throw?
+</p></question><answer><p>
+Two opposite spells simply negate each other. No dispel check is required, no saving throw is allowed, and spell resistance does not apply.
+</p></answer></sage-advice><sage-advice><question><p>
+Can masters who possess spell-like or supernatural abilities share them with their familiars (or paladins' mounts)? Can the master share any spell she receives or just spells she casts?
+</p></question><answer><p>
+Master and familiar (or paladin's mount), can share only spells the master casts on herself (that is, the master must cast the spell and select herself as the target). Only spells can be shared, not spell-like, supernatural, extraordinary, or natural abilities.
+</p></answer></sage-advice><sage-advice><question><p>
+The list of familiar abilities says the familiar uses either the skills listed for the kind of animal familiar it is or the master's skills, whichever are better. What are "better" skills? How can you compare skills?
+</p><p>
+If the master has a skill and the familiar doesn't, it's "better," and the familiar can use it provided that it is physically able to do so. (It would be hard for a cat, for example, to use a Craft skill.) In this case, use the master's skill ranks and the familiar's relevant ability score.
+</p><p>
+If the master and the familiar both have the same skill, the familiar uses either the master's or the familiar's skill ranks, whichever is higher.
+</p><p>
+The Player's Handbook says a familiar gets half the master's hit points. What constitutes the master's hit points? Does the master's Constitution modifier apply? What about the Toughness feat? What about temporary hit point increases such as aid spells or extra hit points from temporary Constitution increases such as the endurance spell?
+</p></question><answer><p>
+The familiar gets half the master's (undamaged) hit points, rounded down. Constitution bonuses and the Toughness feat count, as does any other permanent hit point gain (such as from gaining a level or a permanent increase in Constitution). Temporary hit point gains don't affect the familiar's hit points.
+</p></answer></sage-advice><sage-advice><question><p>
+If a character has multiple attacks and becomes hasted, would he only receive one extra attack per round? What if he had two weapons? Would he get two extra attacks (one with each weapon)? What happens when a character has two weapons and uses the attack or charge action rather than the full-attack action? Does the character attack once with each weapon or just once?
+</p></question><answer><p>
+You can attack only once with a partial or standard action, no matter how many weapons you have. You've got to use the full-attack action (a full-round action) to get any additional attacks to which you might be entitled.
+</p></answer></sage-advice><sage-advice><question><p>
+Half-orcs have a -2 to penalty to their Charisma scores, which makes sense given their lack of charm and brutal social graces. However, the Intimidate skill is based on Charisma, which means that a half-orc barbarian wielding a bloody double axe is less frightening than your average gnome farmer wielding a cob of corn. Is there a reason behind this or is this due for a rules patch?
+</p></question><answer><p>
+No "rules patch" is planned.
+</p><p>
+You can, however, give the half orc in your example a +2 bonus (or more) to the Intimidate check for a favorable circumstance. In some cases, you can even allow the half-orc (or any other character) to use an ability modifier other than Charisma for Intimidate checks. For example, if the half-orc decides to tie a knot in a horseshoe to intimidate someone, you can use the character's Strength modifier instead (see Skills with Different Abilities on page 91 of the DUNGEON MASTER's Guide). 
+</p></answer></sage-advice><sage-advice><question><p>
+Can the 0-level light spell be cast on an opponent's eyes (perhaps as a touch attack)? There is no spell resistance to this new version of the light spell, so this could be an effective use of the spell to blind someone. However, I feel this was not in the spirit of what was intended for the spell.
+</p></question><answer><p>
+You're right. The spell doesn't work on creatures, only objects. You can't cast the spell on a point in space, either. Note that casting a spell on a creature's equipment is the same as casting on the creature. In this case, you can cast the spell on an object in a creature's possession if the creature is willing, but not if it is unwilling.
+</p></answer></sage-advice><sage-advice><question><p>
+I'm confused about the Sense Motive skill. It's not clear when the DM secretly rolls a check for the player, and when the player consciously decides to use it. For opposed Bluff checks, it's obvious that the DM secretly rolls for the player. 
+</p><p>
+However, for hunches and interacting with enchanted characters, who rolls? Does the DM secretly roll when a player encounters an enchanted NPC, or does the player tell the DM he thinks the NPC is enchanted and wants to check? The issue I have with many of the skills is that they state "the player can roll a skill check," but several times I feel that it means to say, "the DM secretly rolls a skill check for the player" (for opposed rolls like Spot and Listen).
+</p></question><answer><p>
+In general, the player rolls the check whenever actively using any skill. The DM usually rolls the check secretly in circumstances when the character might happen to notice something without really trying, or anytime the DM wants to keep what's really going on a secret. For example, the character listens at a door, and the DM rolls the Listen check secretly so that the player doesn't know if there's really no noise there or if he just got a bad roll. Exactly when to let the player roll and when to roll secretly is a matter of judgment and personal preference.
+</p></answer></sage-advice><sage-advice><question><p>
+If a character encounters a figment of a monster and decides to attack, what are the odds of a character striking the figment? I realize that according to the new rules for figments, if the character strikes an illusory creature, and the spellcaster does not cause the creature to react in an appropriate manner, the character will realize the monster is an illusion (incontrovertible evidence). However, what does the character need to roll to hit the illusion in the first place? In addition, during this fake-combat, how many disbelief rolls will the character get, anyway?
+</p></question><answer><p>
+Since the creature isn't real the attack roll is irrelevant. If you want to make an attack roll anyway, give the figment an Armor Class of 10, adjusted for size. After each attack, allow a saving throw for disbelief whether the character hits or not. The very act of attacking means the character is interacting with the illusion. A hit will not necessarily lead to automatic disbelief if the caster is around to make the illusory creature react. The caster could, for example make the illusion roll with a blow and emerge with a mere nick, or even without a scratch.
+</p></answer></sage-advice><sage-advice><question><p>
+I would like to know if the base attack bonuses and the unarmed attack bonuses stack for monks. I could not find anything about this in the description, but at higher levels these bonuses seem like they could be excessive if they do stack.
+</p></question><answer><p>
+Do not add values from the Base Attack Bonus column on Table 3-10 in the Player's Handbook to the values on the Unarmed Attack Bonus column. Use the Base Attack Bonus when the monks makes an armed attack and the Unarmed Attack Bonus column when the monks makes an unarmed attack (but see the next question).
+</p></answer></sage-advice><sage-advice><question><p>
+Does a monk always have to use his unarmed attack bonus when making an unarmed attack? What happens when a 10th-level fighter picks up one level of monk? Does the character now have an attack bonus of +0 when making unarmed attacks?
+</p></question><answer><p>
+No. A monk does not always have to use his unarmed attack bonus when making unarmed attacks. The monk can use his best available attack bonus (and number of attacks) along with his unarmed damage or use just his unarmed attack bonus and unarmed damage. For example, a 10th-level fighter/1st level monk has a base attack bonus of +10/+5, which is much better than a 1st-level monk's +0. The character can make two unarmed attacks and still use his 1st-level unarmed damage of 1d6.
+</p><p>
+You seem to be confused by the text dealing with multiclassed monks on page 55 of the Player's Handbook. This text merely points out that a monk has the option to use only his unarmed attack bonus for unarmed attacks if doing so would give him more attacks. For example, a 1st-level fighter/10th-level monk has a total attack bonus of +8/+3 (+1 for being a 1st-level fighter, +7 for being a 10th-level monk). When attacking unarmed, the monk can make two attacks at +8/+3 or the monk can use just his 10th-level unarmed attack bonus of +7/+4/+1 since that gives the character more attacks.
+</p>
+</answer>
+</sage-advice>
+</sage>

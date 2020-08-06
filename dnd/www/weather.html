@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>Weather Generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="dnd.css" />
+<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.ejs" TYPE="text/jscript.encode"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function generator() 
+{
+	// Temperate Seasons
+	//	var seasons = new Array( "Midwinter", "Winter", "Spring", "Spring", "", "Low Summer", "Low Summer", "Low Summer", "Midsummer", "High Summer", "High Summer", "High Summer", "",	"Autumn", "Autumn", "Winter");
+	var seasons = new Array( "W", "W", "A", "A", "A", "S", "S", "S", "S", "S", "S", "S", "A", "A", "A", "W");
+
+	// Read Inputs
+	var mvalue = document.form1.month_value.value; 
+
+	var cvalue = "";
+	switch( document.form1.climate_value.value )
+	{
+		default: 
+		case "temperate": cvalue = seasons[ mvalue ]; break;
+		case "cold": cvalue = "C"; break;
+		case "hot": cvalue = "H"; break;
+	}
+
+	var xpath_start = "//lookup-table[@key = '" + cvalue + "']/lookup-entry";
+
+	var ndays = new Array( 7, 28, 28, 28, 7, 28, 28, 28, 7, 28, 28, 28, 7, 28, 28, 28);
+	var day_count = ndays[mvalue];
+
+	var generate_list = RGGenerate(generate, "weather.xml", day_count, xpath_start);
+
+	var months = new Array( "Needfest", "Fireseek", "Readying", "Coldeven", "Growfest", "Planting", "Flocktime", "Wealsun", "Richfest", "Reaping", "Goodmonth", "Harvester", "Brewfest", "Patchwall", "Ready'reat", "Sunsebb");	
+
+	var theList = "<table>";
+	theList += "<th style='text-align: center' colspan='7'>" + months[mvalue]; 
+	theList += "<tr><td>Starday</td><td>Sunday</td><td>Moonday</td><td>Godday</td><td>Waterday</td><td>Earthday</td><td>Freeday</td></tr></th>";
+					
+	for( i in generate_list)
+	{
+		if(i % 7 == 0 )
+			theList += "<tr>";
+
+		theList += "<td>";
+		theList += generate_list[i];
+		theList += "</td>";
+
+		if(i % 7 == 6 )
+			theList += "</tr>";
+	}
+
+	theList += "</table>";
+
+	display("theResult", theList);
+}
+
+
+// <!-- Begin Display Text Functions-->
+function Msg( s )
+{
+	display("theResult", s);
+}
+
+var NS = (document.layers) ? 1 : 0;
+var NS6 = (document.getElementById) ? 1 : 0;
+var IE = (document.all) ? 1 : 0;
+
+function display(id, str) 
+{
+	if (NS) 
+	{
+    	with (document[id].document) 
+		{
+			open();
+    		write(str);
+			close();
+		}
+	}
+	else if (NS6)
+	{
+    	document.getElementById(id).innerHTML = str;
+	}
+	else
+	{
+		document.all[id].innerHTML = str;
+	}
+}
+
+// <!-- Begin Display Text Functions-->
+</SCRIPT>
+
+</head>
+<BODY>
+
+<H1 align="center">Weather Generator</H1>
+<H4 align="center"><A href="email:michaellambert@email.com">by Michael Lambert</A></H4>
+<H4 align="center">Copyright 2002</H4>
+<H4 align="center">Version 1.0</H4>
+<P>
+This utility generates random weather conditions for a campaign setting.  This utility is 
+distributed at no cost and comes with no guarantee or warranty. Feel 
+free to use this in your campaign and pass it along to your friends.  Hopefully, 
+it will add a little flair to your campaign.  If you have a particularly 
+interesting modification or just plain old comments send it to me via email.
+
+To randomly generate an entry just hit the generate button. 
+</P>
+
+<form method="post" action="" name="form1">
+	<table border="0" cellpadding="1" cellspacing="1" width="100%">		
+	<tr> <td width="20%" valign="top">
+
+	<table border="0" cellpadding="1" cellspacing="1" width="100%">		
+	<tr align="center"> 
+	<td>Climate</td>
+	<td><select name="climate_value"> 
+			<option value="temperate" selected>Temperate</option>
+			<option value="cold">Cold</option>
+			<option value="hot">Hot</option>
+	</select>
+	</td>
+	</tr>
+	<tr align="center"> 
+	<td>Month</td>
+	<td>
+	<select name="month_value"> 
+			<option value="0" selected>Needfest</option>
+			<option value="1">Fireseek</option>
+			<option value="2">Readying</option>
+			<option value="3">Coldeven</option>
+			<option value="4">Growfest</option>
+			<option value="5">Planting</option>
+			<option value="6">Flocktime</option>
+			<option value="7">Wealsun</option>
+			<option value="8">Richfest</option>
+			<option value="9">Reaping</option>
+			<option value="10">Goodmonth</option>
+			<option value="11">Harvester</option>
+			<option value="12">Brewfest</option>
+			<option value="13">Patchwall</option>
+			<option value="14">Ready'reat</option>
+			<option value="15">Sunsebb</option>
+	</select>
+	
+	</td>
+	</tr>
+	<tr align="center"> 
+	<td colspan="2"><div><input type=button value="Generate" onClick="generator()" /></div></td>
+	</tr>
+
+	</table>
+	</td>
+	</tr> 
+	<tr align="left">
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe" width="80%" valign="middle">
+	<p><span id="theResult">Press the Generate button to start.</span></p>
+
+	</td>
+	</tr>
+	</table>
+</form>
+
+<P>
+<UL>
+
+<LI>Hot temperatures above 90 degrees F. Characters must make Fortitude save each hour (DC 15, +1 for each previous check) or sustain 1d4 points of subdual damage, suffers from heatstroke, and is fatigued.  Heavy clothing or armor incurrs a -4 penalty to saves.</LI>
+<LI>In cold temperatures below 40 degrees F, unprotected characters must make Fortitude save each hour (DC 15, + 1 per previous check) or sustain 1d6 points of subdual damage, suffer from frostbite or hypothermia, and is fatigued.</LI>
+<LI>In cold temperatures below 0 degress F, unprotected characters must succeed at a Fort save once every 10 minutes (DC 15, +1 per previous check) or take 1d6 points of subdual damage, suffer frostbite or hypothermia, and is fatigued. Those wearing winter clothing make checks once per hour. </LI>
+<LI>Wind speeds in between 31-50 mph reduce visibility by half. Spot, Search, Listen checks and ranged weapon attacks suffer -4 penalty. Characters must succeed at a Fort save DC 15 or be Knocked down, if small, and Checked, if medium sized. </LI>
+<LI>Winds speeds in between 51-74 mph mph reduce visibility to zero. Spot, Search, Listen checks, or ranged weapon attacks are impossible. Characters must succeed at a Fort save DC 18 or be Blown away, if small, and Knocked down, if medium sized.
+</LI>
+<LI>Fog obscures all sight beyond 5 feet and those within 5 feet have one-half concealment.</LI>
+<LI>Thunderstorm are accompanied by lightning, one bolt per minute for a 1-hour period at the center of the storm. Each bolt causes electrical damage equal to 1d10 eight-sided dice.</LI>
+<LI>Tornadoes can occur in storms and have localized wind speeds in between 175-300 mph. The funnel moves forward at an average of 30 mph and uproots trees, destroys buildings, and causes major destruction.  Characters in close proximity to the tornado must make Fort saves DC 30 or be sucked towards the tornado. Coming into contact with the actual funnel cloud are picked up and whirled around for 1d10 rounds, taking 6d6 points of damage per round, before being violently expelled suffering falling damage.  All ranged attacks are impossible as are Listen checks. </LI>
+<LI>Downpours are powerful rainstorms that obscure visibility beyond 5 feet, those within 5 feet have one-half concealment. The heavy rains make Spot, Search, Listen check and ranged weapon attacks impossible. The storm also causes Flash Floods. Characters caught in the path of a flash flood must make a Fortitude save (DC 15) or be swept away by the rushing water, taking 1d6 points of subdual damage per round or 1d3 points with a successful Swim check.</LI>
+<LI>Snowstorms bring 1-6 inches of snow and reduce visibility to one-third.</LI>
+<LI>Blizzards bring several feet of snow, extremely cold temperatures below 0 degrees F, and zero visibility. </LI>
+<LI>Duststorm bring 1-6 inches of sand and reduce visibility by half.</LI>
+<LI>Greater duststorms leave 1-5 feet of sand.  Unprotected characters suffer 1d3 points of subdual damage each round and are in danger of choking. Characters without mouth and nose protection begin Drowning.</LI>
+</UL>
+
+</P>
+
+<xml id="generate"> </xml>
+
+</BODY>
+</HTML>
