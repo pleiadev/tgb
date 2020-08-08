@@ -1,28 +1,22 @@
 SOURCES = \
 $O\contents.html \
-$O\contents.xml \
 $O\d20_xml_mm.html \
-$O\monsters.xml \
 $O\doors.html \
-$O\doors.xml \
 $O\namegenerator.html \
-$O\namegenerator.ejs \
-$O\name_sample.xml \
-$O\namegeneratorcompiler.hta \
-$O\namegeneratorcompiler.ejs \
+$O\namegenerator.js \
+$O\namegeneratorcompiler.htm \
+$O\namegeneratorcompiler.js \
 $O\npcbackgroundgenerator.html \
 $O\outdoorfeatures.html \
-$O\outdoorfeatures.xml \
 $O\roomfurnishings.html \
-$O\roomfurnishings.ejs \
+$O\roomfurnishings.js \
 $O\tavernnames.html \
-$O\tavernnames.xml \
 $O\theWizard.js \
 $O\trapsgenerator.html \
-$O\trapsgenerator.xml \
 $O\weather.html \
-$O\weather.xml \
-$O\randomgenerator.ejs \
+$O\randomgenerator.js \
+$O\dnd.css\
+
 
 #
 # INCLUDE FILE FOR BUILDING THIS PROJECT!!!

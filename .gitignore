@@ -130,3 +130,9 @@ dmypy.json
 
 # Project specific files
 test.tg
+www/
+dnd/web/.vscode/
+dnd/web/www/
+
+
+
