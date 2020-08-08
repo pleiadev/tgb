@@ -1,0 +1,18 @@
+SOURCES = \
+$O\character.xml \
+$O\contents.xml \
+$O\doors.xml \
+$O\monsters.xml \
+$O\name_sample.txt \
+$O\namegenerator.xml \
+$O\npcbackgroundgenerator.xml \
+$O\outdoorfeatures.xml \
+$O\tavernnames.xml \
+$O\trapsgenerator.xml \
+$O\weather.xml \
+
+
+#
+# INCLUDE FILE FOR BUILDING THIS PROJECT!!!
+#
+!INCLUDE <makewww.def>

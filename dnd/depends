@@ -1,0 +1,12 @@
+DEPENDS = \
+data \
+web \
+
+#
+# DO NOT EDIT THIS INCLUDE!!!  Edit the DEPENDS variable if you want to 
+# add a new source project to the build. Edit the makefile in a project 
+# directory if you want to change the project compilation behavior. If 
+# you are having problems with the depends.def file, make sure you have 
+# added it to your INCLUDE environment variable.
+#
+!INCLUDE <depends.def>
