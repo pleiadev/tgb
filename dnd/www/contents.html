@@ -3,7 +3,7 @@
 <title>Room Contents Generator</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="dnd.css" />
-<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.ejs" TYPE="text/jscript.encode"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.js" TYPE="text/jscript"></SCRIPT>
 
 <SCRIPT LANGUAGE="JavaScript">
 function generator() 
@@ -11,7 +11,7 @@ function generator()
 	// Read Inputs
 	var nvalue = document.form1.number_value.value; 
 	
-	var generate_list = RGGenerate(generate, "contents.xml", nvalue);
+	var generate_list = RGGenerate(generate, "https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/contents.xml", nvalue);
 
 	var theList = "<table border='0' width='100%'><tr><td><ol>";
 	for( i in generate_list)

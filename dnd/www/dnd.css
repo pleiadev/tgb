@@ -1,7 +1,7 @@
 BODY
 {
     FONT-FAMILY: "Verdana", sans-serif;
-    FONT-SIZE: x-small;
+    FONT-SIZE: medium;
 }
 CODE
 {
@@ -48,7 +48,7 @@ TD
 {
 	BORDER-WIDTH: 1; 
 	PADDING: 2px; 
-	FONT-SIZE: x-small;
+	FONT-SIZE: medium;
     MARGIN: 2px;
     TEXT-ALIGN: left
 }
@@ -59,7 +59,7 @@ TH
     BORDER-LEFT: medium none;
     BORDER-RIGHT: medium none;
     BORDER-TOP: medium none;
-    FONT-SIZE: x-small;
+    FONT-SIZE: medium;
     MARGIN: 2px;
     PADDING-BOTTOM: 2px;
     PADDING-LEFT: 2px;

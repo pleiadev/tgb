@@ -3,15 +3,16 @@
 	<title>NPC Background Generator</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="dnd.css" />
-<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.ejs" TYPE="text/jscript.encode"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.js" TYPE="text/jscript"></SCRIPT>
 
 <SCRIPT LANGUAGE="JavaScript">
 function generator() 
 {
 	// Read Inputs
+	var backgrounds_source = document.form1.backgrounds_source.value; 
 	var nvalue = document.form1.number_value.value; 
 	
-	var generate_list = RGGenerate(generate, "npcbackgroundgenerator.xml", nvalue);
+	var generate_list = RGGenerate(generate, backgrounds_source, nvalue);
 
 	var theList = "<table><tr><td><ol>";
 	for( i in generate_list)
@@ -64,9 +65,9 @@ function display(id, str)
 <BODY>
 
 <H1 align="center">NPC Background Generator</H1>
-<H4 align="center"><A href="email:michaellambert@email.com">by Michael Lambert</A></H4>
+<H4 align="center"><A href="email:pleiad@hotmail.com">by Pleiades LLC</A></H4>
 <H4 align="center">Copyright 2002</H4>
-<H4 align="center">Version 1.0</H4>
+<H4 align="center">Version 1.1</H4>
 <P>
 This utility generates random NPC background generators.  This utility is 
 distributed at no cost and comes with no guarantee or warranty. Feel 
@@ -82,6 +83,11 @@ To randomly generate an entry just hit the generate button.
 	<tr> <td width="20%" valign="top">
 						
 	<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	<tr align="center"> 
+	<td>Source File</td>
+	<td> 
+	<input type="text" name="backgrounds_source" maxlength="256" value="https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/npcbackgroundgenerator.xml" size="20"> </td>
+	</tr> 
 	<tr align="center"> 
 	<td>Number</td>
 	<td><input type="text" name="number_value" maxlength="2" value="4"> </td>

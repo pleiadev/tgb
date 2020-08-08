@@ -27,7 +27,7 @@
 
 
 
-function readTextFile(file)
+function RemoteXmlFileRead(file)
 {
     var rawFile = new XMLHttpRequest();
 	rawFile.async = false;
@@ -47,63 +47,54 @@ function readTextFile(file)
 	return rawFile;
 }
 
+function XmlDomLoad(file)
+{
+	var xmlReq = RemoteXmlFileRead(file); 
+	var parser = new DOMParser();
+	var xmlDoc = parser.parseFromString(xmlReq.responseText,"text/xml");
+	return xmlDoc;
+}
+
+function XmlDomEvaluateXPath(xmlDoc, xpath)
+{
+	var nodes = null;
+	var isIE = /*@cc_on!@*/false || !!document.documentMode;
+	if (isIE)
+		nodes = xmlDoc.selectNodes(xpath);
+	else
+		nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+	return nodes;
+}
+function XmlNodeAttribute(node, attrib)
+{
+	return node.getAttribute(attrib);
+}
+
+function XmlNodeText(node)
+{
+	// return node.text;
+	return node.textContent;	
+}
 
 function LCReadDoubletList(filepath) 
 {
 	var dic = new Object(); // char pair map
-	//var dic = new Array(); // char pair map
 
 	try
 	{
-		//Dbg("reading file = " + filepath);
-		var xmlReq = readTextFile(filepath); 
-		//Dbg("file read, xmlHttp typeof = " + typeof(xmlReq) + " content = " + xmlReq.responseText);
-		
-		//var xmlDoc = xmlReq.responseXML;
-		//Dbg("XMLDocument typeof = " + typeof(xmlDoc) + " documentURI = " + xmlDoc.documentURI);
-
-		var parser = new DOMParser();
-		var xmlDoc = parser.parseFromString(xmlReq.responseText,"text/xml");
-		//Dbg("XMLDocument typeof = " + typeof(xmlDoc) + " documentURI = " + xmlDoc.documentURI);
-
-		//xmlList = xmlDoc.getElementsByTagName("doublet-list")[0];
-		//Dbg("XMLNode typeof = " + typeof(xmlList) + " nodeName = " + xmlList.nodeName + " nodeValue = " + xmlList.nodeValue);
-
-		//xmlNode1 = xmlDoc.getElementsByTagName("doublet")[1];
-		//Dbg("XMLNode typeof = " + typeof(xmlNode1) + " nodeName = " + xmlNode1.nodeName + " nodeValue = " + xmlNode1.nodeValue + " length = " + xmlNode1.length);
-
-		var isIE = /*@cc_on!@*/false || !!document.documentMode;
-		var nodes = null;
-		if (isIE)
-			nodes = xmlDoc.selectNodes("//doublet");
-		else
-			nodes = xmlDoc.evaluate("//doublet", xmlDoc, null, XPathResult.ANY_TYPE, null);
-
-		//Dbg(nodes);
-		
-		//var nodes = compiled_names.selectNodes("//doublet");
+		var xmlDoc = XmlDomLoad(filepath); 
+		var nodes = XmlDomEvaluateXPath(xmlDoc, "//doublet");
 		if (null == nodes) 
-		{
-			Dbg("Exit 2");
 			return dic;
-		}
-
-		//for( i = 0; i < nodes.length; i++ )
-		//	var node = nodes(i);
-		
+	
 		var node = null;
 		var attrib = null;
 		while (node = nodes.iterateNext())
 		{
-			attrib = node.getAttribute("pair");
+			attrib = XmlNodeAttribute(node, "pair");
 			if (null != attrib)
 			{
-				//Dbg(node.text)
-				//Dbg(node.textContent)
-
-				//dic.Add( attrib, node.text);
-				//dic.Add( attrib, node.textContent);
-				dic[attrib] = node.textContent;
+				dic[attrib] = XmlNodeText(node);
 			}
 		}
 	}

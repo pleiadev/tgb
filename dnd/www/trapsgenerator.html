@@ -3,7 +3,7 @@
 <title>Traps Generator</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="dnd.css" />
-<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.ejs" TYPE="text/jscript.encode"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.js" TYPE="text/jscript"></SCRIPT>
 
 <SCRIPT LANGUAGE="JavaScript">
 function generator() 
@@ -11,7 +11,7 @@ function generator()
 	// Read Inputs
 	var nvalue = document.form1.number_value.value; 
 	
-	var generate_list = RGGenerate(generate, "trapsgenerator.xml", nvalue);
+	var generate_list = RGGenerate(generate, "https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/trapsgenerator.xml", nvalue);
 
 	var theList = "<table><tr><td><ol>";
 	for( i in generate_list)
@@ -64,7 +64,7 @@ function display(id, str)
 <BODY>
 
 <H1 align="center">Traps Generator</H1>
-<H4 align="center"><A href="email:michaellambert@email.com">by Michael Lambert</A></H4>
+<H4 align="center"><A href="email:pleiad@hotmail.com">by Pleiades LLC</A></H4>
 <H4 align="center">Copyright 2002</H4>
 <H4 align="center">Version 1.0</H4>
 <P>
