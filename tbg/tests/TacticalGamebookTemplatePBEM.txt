@@ -128,7 +128,7 @@
 # 
 
 title: Test PBEM #1
-author: Michael Lambert
+author: Pleiades LLC
 date: 12/25/2019
 offsetx: 0
 offsety: 0

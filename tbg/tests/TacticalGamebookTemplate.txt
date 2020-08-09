@@ -27,7 +27,7 @@
 #
 
 title: Test Bot #1 
-author: Michael Lambert
+author: Pleiades LLC
 date: 12/8/2019
 offsetx: 0
 offsety: 0

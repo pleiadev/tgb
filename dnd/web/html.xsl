@@ -1,6 +1,6 @@
 <!--
 
-Copyright (c) 2002 Michael Lambert
+Copyright (c) 2002 Pleiades LLC
 
 Module:		html.xsl
 
@@ -303,7 +303,7 @@ Parameters:	$file (global)
 <td width="25%" />
 
 <td width="60%">
-	<p style="text-align: center">Copyright &#169; 2001-2002 Michael Lambert. All rights reserved.</p>
+	<p style="text-align: center">Copyright &#169; 2001-2002 Pleiades LLC. All rights reserved.</p>
 </td>
 
 <td width="15%" />
