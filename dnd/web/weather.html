@@ -14,6 +14,7 @@ function generator()
 	var seasons = new Array( "W", "W", "A", "A", "A", "S", "S", "S", "S", "S", "S", "S", "A", "A", "A", "W");
 
 	// Read Inputs
+	var source_value = document.form1.names_source.value; 
 	var mvalue = document.form1.month_value.value; 
 
 	var cvalue = "";
@@ -30,7 +31,7 @@ function generator()
 	var ndays = new Array( 7, 28, 28, 28, 7, 28, 28, 28, 7, 28, 28, 28, 7, 28, 28, 28);
 	var day_count = ndays[mvalue];
 
-	var generate_list = RGGenerate(generate, "weather.xml", day_count, xpath_start);
+	var generate_list = RGGenerate(generate, source_value, day_count, xpath_start);
 
 	var months = new Array( "Needfest", "Fireseek", "Readying", "Coldeven", "Growfest", "Planting", "Flocktime", "Wealsun", "Richfest", "Reaping", "Goodmonth", "Harvester", "Brewfest", "Patchwall", "Ready'reat", "Sunsebb");	
 
@@ -112,7 +113,12 @@ To randomly generate an entry just hit the generate button.
 	<table border="0" cellpadding="1" cellspacing="1" width="100%">		
 	<tr> <td width="20%" valign="top">
 
-	<table border="0" cellpadding="1" cellspacing="1" width="100%">		
+	<table border="0" cellpadding="1" cellspacing="1" width="100%">	
+	<tr align="center"> 
+	<td>Source File</td>
+	<td> 
+	<input type="text" name="names_source" maxlength="256" value="https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/weather.xml" size="60"> </td>
+	</tr> 	
 	<tr align="center"> 
 	<td>Climate</td>
 	<td><select name="climate_value"> 
