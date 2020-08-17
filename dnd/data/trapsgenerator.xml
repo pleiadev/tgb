@@ -278,6 +278,32 @@
 	</lookup-table>
 
 
+  <!-- Hit Point Damage is keyed to character level 1-4, 5-10, 11-16, 17-20. Need some more thinking to use these . -->
+  <!-- Hit Point Damage - Deadly -->
+	<lookup-table key="HD">
+		<lookup-entry>4d10</lookup-entry>
+		<lookup-entry>10d10</lookup-entry>
+		<lookup-entry>18d10</lookup-entry>
+		<lookup-entry>24d10</lookup-entry>
+	</lookup-table>
+
+  <!-- Hit Point Damage - Dangerous -->
+	<lookup-table key="HN">
+		<lookup-entry>2d10</lookup-entry>
+		<lookup-entry>4d10</lookup-entry>
+		<lookup-entry>10d10</lookup-entry>
+		<lookup-entry>18d10</lookup-entry>
+	</lookup-table>
+
+  <!-- Hit Point Damage - Setback  -->
+	<lookup-table key="HS">
+		<lookup-entry>1d10</lookup-entry>
+		<lookup-entry>2d10</lookup-entry>
+		<lookup-entry>4d10</lookup-entry>
+		<lookup-entry>10d10</lookup-entry>
+	</lookup-table>
+
+
   <!-- Pit Trap Contents -->
 	<lookup-table key="PT">
 		<lookup-entry>The bottom is a hard floor. No attack roll necessary to hit the floor, take 1d6 bludgeoning damage for every ten feet fallen</lookup-entry>
@@ -289,7 +315,6 @@
 		<lookup-entry>The bottom contains a gelatinous cube (DC15 Dexterity check to avoid landing on it and being immediately engulfed), take 1d6 bludgeoning damage for every ten feet fallen. Try and avoid being engulfed if you can see it</lookup-entry>
 		<lookup-entry>The bottom contains a black pudding (DC15 Dexterity check to avoid landing directly on it), take 1d6 bludgeoning damage for every ten feet fallen. There are cracks running down the face of the wall that you can navigate with a successful climb check. The black pudding follows</lookup-entry>
 		<lookup-entry>The bottom contains a %CT%, take 1d6 bludgeoning damage for every ten feet fallen. The creature is %CA%</lookup-entry>
-		<lookup-entry></lookup-entry>
 	</lookup-table>
 
   <!-- Reflex or Dexterity Save DC - Deadly -->
