@@ -138,13 +138,16 @@
   </OpenGameLicense>
 </LegalInformation>
 
+  <!-- Default trap types. -->
 	<lookup-table key="D">
 		<lookup-entry>%S%</lookup-entry>
 		<lookup-entry>%S%</lookup-entry>
 		<lookup-entry>%S%</lookup-entry>
+		<lookup-entry>%C%</lookup-entry>
 		<lookup-entry>%M%</lookup-entry>
 	</lookup-table>
 
+  <!-- Trigger mechanism -->
 	<lookup-table key="T">
 		<lookup-entry>Door or trapdoor trigger</lookup-entry>
 		<lookup-entry>Switch or latch trigger</lookup-entry>
@@ -152,15 +155,16 @@
 		<lookup-entry>Magical trigger</lookup-entry>
 	</lookup-table>
 
+  <!-- Simple Traps...Fighters! -->
 	<lookup-table key="S">
-  <lookup-entry> Caltrops Trap: CR 1; +0 melee negating armor, shield, and deflection (1 pt dmg/x3 crit, reduced to 1/2 speed); Search %SL%. Note: 5-ft. reach, target passes over square.</lookup-entry>
+  <lookup-entry> Caltrops Trap: CR 1; +0 melee negating armor, shield, and deflection (1 pt dmg/x3 crit, reduced to 1/2 speed); Search %SL%. Note: 5-ft. reach, target passes over square. %AT%.</lookup-entry>
   <lookup-entry> Arrow Trap: CR 1; +10 ranged (1d6/x3 crit); Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path.</lookup-entry>
   <lookup-entry> Spear Trap: CR 2; +12 ranged (1d8/x3 crit); Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path.</lookup-entry>
   <lookup-entry> Pit Trap (%DL% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RL% avoids falling; Search %SL%.</lookup-entry>
   <lookup-entry> Spiked Pit Trap (%DL% Deep): CR 2 (+1 per 20 feet of fall); %PT%, +10 melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RL% avoids falling; Search %SL%.</lookup-entry>
   <lookup-entry> Spiked Pit Trap (%DL% Deep): CR 6 (+1 per 20 feet of fall); %PT%, +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RL% avoids faling; Search %SL%.</lookup-entry>
-  <lookup-entry> Log Trap: CR 2; +12 ranged (1d8/x3 crit); Search %SL%. Note: activitation mechanism unreliable check marching order to determine when it activates. </lookup-entry>
-  <lookup-entry> Spiked Log Trap: CR 2; +10 ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RL%; Search %SL%.</lookup-entry>  
+  <lookup-entry> Log Trap: CR 2; +12 ranged (1d8/x3 crit); Search %SL%. Note: %AT%. </lookup-entry>
+  <lookup-entry> Spiked Log Trap: CR 2; +10 ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RL% avoids; Search %SL%.</lookup-entry>  
   <lookup-entry> Poison Needle Trap: CR 2; +8 ranged (1, plus greenblood oil poison); Search %SL%.</lookup-entry>
   <lookup-entry> Hail of Needles: CR 1; +20 ranged (2d4); Search %SL%.</lookup-entry>
   <lookup-entry> Crushing Wall Trap: CR 10; no attack roll required (20d6); Search %SL%.</lookup-entry>
@@ -173,34 +177,46 @@
   <lookup-entry> Portcullis Trap: CR 2; +10 melee (3d6/x2 crit); Search %SL%. Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway.</lookup-entry>
 </lookup-table>
 
+  <!-- Creature Traps...Clerics! -->
   <lookup-table key="C">
     <lookup-entry>%CN% %CT% stand above portal on a ledge %DS% up. They stand by a crate rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.</lookup-entry>
     <lookup-entry>%CN% %CT% stand above portal on a ledge %DS% up. They hold a crate full of rocks between them. Upon spoting an intruder, they drop the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each of the creatures.</lookup-entry>
+    <lookup-entry>%CN% %CT% stand in an alcove to the sides of the door. One is tied by a rope to a suspended crate of rocks. Upon spoting an intruder, it moves triggering the crate to drop so it crashes down upon the intruder. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then step out to attack.</lookup-entry>
   </lookup-table>
 
+  <!-- Magical Traps...Wizards! -->
   <lookup-table key="M">
     <lookup-entry> Flame Jet: CR 2; 1-ft.-wide, 50-ft.-long stream of flame (3d6); Reflex save (DC 13) avoids; Search %SH%.</lookup-entry>
     <lookup-entry> Lightning Blast: CR 3; 5-ft.-wide, 50-ft.-long blast (3d6); Reflex save (DC 13) avoids; Search %SH%.</lookup-entry>
     <lookup-entry> Globe of Cold: CR 4; 20-ft.-radius sphere or hemisphere (5d6); Reflex save (DC 15) avoids; Search %SH%.</lookup-entry>
     <lookup-entry> Electrified Floor: CR 4; section of floor (3d10); Reflex save (DC 14) for half damage; Search %SH%.</lookup-entry>
-    <lookup-entry> Floor Transforms into Acid: CR 6; section of floor (10d6); Reflex save (DC 16) negates; Search %SH%. Note: Successful save means character dives to safety in time.</lookup-entry>
+    <lookup-entry> Floor Transforms into acid: CR 6; section of floor (10d6); Reflex save (DC 16) negates; Search %SH%. Note: Successful save means character dives to safety in time.</lookup-entry>
     <lookup-entry> Illusion over Spiked Pit (%DL% deep): CR 3; no attack roll required (2d6), +10 melee (1d4 spike attacks for 1d4+2 points of damage per successful hit); Reflex save (DC 15) negates; Search %SH%.</lookup-entry>
     <lookup-entry> Air Sucked out of room: CR 5; one room (see note below); Search %SH%. Note: Deals suffocation damage.</lookup-entry>
   </lookup-table>
 
+  <!-- Trigger Activation Type -->
+	<lookup-table key="AT">
+		<lookup-entry>The activation trigger is unreliable. Use marching order to determine when it activates</lookup-entry>
+		<lookup-entry>The activation trigger is well maintained. Use marching order to determine when it activates</lookup-entry>
+		<lookup-entry>xxx</lookup-entry>
+	</lookup-table>
 
+  <!-- Creature Numbers -->
 	<lookup-table key="CN">
 		<lookup-entry>Two</lookup-entry>
 		<lookup-entry>Three</lookup-entry>
 		<lookup-entry>Four</lookup-entry>
 	</lookup-table>
 
+  <!-- Creature Type -->
 	<lookup-table key="CT">
 		<lookup-entry>skeletons</lookup-entry>
 		<lookup-entry>zombies</lookup-entry>
 		<lookup-entry>ghouls</lookup-entry>
 	</lookup-table>
 
+  <!-- Creature Attitude -->
 	<lookup-table key="CA">
 		<lookup-entry>hostile</lookup-entry>
 		<lookup-entry>neutral uncertain</lookup-entry>
@@ -209,12 +225,14 @@
 		<lookup-entry>friendly</lookup-entry>
 	</lookup-table>
 
+  <!-- Distance Short Length -->
 	<lookup-table key="DS">
 		<lookup-entry>10 feet</lookup-entry>
 		<lookup-entry>15 feet</lookup-entry>
 		<lookup-entry>20 feet</lookup-entry>
 	</lookup-table>
 
+  <!-- Distance Long Length -->
 	<lookup-table key="DL">
 		<lookup-entry>20 feet</lookup-entry>
 		<lookup-entry>20 feet</lookup-entry>
@@ -226,6 +244,26 @@
 		<lookup-entry>100 feet</lookup-entry>
 	</lookup-table>
 
+  <!-- Pit Trap Contents -->
+	<lookup-table key="PT">
+		<lookup-entry>The bottom is a hard floor. No attack roll necessary to hit the floor, take 1d6 bludgeoning damage for every ten feet fallen</lookup-entry>
+		<lookup-entry>The bottom is filled debris and the skeletal remains of an earlier traveler. No attack roll necessary to hit the floor, take 1d6 bludgeoning damage for every ten feet fallen</lookup-entry>
+		<lookup-entry>The bottom is filled with a shallow pool of acid (DC15 Dexterity check to cling feebly to cracks or take 2d6 acid damage per round). Lucky the acid broke your fall, take half damage for falling (1d6 bludgeoning for every ten feet fallen)</lookup-entry>
+		<lookup-entry>The bottom is filled with a deep pool of %WT% water (DC10 Strength swim check to move 5 feet where failure sinks 5 feet and begins drowning). Your pack or armor might weight you down see the rules for swiming in armor</lookup-entry>
+		<lookup-entry>The bottom is filled with quicksand (DC10 Strength swim check to move 5 feet where failure sinks 5 feet and begins drowning)</lookup-entry>
+		<lookup-entry>The bottom is filled with tar (DC15 Strength swim check to move 5 feet where failure sinks 5 feet and begins drowning. An open flame will ignite the tar causing fire 1d6 damage every round</lookup-entry>
+		<lookup-entry>The bottom contains a gelatinous cube (DC15 Dexterity check to avoid landing on it and being immediately engulfed), take 1d6 bludgeoning damage for every ten feet fallen. Try and avoid being engulfed if you can see it</lookup-entry>
+		<lookup-entry>The bottom contains a black pudding (DC15 Dexterity check to avoid landing directly on it), take 1d6 bludgeoning damage for every ten feet fallen. There are cracks running down the face of the wall that you can navigate with a successful climb check. The black pudding follows</lookup-entry>
+		<lookup-entry>The bottom contains a %CT%, take 1d6 bludgeoning damage for every ten feet fallen. The creature is %CA%</lookup-entry>
+		<lookup-entry></lookup-entry>
+	</lookup-table>
+
+  <!-- Reflex or Dexterity Save DC -->
+	<lookup-table key="RL">
+		<lookup-entry>save (DC 20)</lookup-entry>
+	</lookup-table>
+
+  <!-- Trap Seach and Disable DCs Low CRs -->
 	<lookup-table key="SL">
 		<lookup-entry>(DC 20); Disable Device (DC 20)</lookup-entry>
 		<lookup-entry>(DC 20); Disable Device (DC 20)</lookup-entry>
@@ -238,6 +276,7 @@
 		<lookup-entry>(DC 22); Disable Device (DC 22)</lookup-entry>
 	</lookup-table>
 
+  <!-- Trap Seach and Disable DCs High CRs -->
 	<lookup-table key="SH">
 		<lookup-entry>(DC 25); Disable Device (DC 26)</lookup-entry>
 		<lookup-entry>(DC 26); Disable Device (DC 25)</lookup-entry>
@@ -245,29 +284,13 @@
 		<lookup-entry>(DC 28); Disable Device (DC 30)</lookup-entry>
 	</lookup-table>
 
-	<lookup-table key="PT">
-		<lookup-entry>The bottom is a hard floor. No attack roll necessary to hit the floor, take 1d6 bludgeoning damage for every ten feet fallen. </lookup-entry>
-		<lookup-entry>The bottom is filled debris and the skeletal remains of an earlier traveler. No attack roll necessary to hit the floor, take 1d6 bludgeoning damage for every ten feet fallen.</lookup-entry>
-		<lookup-entry>The bottom is filled with a shallow pool of acid (DC15 Dexterity check to cling feebly to cracks or take 2d6 acid damage per round). Lucky the acid broke your fall, take half damage for falling (1d6 bludgeoning for every ten feet fallen). </lookup-entry>
-		<lookup-entry>The bottom is filled with a deep pool of %WT% water (DC10 Strength swim check to move 5 feet where failure sinks 5 feet and begins drowning). Your pack or armor might weight you down see the rules for swiming in armor.</lookup-entry>
-		<lookup-entry>The bottom is filled with quicksand (DC10 Strength swim check to move 5 feet where failure sinks 5 feet and begins drowning).</lookup-entry>
-		<lookup-entry>The bottom is filled with tar (DC15 Strength swim check to move 5 feet where failure sinks 5 feet and begins drowning. An open flame will ignite the tar causing fire 1d6 damage every round.</lookup-entry>
-		<lookup-entry>The bottom contains a gelatinous cube (DC15 Dexterity check to avoid landing on it and being immediately engulfed), take 1d6 bludgeoning damage for every ten feet fallen. Try and avoid being engulfed if you can see it.</lookup-entry>
-		<lookup-entry>The bottom contains a black pudding (DC15 Dexterity check to avoid landing directly on it), take 1d6 bludgeoning damage for every ten feet fallen. There are cracks running down the face of the wall that you can navigate with a successful climb check. The black pudding will follow.</lookup-entry>
-		<lookup-entry>The bottom contains a %CT%, take 1d6 bludgeoning damage for every ten feet fallen. The creature is %CA%.</lookup-entry>
-		<lookup-entry></lookup-entry>
-	</lookup-table>
-
+  <!-- Water Type or quality -->
 	<lookup-table key="WT">
 		<lookup-entry>putrid</lookup-entry>
 		<lookup-entry>stagnant</lookup-entry>
 		<lookup-entry>brackish</lookup-entry>
 		<lookup-entry>fresh</lookup-entry>
 		<lookup-entry>salt</lookup-entry>
-	</lookup-table>
-
-	<lookup-table key="RL">
-		<lookup-entry>save (DC 20)</lookup-entry>
 	</lookup-table>
 
 </generator>
