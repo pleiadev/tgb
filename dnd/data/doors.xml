@@ -186,12 +186,12 @@
 	<lookup-entry>, Door slides down rather than opening normally. (Break DC +1)</lookup-entry>
 	<lookup-entry>, Door slides up rather than opening normally. (Break DC +2)</lookup-entry>
 	<lookup-entry>, Door is magically reinforced. (Break DC 30 Wooden and 40 Stone or Iron)</lookup-entry>
-	<lookup-entry> </lookup-entry>
-	<lookup-entry> </lookup-entry>
-	<lookup-entry> </lookup-entry>
-	<lookup-entry> </lookup-entry>
-	<lookup-entry> </lookup-entry>
-	<lookup-entry> </lookup-entry>
+	<lookup-entry>, Door slides closed after being opened and will lock. (Break DC +1) </lookup-entry>
+	<lookup-entry>, Door slides closed after being opened and debris will fall block operation. (Break DC +2) </lookup-entry>
+	<lookup-entry>, Door unstable and door frame collapses after being passed. (Door blocked) </lookup-entry>
+	<lookup-entry>, Door unstable and door frame collapses after being passed. (Shifting debris takes 1d4+1 turns) </lookup-entry>
+	<lookup-entry>, Door prone to sliding closed and getting stuck. (Break DC +1)  </lookup-entry>
+	<lookup-entry>, Door gets stuck on uneven flooring. (Door won't fully open or close)  </lookup-entry>
 	<lookup-entry> </lookup-entry>
 	<lookup-entry> </lookup-entry>
 	</lookup-table>
