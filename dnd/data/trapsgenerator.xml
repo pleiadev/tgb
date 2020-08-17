@@ -163,10 +163,12 @@
   <lookup-entry>Pit Trap (%DL% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SL%.</lookup-entry>
   <lookup-entry>Spiked Pit Trap (%DL% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RS% avoids falling; Search %SL%.</lookup-entry>
   <lookup-entry>Spiked Pit Trap (%DL% Deep): CR 6 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RS% avoids falling; Search %SL%.</lookup-entry>
-  <lookup-entry>Log Trap: CR 2; %AN% ranged (1d8/x3 crit); Search %SL%. Note: Activation %AT%.</lookup-entry>
-  <lookup-entry>Spiked Log Trap: CR 2; %AN% ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RS% avoids; Search %SL%. Activation %AT%.</lookup-entry>  
+  <lookup-entry>Swinging Log Trap: CR 2; %AN% ranged (1d8/x3 crit); Search %SL%. Note: Activation %AT%.</lookup-entry>
+  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AN% ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RS% avoids; Search %SL%. Activation %AT%.</lookup-entry>  
   <lookup-entry>Poison Needle Trap: CR 2; %AS% ranged (1, plus greenblood oil poison); Search %SL%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Needles: CR 1; %AD% ranged (2d4); Search %SL%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Hail of Bowling Balls Trap: CR 6; %AD% melee 2d6/x6; Reflex %RS% avoids critical damage; Search %SL%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 attacks.</lookup-entry>
+  <lookup-entry>Rolling Sphere Trap: CR 5; %AD% melee 6d6; Reflex %RS% avoids critical damage; Search %SL%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 attacks.</lookup-entry>
   <lookup-entry>Crushing Wall Trap: CR 10; no attack roll required (20d6); Search %SL%. Activation %AT%.</lookup-entry>
   <lookup-entry>Scything Blade Trap: CR 1; %AN% melee 1d8/x3; Reflex %RS% avoids critical damage; Search %SL%. Activation %AT%.</lookup-entry>
   <lookup-entry>Falling Block Trap: CR 5; %AD% melee 6d6; Reflex %RS% avoids critical damage; Search %SL%. Note: Can strike all characters in two adjacent specified squares. Activation %AT%.</lookup-entry>
@@ -179,8 +181,8 @@
 
   <!-- Creature Traps...Clerics! -->
   <lookup-table key="C">
-    <lookup-entry>%CN% %CT% stand above portal on a ledge %DS% up. They stand by a crate rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.</lookup-entry>
-    <lookup-entry>%CN% %CT% stand above portal on a ledge %DS% up. They hold a crate full of rocks between them. Upon spoting an intruder, they drop the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each of the creatures.</lookup-entry>
+    <lookup-entry>%CN% %CT% stand above the portal on a ledge %DS% up. They stand by a crate rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.</lookup-entry>
+    <lookup-entry>%CN% %CT% stand above the portal on a ledge %DS% up. They hold a crate full of rocks between them. Upon spoting an intruder, they drop the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each of the creatures.</lookup-entry>
     <lookup-entry>%CN% %CT% stand in an alcove to the sides of the door. One is tied by a rope to a suspended crate of rocks. Upon spoting an intruder, it moves triggering the crate to drop so it crashes down upon the intruder. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then step out to attack.</lookup-entry>
   </lookup-table>
 
