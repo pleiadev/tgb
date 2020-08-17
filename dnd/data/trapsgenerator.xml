@@ -157,24 +157,24 @@
 
   <!-- Simple Traps...Fighters! -->
 	<lookup-table key="S">
-  <lookup-entry> Caltrops Trap: CR 1; +0 melee negating armor, shield, and deflection (1 pt dmg/x3 crit, reduced to 1/2 speed); Search %SL%. Note: 5-ft. reach, target passes over square. %AT%.</lookup-entry>
-  <lookup-entry> Arrow Trap: CR 1; +10 ranged (1d6/x3 crit); Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path.</lookup-entry>
-  <lookup-entry> Spear Trap: CR 2; +12 ranged (1d8/x3 crit); Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path.</lookup-entry>
-  <lookup-entry> Pit Trap (%DL% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RL% avoids falling; Search %SL%.</lookup-entry>
-  <lookup-entry> Spiked Pit Trap (%DL% Deep): CR 2 (+1 per 20 feet of fall); %PT%, +10 melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RL% avoids falling; Search %SL%.</lookup-entry>
-  <lookup-entry> Spiked Pit Trap (%DL% Deep): CR 6 (+1 per 20 feet of fall); %PT%, +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RL% avoids faling; Search %SL%.</lookup-entry>
-  <lookup-entry> Log Trap: CR 2; +12 ranged (1d8/x3 crit); Search %SL%. Note: %AT%. </lookup-entry>
-  <lookup-entry> Spiked Log Trap: CR 2; +10 ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RL% avoids; Search %SL%.</lookup-entry>  
-  <lookup-entry> Poison Needle Trap: CR 2; +8 ranged (1, plus greenblood oil poison); Search %SL%.</lookup-entry>
-  <lookup-entry> Hail of Needles: CR 1; +20 ranged (2d4); Search %SL%.</lookup-entry>
-  <lookup-entry> Crushing Wall Trap: CR 10; no attack roll required (20d6); Search %SL%.</lookup-entry>
-  <lookup-entry> Scything Blade Trap: CR 1; +8 melee (1d8/x3 crit); Search %SL%.</lookup-entry>
-  <lookup-entry> Falling Block Trap: CR 5; +15 melee (6d6); Search %SL%. Note: Can strike all characters in two adjacent specified squares.</lookup-entry>
-  <lookup-entry> Large Net Trap: CR 1; +5 melee (see note); Search %SL%. Note: Characters in 10-ft. square are grappled by net (Str_18) if they fail a Reflex %RL%.</lookup-entry>
-  <lookup-entry> Poison Gas Trap: CR 10; no attack roll necessary (see note below); Search %SL%. Note: Trap releases burnt othur fumes.</lookup-entry>
-  <lookup-entry> Acid Spray Trap: CR 10; no attack roll necessary (see note below); Search %SL%. Note: Trap releases a spray of acid in %DS% diameter circle; Those caught in the circle take 2d10 acid damage; Reflex %RL% avoids.</lookup-entry>
-  <lookup-entry> Flooding Room Trap: CR 5; no attack roll necessary (see note below); Search %SL%. Note: Room floods in 4 rounds.</lookup-entry>
-  <lookup-entry> Portcullis Trap: CR 2; +10 melee (3d6/x2 crit); Search %SL%. Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway.</lookup-entry>
+  <lookup-entry>Caltrops Trap: CR 1; %AS% melee negating armor, shield, and deflection (1 pt dmg/x3, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Search %SL%. Note: 5-ft. reach, target passes over square. Activation %AT%.</lookup-entry>
+  <lookup-entry>Arrow Trap: CR 1; %AS% ranged 1d6/x3; Reflex %RS% avoids critical damage; Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path. Activation %AT%.</lookup-entry>
+  <lookup-entry>Spear Trap: CR 2; %AN% ranged 1d8/x3; Reflex %RS% avoids critical damage; Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path. Activation %AT%.</lookup-entry>
+  <lookup-entry>Pit Trap (%DL% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SL%.</lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DL% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RS% avoids falling; Search %SL%.</lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DL% Deep): CR 6 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RS% avoids falling; Search %SL%.</lookup-entry>
+  <lookup-entry>Log Trap: CR 2; %AN% ranged (1d8/x3 crit); Search %SL%. Note: Activation %AT%.</lookup-entry>
+  <lookup-entry>Spiked Log Trap: CR 2; %AN% ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RS% avoids; Search %SL%. Activation %AT%.</lookup-entry>  
+  <lookup-entry>Poison Needle Trap: CR 2; %AS% ranged (1, plus greenblood oil poison); Search %SL%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Hail of Needles: CR 1; %AD% ranged (2d4); Search %SL%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Crushing Wall Trap: CR 10; no attack roll required (20d6); Search %SL%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Scything Blade Trap: CR 1; %AN% melee 1d8/x3; Reflex %RS% avoids critical damage; Search %SL%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Falling Block Trap: CR 5; %AD% melee 6d6; Reflex %RS% avoids critical damage; Search %SL%. Note: Can strike all characters in two adjacent specified squares. Activation %AT%.</lookup-entry>
+  <lookup-entry>Large Net Trap: CR 1; %AS% melee (see note); Search %SL%. Note: Characters in 10-ft. square are grappled by net (Str_18) if they fail a Reflex %RS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Gas Trap: CR 10; no attack roll necessary (see note below); Search %SL%. Note: Trap releases burnt othur fumes. Activation %AT%.</lookup-entry>
+  <lookup-entry>Acid Spray Trap: CR 10; no attack roll necessary (see note below); Search %SL%. Note: Trap releases a spray of acid in %DS% diameter circle; Those caught in the circle take 2d10 acid damage; Reflex %RS% avoids. Activation %AT%.</lookup-entry>
+  <lookup-entry>Flooding Room Trap: CR 5; no attack roll necessary (see note below); Search %SL%. Note: Room floods in 4 rounds and drains in 1d4+1 rounds. Activation %AT%.</lookup-entry>
+  <lookup-entry>Portcullis Trap: CR 2; %AN% melee 3d6/x2; Reflex %RS% avoids critical damage; Search %SL%. Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Activation %AT%.</lookup-entry>
 </lookup-table>
 
   <!-- Creature Traps...Clerics! -->
@@ -186,20 +186,48 @@
 
   <!-- Magical Traps...Wizards! -->
   <lookup-table key="M">
-    <lookup-entry> Flame Jet: CR 2; 1-ft.-wide, 50-ft.-long stream of flame (3d6); Reflex save (DC 13) avoids; Search %SH%.</lookup-entry>
-    <lookup-entry> Lightning Blast: CR 3; 5-ft.-wide, 50-ft.-long blast (3d6); Reflex save (DC 13) avoids; Search %SH%.</lookup-entry>
-    <lookup-entry> Globe of Cold: CR 4; 20-ft.-radius sphere or hemisphere (5d6); Reflex save (DC 15) avoids; Search %SH%.</lookup-entry>
-    <lookup-entry> Electrified Floor: CR 4; section of floor (3d10); Reflex save (DC 14) for half damage; Search %SH%.</lookup-entry>
-    <lookup-entry> Floor Transforms into acid: CR 6; section of floor (10d6); Reflex save (DC 16) negates; Search %SH%. Note: Successful save means character dives to safety in time.</lookup-entry>
-    <lookup-entry> Illusion over Spiked Pit (%DL% deep): CR 3; no attack roll required (2d6), +10 melee (1d4 spike attacks for 1d4+2 points of damage per successful hit); Reflex save (DC 15) negates; Search %SH%.</lookup-entry>
-    <lookup-entry> Air Sucked out of room: CR 5; one room (see note below); Search %SH%. Note: Deals suffocation damage.</lookup-entry>
+    <lookup-entry>Flame Jet: CR 2; 1 foot wide, 50 feet long stream of flame (3d6); Reflex %RN% avoids; Search %SH%.</lookup-entry>
+    <lookup-entry>Lightning Blast: CR 3; 5 feet wide, 50 feet long blast (3d6); Reflex %RN% avoids; Search %SH%.</lookup-entry>
+    <lookup-entry>Globe of Cold: CR 4; 20 foot radius sphere or hemisphere (5d6); Reflex %RN% avoids; Search %SH%.</lookup-entry>
+    <lookup-entry>Electrified Floor: CR 4; section of floor (3d10); Reflex %RN% for half damage; Search %SH%.</lookup-entry>
+    <lookup-entry>Floor Transforms into acid: CR 6; section of floor (10d6); Reflex %RD% negates; Search %SH%. Note: Successful save means character dives to safety in time.</lookup-entry>
+    <lookup-entry>Illusion over Spiked Pit (%DM% deep): CR 3 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spike attacks for 1d4+2 points of damage per successful hit); Reflex %RN% avoids; Search %SH%.</lookup-entry>
+    <lookup-entry>Air Sucked out of room: CR 5; one room (see note below); Search %SH%. Note: Deals suffocation damage.</lookup-entry>
   </lookup-table>
+
+
+  <!-- Attack bonus - Deadly -->
+	<lookup-table key="AD">
+		<lookup-entry>+9</lookup-entry>
+		<lookup-entry>+10</lookup-entry>
+		<lookup-entry>+11</lookup-entry>
+		<lookup-entry>+12</lookup-entry>
+	</lookup-table>
+
+  <!-- Attack bonus - Dangerous -->
+	<lookup-table key="AN">
+		<lookup-entry>+6</lookup-entry>
+		<lookup-entry>+7</lookup-entry>
+		<lookup-entry>+8</lookup-entry>
+	</lookup-table>
+
+  <!-- Attack bonus - Setback  -->
+	<lookup-table key="AS">
+		<lookup-entry>+3</lookup-entry>
+		<lookup-entry>+4</lookup-entry>
+		<lookup-entry>+5</lookup-entry>
+	</lookup-table>
+
 
   <!-- Trigger Activation Type -->
 	<lookup-table key="AT">
-		<lookup-entry>The activation trigger is unreliable. Use marching order to determine when it activates</lookup-entry>
-		<lookup-entry>The activation trigger is well maintained. Use marching order to determine when it activates</lookup-entry>
-		<lookup-entry>xxx</lookup-entry>
+		<lookup-entry>trigger is on a hair trigger. Those probing with a 10 foot pole could avoid the trap</lookup-entry>
+		<lookup-entry>trigger is well maintained. Activate on the first in line</lookup-entry>
+		<lookup-entry>trigger is keyed for the second activation.</lookup-entry>
+		<lookup-entry>trigger is unreliable. Use marching order to determine when it activates</lookup-entry>
+		<lookup-entry>trigger is old. Use marching order to determine when it activates</lookup-entry>
+		<lookup-entry>trigger is old and unreliable. Use marching order to determine when it activates</lookup-entry>
+		<lookup-entry>trigger is fragile and breaks after activation. Use marching order to determine when it activates</lookup-entry>
 	</lookup-table>
 
   <!-- Creature Numbers -->
@@ -225,6 +253,23 @@
 		<lookup-entry>friendly</lookup-entry>
 	</lookup-table>
 
+  <!-- Distance Long Length -->
+	<lookup-table key="DL">
+		<lookup-entry>50 feet</lookup-entry>
+		<lookup-entry>60 feet</lookup-entry>
+		<lookup-entry>80 feet</lookup-entry>
+		<lookup-entry>100 feet</lookup-entry>
+	</lookup-table>
+
+<!-- Distance Medium Length -->
+	<lookup-table key="DM">
+		<lookup-entry>20 feet</lookup-entry>
+		<lookup-entry>20 feet</lookup-entry>
+		<lookup-entry>20 feet</lookup-entry>
+		<lookup-entry>30 feet</lookup-entry>
+		<lookup-entry>40 feet</lookup-entry>
+	</lookup-table>
+
   <!-- Distance Short Length -->
 	<lookup-table key="DS">
 		<lookup-entry>10 feet</lookup-entry>
@@ -232,17 +277,6 @@
 		<lookup-entry>20 feet</lookup-entry>
 	</lookup-table>
 
-  <!-- Distance Long Length -->
-	<lookup-table key="DL">
-		<lookup-entry>20 feet</lookup-entry>
-		<lookup-entry>20 feet</lookup-entry>
-		<lookup-entry>20 feet</lookup-entry>
-		<lookup-entry>20 feet</lookup-entry>
-		<lookup-entry>40 feet</lookup-entry>
-		<lookup-entry>60 feet</lookup-entry>
-		<lookup-entry>80 feet</lookup-entry>
-		<lookup-entry>100 feet</lookup-entry>
-	</lookup-table>
 
   <!-- Pit Trap Contents -->
 	<lookup-table key="PT">
@@ -258,10 +292,29 @@
 		<lookup-entry></lookup-entry>
 	</lookup-table>
 
-  <!-- Reflex or Dexterity Save DC -->
-	<lookup-table key="RL">
+  <!-- Reflex or Dexterity Save DC - Deadly -->
+	<lookup-table key="RD">
+		<lookup-entry>save (DC 16)</lookup-entry>
+		<lookup-entry>save (DC 17)</lookup-entry>
+		<lookup-entry>save (DC 18)</lookup-entry>
+		<lookup-entry>save (DC 19)</lookup-entry>
 		<lookup-entry>save (DC 20)</lookup-entry>
 	</lookup-table>
+
+  <!-- Reflex or Dexterity Save DC - Dangerous -->
+	<lookup-table key="RN">
+		<lookup-entry>save (DC 12)</lookup-entry>
+		<lookup-entry>save (DC 13)</lookup-entry>
+		<lookup-entry>save (DC 14)</lookup-entry>
+		<lookup-entry>save (DC 15)</lookup-entry>
+	</lookup-table>
+
+  <!-- Reflex or Dexterity Save DC - Setback  -->
+	<lookup-table key="RS">
+		<lookup-entry>save (DC 10)</lookup-entry>
+		<lookup-entry>save (DC 11)</lookup-entry>
+	</lookup-table>
+
 
   <!-- Trap Seach and Disable DCs Low CRs -->
 	<lookup-table key="SL">
