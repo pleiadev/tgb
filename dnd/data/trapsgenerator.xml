@@ -158,75 +158,69 @@
 		<lookup-entry> Caltrops Trap: CR 1; +0 melee negating armor, shield, and deflection (1 pt dmg/x3 crit, reduced to 1/2 speed); Search %SL%. Note: 5-ft. reach, target passes over square.  
 		</lookup-entry>
 		<lookup-entry> Arrow Trap: CR 1; +10 ranged (1d6/x3 crit); Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Spear Trap: CR 2; +12 ranged (1d8/x3 crit); Search %SL%. Note: 200-ft. max range, target determined randomly from those in its path.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Pit Trap (%DL% Deep): CR 1; no attack roll necessary (2d6); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Spiked Pit Trap (%DL% Deep): CR 2; no attack roll necessary (2d6), +10 melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+	  </lookup-entry>
 		<lookup-entry> Pit Trap (%DL% Deep): CR 2; no attack roll necessary (4d6); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+	  </lookup-entry>
 		<lookup-entry> Spiked Pit Trap (%DL% Deep): CR 3; no attack roll necessary (4d6), +10 melee (1d4 spikes for 1d4+4 points of damage per successful hit); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+	  </lookup-entry>
 		<lookup-entry> Pit Trap (%DL% Deep): CR 3; no attack roll necessary (6d6); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+  	</lookup-entry>
 		<lookup-entry> Spiked Pit Trap (%DL% Deep): CR 4; no attack roll necessary (6d6), +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+  	</lookup-entry>
 		<lookup-entry> Pit Trap (%DL% Deep): CR 4; no attack roll necessary (8d6); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+  	</lookup-entry>
 		<lookup-entry> Spiked Pit Trap (%DL% Deep): CR 5; no attack roll necessary (8d6), +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+  	</lookup-entry>
 		<lookup-entry> Pit Trap (%DL% Deep): CR 5; no attack roll necessary (10d6); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+  	</lookup-entry>
 		<lookup-entry> Spiked Pit Trap (%DL% Deep): CR 6; no attack roll necessary (10d6), +10 melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RL% avoids; Search %SL%.  
-	</lookup-entry>
+  	</lookup-entry>
 		<lookup-entry> Poison Needle Trap: CR 2; +8 ranged (1, plus greenblood oil poison); Search %SL%.  
-	</lookup-entry>
-	<lookup-entry> Spiked Log Trap: CR 2; +10 ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RL%; Search %SL%.  
-	</lookup-entry>  
+  	</lookup-entry>
+  	<lookup-entry> Spiked Log Trap: CR 2; +10 ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RL%; Search %SL%.  
+  	</lookup-entry>  
 		<lookup-entry> Hail of Needles: CR 1; +20 ranged (2d4); Search %SL%.  
-	</lookup-entry>
+  	</lookup-entry>
 		<lookup-entry> Crushing Wall Trap: CR 10; no attack roll required (20d6); Search %SL%.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Scything Blade Trap: CR 1; +8 melee (1d8/x3 crit); Search %SL%.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Falling Block Trap: CR 5; +15 melee (6d6); Search %SL%. Note: Can strike all characters in two adjacent specified squares.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Large Net Trap: CR 1; +5 melee (see note); Search %SL%. Note: Characters in 10-ft. square are grappled by net (Str_18) if they fail a Reflex %RL%.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Poison Gas Trap: CR 10; no attack roll necessary (see note below); Search %SL%. Note: Trap releases burnt othur fumes.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Acid Spray Trap: CR 10; no attack roll necessary (see note below); Search %SL%. Note: Trap releases a spray of acid in %DS% diameter circle; Those caught in the circle take 2d10 acid damage; Reflex %RL% avoids.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Flooding Room Trap: CR 5; no attack roll necessary (see note below); Search %SL%. Note: Room floods in 4 rounds.  
-</lookup-entry>
+    </lookup-entry>
 		<lookup-entry> Portcullis Trap: CR 2; +10 melee (3d6/x2 crit); Search %SL%. Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway.  
-</lookup-entry>
+    </lookup-entry>
 	</lookup-table>
 
 	<lookup-table key="C">
     </lookup-entry>%CN% %CT% stand above portal on a ledge %DS% up. They stand by a crate rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.
-  </lookup-entry>
+    </lookup-entry>
     </lookup-entry>%CN% %CT% stand above portal on a ledge %DS% up. They hold a crate full of rocks between them. Upon spoting an intruder, they drop the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each of the creatures.
-  </lookup-entry>
+    </lookup-entry>
 	</lookup-table>
 
 
 	<lookup-table key="M">
-		<lookup-entry> Flame Jet: CR 2; 1-ft.-wide, 50-ft.-long stream of flame (3d6); Reflex save (DC 13) avoids; Search %SH%.  
-</lookup-entry>
-		<lookup-entry> Lightning Blast: CR 3; 5-ft.-wide, 50-ft.-long blast (3d6); Reflex save (DC 13) avoids; Search %SH%.  
-</lookup-entry>
-		<lookup-entry> Globe of Cold: CR 4; 20-ft.-radius sphere or hemisphere (5d6); Reflex save (DC 15) avoids; Search %SH%.  
-</lookup-entry>
-		<lookup-entry> Electrified Floor: CR 4; section of floor (3d10); Reflex save (DC 14) for half damage; Search %SH%.  
-</lookup-entry>
-		<lookup-entry> Floor Transforms into Acid: CR 6; section of floor (10d6); Reflex save (DC 16) negates; Search %SH%. Note: Successful save means character dives to safety in time.  
-</lookup-entry>
-		<lookup-entry> Illusion over Spiked Pit (%DL% deep): CR 3; no attack roll required (2d6), +10 melee (1d4 spike attacks for 1d4+2 points of damage per successful hit); Reflex save (DC 15) negates; Search %SH%.  
-</lookup-entry>
-		<lookup-entry> Air Sucked out of Room: CR 5; one room (see note below); Search %SH%. Note: Deals suffocation damage.  
+		<lookup-entry> Flame Jet: CR 2; 1-ft.-wide, 50-ft.-long stream of flame (3d6); Reflex save (DC 13) avoids; Search %SH%.</lookup-entry>
+		<lookup-entry> Lightning Blast: CR 3; 5-ft.-wide, 50-ft.-long blast (3d6); Reflex save (DC 13) avoids; Search %SH%.</lookup-entry>
+		<lookup-entry> Globe of Cold: CR 4; 20-ft.-radius sphere or hemisphere (5d6); Reflex save (DC 15) avoids; Search %SH%.</lookup-entry>
+		<lookup-entry> Electrified Floor: CR 4; section of floor (3d10); Reflex save (DC 14) for half damage; Search %SH%.</lookup-entry>
+		<lookup-entry> Floor Transforms into Acid: CR 6; section of floor (10d6); Reflex save (DC 16) negates; Search %SH%. Note: Successful save means character dives to safety in time.</lookup-entry>
+		<lookup-entry> Illusion over Spiked Pit (%DL% deep): CR 3; no attack roll required (2d6), +10 melee (1d4 spike attacks for 1d4+2 points of damage per successful hit); Reflex save (DC 15) negates; Search %SH%.</lookup-entry>
+		<lookup-entry> Air Sucked out of Room: CR 5; one room (see note below); Search %SH%. Note: Deals suffocation damage.</lookup-entry>
 	</lookup-table>
 
 
