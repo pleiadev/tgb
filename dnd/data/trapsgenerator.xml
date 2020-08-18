@@ -159,7 +159,7 @@
 
   <!-- Creature Traps...Clerics! -->
   <lookup-table key="C">
-    <lookup-entry>%CC% %CS% stand above the portal on a ledge %DS% up. They stand by a crate rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.</lookup-entry>
+    <lookup-entry>%CC% %CS% stand above the portal on a ledge %DS% up. They stand by a crate of rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.</lookup-entry>
     <lookup-entry>%CC% %CS% stand above the portal on a ledge %DS% up. They hold a crate full of rocks between them. Upon spoting an intruder, they drop the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each of the creatures.</lookup-entry>
     <lookup-entry>%CC% %CS% stand in an alcove to the sides of the door. One is tied by a rope to a suspended crate of rocks. Upon spoting an intruder, it moves triggering the crate to drop so it crashes down upon the intruder. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then step out to attack.</lookup-entry>
   </lookup-table>
@@ -325,32 +325,6 @@
 		<lookup-entry>10 feet</lookup-entry>
 		<lookup-entry>15 feet</lookup-entry>
 		<lookup-entry>20 feet</lookup-entry>
-	</lookup-table>
-
-
-  <!-- Hit Point Damage is keyed to character level 1-4, 5-10, 11-16, 17-20. Need some more thought to use these . -->
-  <!-- Hit Point Damage - Deadly -->
-	<lookup-table key="HD">
-		<lookup-entry levels="1-4">4d10</lookup-entry>
-		<lookup-entry levels="5-10">10d10</lookup-entry>
-		<lookup-entry levels="11-16">18d10</lookup-entry>
-		<lookup-entry levels="17-20">24d10</lookup-entry>
-	</lookup-table>
-
-  <!-- Hit Point Damage - Dangerous -->
-	<lookup-table key="HN">
-		<lookup-entry levels="1-4">2d10</lookup-entry>
-		<lookup-entry levels="5-10">4d10</lookup-entry>
-		<lookup-entry levels="11-16">10d10</lookup-entry>
-		<lookup-entry levels="17-20">18d10</lookup-entry>
-	</lookup-table>
-
-  <!-- Hit Point Damage - Setback  -->
-	<lookup-table key="HS">
-		<lookup-entry levels="1-4">1d10</lookup-entry>
-		<lookup-entry levels="5-10">2d10</lookup-entry>
-		<lookup-entry levels="11-16">4d10</lookup-entry>
-		<lookup-entry levels="17-20">10d10</lookup-entry>
 	</lookup-table>
 
   <!-- Poison Gas -->
@@ -556,7 +530,7 @@
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% to reset a tension line</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% blown to reset a switch</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by key press to reset a switch</lookup-entry>
-		<lookup-entry>plate has been ripped out and thrown to the side. The trap is broken but the characters do not know this for sure.</lookup-entry>
+		<lookup-entry>plate has been ripped out and thrown to the side. The trap is broken but the characters do not know this for sure</lookup-entry>
 	</lookup-table>
 
   <!-- Trigger reset heat  -->
@@ -602,7 +576,7 @@
 		<lookup-entry>knob which disables by a strong lift up and activates when door handle is pulled to open</lookup-entry>
 		<lookup-entry>knob which disables by a strong push down and activates when door handle is pushed to open</lookup-entry>
 		<lookup-entry>knob which disables by a strong push down and activates when door handle is pulled to open</lookup-entry>
-		<lookup-entry>knob is dangling from the door. The trap is broken but the player do not know this for sure.</lookup-entry>
+		<lookup-entry>knob is dangling from the door. The trap is broken but the players do not know this for sure</lookup-entry>
 	</lookup-table>
 
   <!-- Water Type or quality -->
