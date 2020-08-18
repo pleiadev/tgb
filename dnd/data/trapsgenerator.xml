@@ -181,9 +181,9 @@
   <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RD% avoids falling; Search %SD%. Clues %TCft%.</lookup-entry>
   <lookup-entry>Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%. Clues %TCft%.</lookup-entry>
   <lookup-entry>Spiked Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %AD% mele22e (1d4 spikes for $d4$ points of damage per successful hit); %PT%; Reflex %RS% avoids falling; Search %SD%. Clues %TCft%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Needle Trap: CR 3; %AS% ranged (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Dust Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Gas Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Gas remains active 1d4 rounds; Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Needle Trap: CR 3; %AS% ranged (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Clues %TCxt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Dust Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Clues %TCxt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Gas Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Gas remains active 1d4 rounds; Reflex %RD% avoids Poisoned; Search %SD%. Clues %TCxt%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Needles: CR 3; %AS% ranged (2d4); Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Bowling Balls Trap: CR 3; %AD% melee 2d6/x6; Reflex %RD% avoids critical damage. Note that room may be designed to curve or ricochet the path of the sphere for 1d4 attacks. Search %SD%. Clues %TCct%. Activation %AT%. </lookup-entry>
   <lookup-entry>Rolling Sphere Trap: CR 3; %AD% melee 6d6; Reflex %RD% avoids critical damage; Search %SD%. Clues %TCct%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 attacks.</lookup-entry>
@@ -203,9 +203,9 @@
   <lookup-entry>Spiked Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RN% avoids falling; Search %SN%. Clues %TCft%.</lookup-entry>
   <lookup-entry>Swinging Log Trap: CR 2; %AN% ranged (1d8/x3 crit); Search %SN%. Clues %TCct%. Activation %AT%.</lookup-entry>
   <lookup-entry>Spiked Swinging Log Trap: CR 2; %AN% ranged (1d8x3, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RN% avoids; Search %SN%. Clues %TCct%. Activation %AT%.</lookup-entry>  
-  <lookup-entry>Poison Needle Trap: CR 2; %AN% ranged (1x3, plus greenblood oil poison); Search %SN%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Dust Trap: CR 2; no attack roll necessary (1d4, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Gas Trap: CR 2; no attack roll necessary (1d4, plus %PG%); Reflex %RS% avoids gas; Search %SN%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Needle Trap: CR 2; %AN% ranged (1x3, plus greenblood oil poison); Search %SN%. Clues %TCxt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Dust Trap: CR 2; no attack roll necessary (1d4, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Clues %TCxt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Gas Trap: CR 2; no attack roll necessary (1d4, plus %PG%); Reflex %RS% avoids gas; Search %SN%. Clues %TCxt%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Needles: CR 2; %AN% ranged (2d4); Search %SN%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Bowling Balls Trap: CR 2; %AN% melee 2d6/x3; Reflex %RN% avoids critical damage; Search %SN%. Clues %TCct%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 rounds.</lookup-entry>
   <lookup-entry>Rolling Sphere Trap: CR 2; %AN% melee 6d6; Reflex %RN% avoids critical damage; Search %SN%. Clues %TCct%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 rounds.</lookup-entry>
@@ -227,9 +227,9 @@
   <lookup-entry>Spiked Pit Trap (%DS% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AS% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%. Clues %TCft%.</lookup-entry>
   <lookup-entry>Swinging Log Trap: CR 1; %AS% ranged ($S$/x2 crit); Search %SS%. Clues %TCct%. Activation %AT%.</lookup-entry>
   <lookup-entry>Spiked Swinging Log Trap: CR 2; %AS% ranged ($S$x2, plus 1d4 spikes for $d4$ points of damage per spike); Reflex %RS% avoids; Search %SS%. Clues %TCct%. Activation %AT%.</lookup-entry>  
-  <lookup-entry>Poison Needle Trap: CR 1; %AS% ranged (1, plus Poisoned); Reflex %RS% avoids being Poisoned; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Dust Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Gas Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Gas remains active 1d4 rounds; Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Needle Trap: CR 1; %AS% ranged (1, plus Poisoned); Reflex %RS% avoids being Poisoned; Search %SS%. Clues %TCxt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Dust Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Clues %TCxt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Gas Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Gas remains active 1d4 rounds; Reflex %RS% avoids gas; Search %SS%. Clues %TCxt%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Needles: CR 1; %AS% ranged ($S$); Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Scything Blade Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Search %SS%. Clues %TCst%. Activation %AT%.</lookup-entry>
   <lookup-entry>Portcullis Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Search %SS%. Clues %TCpt%. Activation %AT%.</lookup-entry>
@@ -329,11 +329,11 @@
 
   <!-- Poison Gas -->
 	<lookup-table key="PG">
-		<lookup-entry>hallucinatory gas scrambles the mind and senses. All Intelligence and Wisdom checks made suffer Disadvantage.</lookup-entry>
-		<lookup-entry>weakening gas. All Strength and Dexterity checks made suffer Disadvantage.</lookup-entry>
-		<lookup-entry>dusty gas. Visibility is reduced to 1 foot and creaures gain Blinded condition. </lookup-entry>
-		<lookup-entry>stinging pepper gas. Visibility is reduced to 1 foot and creaures gain Stunned condition. </lookup-entry>
-		<lookup-entry>foul poisoned gas. Creaures gain Poisoned condition. </lookup-entry>
+		<lookup-entry>hallucinatory gas scrambles the mind and senses. All Intelligence and Wisdom checks made suffer Disadvantage</lookup-entry>
+		<lookup-entry>weakening gas. All Strength and Dexterity checks made suffer Disadvantage</lookup-entry>
+		<lookup-entry>dusty gas. Visibility is reduced to 1 foot and creaures gain Blinded condition</lookup-entry>
+		<lookup-entry>stinging pepper gas. Visibility is reduced to 1 foot and creaures gain Stunned condition</lookup-entry>
+		<lookup-entry>foul poisoned gas. Creaures gain Poisoned condition</lookup-entry>
 	</lookup-table>
 
 
@@ -484,6 +484,23 @@
 		<lookup-entry>It looks like there is a body part here. There is an old,decayed leg. It looks crushed</lookup-entry>
 	</lookup-table>
 
+  <!-- Trap Clues - Posion trap-->
+	<lookup-table key="TCxt">
+		<lookup-entry>There are some small animals. They are dead. It is a %TCxta% and %TCxta%. It does not look injured and it is not clear why it died. There is an subtule and unusual odor</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="TCxta">
+		<lookup-entry>rat</lookup-entry>
+		<lookup-entry>mouse</lookup-entry>
+		<lookup-entry>cat</lookup-entry>
+		<lookup-entry>possum</lookup-entry>
+		<lookup-entry>nutria</lookup-entry>
+		<lookup-entry>coypu</lookup-entry>
+		<lookup-entry>chipmunk</lookup-entry>
+		<lookup-entry>hamster</lookup-entry>
+		<lookup-entry>gerbil</lookup-entry>
+		<lookup-entry>chinchilla</lookup-entry>
+	</lookup-table>
 
   <!-- Trigger Clues - Players need clues -->
 	<lookup-table key="TCa">
@@ -523,9 +540,9 @@
 		<lookup-entry>plate that activates when %TO% and disabled by first sliding a disguised reset handle</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by first stepping on a hidden reset tile</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by heat from %TH% turning a hidden reset fan tumbler</lookup-entry>
-		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset a balance vase </lookup-entry>
-		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset a mill tumbler </lookup-entry>
-		<lookup-entry>plate that activates when %TO% and disabled by key used to reset a lock </lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset a balance vase</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset a mill tumbler</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by key used to reset a lock</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% to reset a balance line</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% to reset a tension line</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% blown to reset a switch</lookup-entry>
