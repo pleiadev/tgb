@@ -140,9 +140,6 @@
 
   <!-- Default trap types. -->
 	<lookup-table key="D">
-		<lookup-entry>%S%</lookup-entry>
-		<lookup-entry>%S%</lookup-entry>
-		<lookup-entry>%S%</lookup-entry>
 		<lookup-entry>%S3%</lookup-entry>
 		<lookup-entry>%S2%</lookup-entry>
 		<lookup-entry>%S1%</lookup-entry>
