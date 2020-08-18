@@ -157,31 +157,6 @@
 
 
 
-  <!-- Simple Traps...Fighters! -->
-	<lookup-table key="S">
-  <lookup-entry>Caltrops Trap: CR 0; %AS% melee negating armor, shield, and deflection ($S$, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Search %SS%. Note: 5-ft. reach, target passes over square. Activation %AT%.</lookup-entry>
-  <lookup-entry>Arrow Trap: CR 0; %AS% ranged 1d6/x3; Reflex %RS% avoids critical damage; Search %SS%. Note: 200-ft. max range, target determined randomly from those in its path. Activation %AT%.</lookup-entry>
-  <lookup-entry>Spear Trap: CR 0; %AN% ranged 1d8/x3; Reflex %RS% avoids critical damage; Search %SS%. Note: 200-ft. max range, target determined randomly from those in its path. Activation %AT%.</lookup-entry>
-  <lookup-entry>Pit Trap (%DD% Deep): CR 0 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 0 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 0 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
-  <lookup-entry>Swinging Log Trap: CR 0; %AN% ranged (1d8/x3 crit); Search %SS%. Note: Activation %AT%.</lookup-entry>
-  <lookup-entry>Spiked Swinging Log Trap: CR 0; %AN% ranged (1d8, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RS% avoids; Search %SS%. Activation %AT%.</lookup-entry>  
-  <lookup-entry>Poison Needle Trap: CR 0; %AS% ranged (1d4, plus Poisoned); Reflex %RS% avoids Poisoned; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Dust Trap: CR 0; no attack roll necessary (1d4, plus Poisoned); Reflex %RS% avoids Poisoned; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Gas Trap: CR 0; no attack roll necessary (1d4, plus Poisoned); Gas remains active 1d4 rounds; Reflex %RS% avoids Poisoned; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Hail of Needles: CR 0; %AS% ranged (2d4); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Hail of Bowling Balls Trap: CR 0; %AD% melee 2d6/x6; Reflex %RS% avoids critical damage; Search %SS%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 attacks.</lookup-entry>
-  <lookup-entry>Rolling Sphere Trap: CR 0; %AD% melee 6d6; Reflex %RS% avoids critical damage; Search %SS%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 attacks.</lookup-entry>
-  <lookup-entry>Crushing Wall Trap: CR 0; no attack roll required (20d6); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Scything Blade Trap: CR 0; %AN% melee 1d8/x3; Reflex %RS% avoids critical damage; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Falling Block Trap: CR 0; %AD% melee 6d6; Reflex %RS% avoids critical damage; Search %SS%. Note: Can strike all characters in two adjacent specified squares. Activation %AT%.</lookup-entry>
-  <lookup-entry>Large Net Trap: CR 0; %AS% melee (see note); Search %SS%. Note: Characters in 10-ft. square are grappled by net (Str_18) if they fail a Reflex %RS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Acid Spray Trap: CR 0; no attack roll necessary (see note below); Search %SS%. Note: Trap releases a spray of acid in %DS% diameter circle; Those caught in the circle take 2d10 acid damage; Reflex %RS% avoids. Activation %AT%.</lookup-entry>
-  <lookup-entry>Flooding Room Trap: CR 0; no attack roll necessary (see note below); Search %SS%. Note: Room floods in 4 rounds and drains in 1d4+1 rounds. Activation %AT%.</lookup-entry>
-  <lookup-entry>Portcullis Trap: CR 0; %AN% melee 3d6/x2; Reflex %RS% avoids critical damage; Search %SS%. Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Activation %AT%.</lookup-entry>
-</lookup-table>
-
   <!-- Creature Traps...Clerics! -->
   <lookup-table key="C">
     <lookup-entry>%CC% %CS% stand above the portal on a ledge %DS% up. They stand by a crate rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.</lookup-entry>
@@ -202,18 +177,18 @@
 
   <!-- Simple Traps...Deadly! -->
 	<lookup-table key="S3">
-  <lookup-entry>Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
-  <lookup-entry>Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
-  <lookup-entry>Spiked Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %AD% mele22e (1d4 spikes for $d4$ points of damage per successful hit); %PT%; Reflex %RS% avoids falling; Search %SD%.</lookup-entry>
+  <lookup-entry>Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%. Clue %TCft%.</lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RD% avoids falling; Search %SD%. Clue %TCft%.</lookup-entry>
+  <lookup-entry>Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%. Clue %TCft%.</lookup-entry>
+  <lookup-entry>Spiked Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %AD% mele22e (1d4 spikes for $d4$ points of damage per successful hit); %PT%; Reflex %RS% avoids falling; Search %SD%. Clues %TCft%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Needle Trap: CR 3; %AS% ranged (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Dust Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Gas Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Gas remains active 1d4 rounds; Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Needles: CR 3; %AS% ranged (2d4); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Hail of Bowling Balls Trap: CR 3; %AD% melee 2d6/x6; Reflex %RD% avoids critical damage. Note that room may be designed to curve or ricochet the path of the sphere for 1d4 attacks. Search %SD%. Activation %AT%. </lookup-entry>
-  <lookup-entry>Rolling Sphere Trap: CR 3; %AD% melee 6d6; Reflex %RD% avoids critical damage; Search %SD%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 attacks.</lookup-entry>
-  <lookup-entry>Crushing Wall Trap: CR 3; no attack roll required (20d6); Search %SD%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Scything Blade Trap: CR 3; %AN% melee 1d8/x4; Reflex %RD% avoids critical damage; Search %SD%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Hail of Bowling Balls Trap: CR 3; %AD% melee 2d6/x6; Reflex %RD% avoids critical damage. Note that room may be designed to curve or ricochet the path of the sphere for 1d4 attacks. Search %SD%. Clue %TCct%. Activation %AT%. </lookup-entry>
+  <lookup-entry>Rolling Sphere Trap: CR 3; %AD% melee 6d6; Reflex %RD% avoids critical damage; Search %SD%. Clue %TCct%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 attacks.</lookup-entry>
+  <lookup-entry>Crushing Wall Trap: CR 3; no attack roll required (20d6); Search %SD%. Clue %TCct%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Scything Blade Trap: CR 3; %AN% melee 1d8/x4; Reflex %RD% avoids critical damage; Search %SD%. Clue %TCpt%. Activation %AT%.</lookup-entry>
   <lookup-entry>Falling Block Trap: CR 3; %AD% melee 6d6; Reflex %RD% avoids critical damage. Can strike all characters in two adjacent specified squares. Search %SD%. Activation %AT%.</lookup-entry>
   <lookup-entry>Acid Spray Trap: CR 3; no attack roll necessary. Trap releases a spray of acid in %DS% diameter circle; Those caught in the circle take 2d10 acid damage; Reflex %RD% avoids. Search %SD%. Activation %AT%.</lookup-entry>
   <lookup-entry>Flooding Room Trap: CR 3 (+1 per round of flood); no attack roll necessary (see note below); Note: Room floods in 4 rounds and drains in 1d4+1 rounds. Search %SD%. Activation %AT%.</lookup-entry>
@@ -221,43 +196,43 @@
 
   <!-- Simple Traps...Dangerous -->
 	<lookup-table key="S2">
-  <lookup-entry>Caltrops Trap: CR 2; %AN% melee negating armor, shield, and deflection (1 pt dmg/x3, reduced to 1/2 speed); Reflex %RN% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SN%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Arrow Trap: CR 2; %AN% ranged 1d6/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Spear Trap: CR 2; %AN% ranged 1d8/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%; Reflex %RN% avoids falling; Search %SN%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RN% avoids falling; Search %SN%.</lookup-entry>
-  <lookup-entry>Swinging Log Trap: CR 2; %AN% ranged (1d8/x3 crit); Search %SN%. Note: Activation %AT%.</lookup-entry>
-  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AN% ranged (1d8x3, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RN% avoids; Search %SN%. Activation %AT%.</lookup-entry>  
+  <lookup-entry>Caltrops Trap: CR 2; %AN% melee negating armor, shield, and deflection (1 pt dmg/x3, reduced to 1/2 speed); There are scraps of clothing laying about. The shoes or boots have holes in the foot. Reflex %RN% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SN%. Clues %TCpf% Activation %AT%.</lookup-entry>
+  <lookup-entry>Arrow Trap: CR 2; %AN% ranged 1d6/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Clue %TCpt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Spear Trap: CR 2; %AN% ranged 1d8/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Clue %TCpt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%; Reflex %RN% avoids falling; Search %SN%. Clue %TCft%.</lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RN% avoids falling; Search %SN%. Clue %TCft%.</lookup-entry>
+  <lookup-entry>Swinging Log Trap: CR 2; %AN% ranged (1d8/x3 crit); Search %SN%. Clue %TCct%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AN% ranged (1d8x3, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RN% avoids; Search %SN%. Clue %TCct%. Activation %AT%.</lookup-entry>  
   <lookup-entry>Poison Needle Trap: CR 2; %AN% ranged (1x3, plus greenblood oil poison); Search %SN%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Dust Trap: CR 2; no attack roll necessary (1d4, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Gas Trap: CR 2; no attack roll necessary (1d4, plus %PG%); Reflex %RS% avoids gas; Search %SN%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Needles: CR 2; %AN% ranged (2d4); Search %SN%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Hail of Bowling Balls Trap: CR 2; %AN% melee 2d6/x3; Reflex %RN% avoids critical damage; Search %SN%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 rounds.</lookup-entry>
-  <lookup-entry>Rolling Sphere Trap: CR 2; %AN% melee 6d6; Reflex %RN% avoids critical damage; Search %SN%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 rounds.</lookup-entry>
-  <lookup-entry>Scything Blade Trap: CR 2; %AN% melee 1d8/x3; Reflex %RN% avoids critical damage; Search %SN%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Falling Block Trap: CR 2; %AN% melee 6d6; Reflex %RN% avoids critical damage; Note: Can strike all characters in two adjacent specified squares. Search %SN%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Hail of Bowling Balls Trap: CR 2; %AN% melee 2d6/x3; Reflex %RN% avoids critical damage; Search %SN%. Clue %TCct%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 rounds.</lookup-entry>
+  <lookup-entry>Rolling Sphere Trap: CR 2; %AN% melee 6d6; Reflex %RN% avoids critical damage; Search %SN%. Clue %TCct%. Activation %AT%. Note: room may be designed to curve or ricochet the path of the sphere for 1d4 rounds.</lookup-entry>
+  <lookup-entry>Scything Blade Trap: CR 2; %AN% melee 1d8/x3; Reflex %RN% avoids critical damage; Search %SN%. Clue %TCst%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Falling Block Trap: CR 2; %AN% melee 6d6; Reflex %RN% avoids critical damage; Note: Can strike all characters in two adjacent specified squares. Search %SN%. Clue %TCct%. Activation %AT%.</lookup-entry>
   <lookup-entry>Large Net Trap: CR 2; %AN% melee. Characters in 10-ft. square are grappled by net (Strength 18) if they fail a Reflex %RN%. Search %SN%. Activation %AT%.</lookup-entry>
   <lookup-entry>Acid Spray Trap: CR 2; no attack roll necessary. Trap releases a spray of acid in %DS% diameter circle; Those caught in the circle take 2d10 acid damage; Reflex %RN% avoids. Search %SN%. Activation %AT%.</lookup-entry>
   <lookup-entry>Flooding Room Trap: CR 2 (+1 per round of flood); no attack roll necessary (see note below); Note: Room floods in 4 rounds and drains in 1d4+1 rounds. Search %SN%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Portcullis Trap: CR 2; %AN% melee 3d6/x2; Reflex %RN% avoids critical damage; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Search %SN%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Portcullis Trap: CR 2; %AN% melee 3d6/x2; Reflex %RN% avoids critical damage; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Search %SN%. Clue %TCpt%. Activation %AT%.</lookup-entry>
 </lookup-table>
 
 
   <!-- Simple Traps...Setbacks -->
 <lookup-table key="S1">
-  <lookup-entry>Caltrops Trap: CR 1; %AS% melee negating armor, shield, and deflection ($S$/x3, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Arrow Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Spear Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Pit Trap (%DS% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DS% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AS% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
-  <lookup-entry>Swinging Log Trap: CR 1; %AS% ranged ($S$/x2 crit); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AS% ranged ($S$x2, plus 1d4 spikes for $d4$ points of damage per spike); Reflex %RS% avoids; Search %SS%. Activation %AT%.</lookup-entry>  
+  <lookup-entry>Caltrops Trap: CR 1; %AS% melee negating armor, shield, and deflection ($S$/x3, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SS%. Clues %TCpf% Activation %AT%.</lookup-entry>
+  <lookup-entry>Arrow Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Clue %TCpt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Spear Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Clue %TCpt%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Pit Trap (%DS% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SS%. Clue %TCft%. </lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DS% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AS% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%. Clue %TCft%.</lookup-entry>
+  <lookup-entry>Swinging Log Trap: CR 1; %AS% ranged ($S$/x2 crit); Search %SS%. Clue %TCct%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AS% ranged ($S$x2, plus 1d4 spikes for $d4$ points of damage per spike); Reflex %RS% avoids; Search %SS%. Clue %TCct%. Activation %AT%.</lookup-entry>  
   <lookup-entry>Poison Needle Trap: CR 1; %AS% ranged (1, plus Poisoned); Reflex %RS% avoids being Poisoned; Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Dust Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Gas Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Gas remains active 1d4 rounds; Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Hail of Needles: CR 1; %AS% ranged ($S$); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Scything Blade Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Portcullis Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Scything Blade Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Search %SS%. Clue %TCst%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Portcullis Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Search %SS%. Clue %TCpt%. Activation %AT%.</lookup-entry>
 </lookup-table>
 
 
@@ -454,6 +429,109 @@
 		<lookup-entry>(DC 22); Disable Device (DC 22)</lookup-entry>
 	</lookup-table>
 
+  <!-- Trap Clue - Piercing trap-->
+	<lookup-table key="TCpt">
+		<lookup-entry>There is are bones. It is an old, skeleton. Missing some bones but looks to have been stabbed</lookup-entry>
+		<lookup-entry>There is are bones. It is an old, skull. Looks to have been stabbed in the face</lookup-entry>
+		<lookup-entry>There some scraps and debris. It is clothing, an old shirt. Looks pierced through and shows old, dried blood</lookup-entry>
+		<lookup-entry>There some scraps. It is clothing, an old pant leg. Looks pierced through and shows old, dried blood</lookup-entry>
+		<lookup-entry>There some scraps. It is clothing, an old pack. It does not look servicable. It apears to have been pierced through the back</lookup-entry>
+		<lookup-entry>There some scraps. It is clothing, an old hat. Looks pierced through and shows old, dried blood</lookup-entry>
+		<lookup-entry>There some scraps. It is clothing, an old cap. Looks pierced through and shows old, dried blood</lookup-entry>
+		<lookup-entry>There some scraps. It is an old helm. It does not look servicable. Looks pierced through and shows old, dried blood</lookup-entry>
+		<lookup-entry>There some scraps. It is part of an old %TCpta%. It does not look servicable. Yep, it pierced through the %TCptb% and shows old, dried blood</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="TCpta">
+		<lookup-entry>shirt</lookup-entry>
+		<lookup-entry>chainmail shirt</lookup-entry>
+		<lookup-entry>leather shirt</lookup-entry>
+		<lookup-entry>padded armor shirt</lookup-entry>
+		<lookup-entry>studded leather shirt</lookup-entry>
+		<lookup-entry>scale mail shirt</lookup-entry>
+		<lookup-entry>robe</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="TCptb">
+		<lookup-entry>heart</lookup-entry>
+		<lookup-entry>lung</lookup-entry>
+		<lookup-entry>liver</lookup-entry>
+		<lookup-entry>kidneys</lookup-entry>
+		<lookup-entry>stomach</lookup-entry>
+		<lookup-entry>gallbladder</lookup-entry>
+	</lookup-table>
+
+
+  <!-- Trap Clue - Piercing Foot-->
+	<lookup-table key="TCpf">
+		<lookup-entry>There is a shoe lying about that has a bloody hole in the sole</lookup-entry>
+		<lookup-entry>The are a pair of discarded boots. The toe has a hole in one and a hole in the heel of the other</lookup-entry>
+		<lookup-entry>There is old blood on the floor leading to the their entrance. It appears that someone step in blood and left a track</lookup-entry>
+		<lookup-entry>The floor shows some old blood splatters. It is a pooling of blood</lookup-entry>
+		<lookup-entry>There is a toe on the floor. It is the big toe and looks decayed</lookup-entry>
+		<lookup-entry>There is a toe on the floor. They appear to be the little toes and look decayed</lookup-entry>
+		<lookup-entry>There is a bone on the floor. It appears to be someone's big toe</lookup-entry>
+	</lookup-table>
+
+  <!-- Trap Clue - Falling pit trap-->
+	<lookup-table key="TCft">
+		<lookup-entry>There is an old hat lying about. No sign of the owner</lookup-entry>
+		<lookup-entry>There is an old cap lying about. No sign of the owner</lookup-entry>
+		<lookup-entry>There is an battered helm lying about. No sign of the owner</lookup-entry>
+		<lookup-entry>There is an pack lying about. It contains some decayed rations</lookup-entry>
+		<lookup-entry>There is a busted grappling hook. It does not look servicable as the tines are bent</lookup-entry>
+		<lookup-entry>There is a short, loose line of rope. It is old and does not look servicable. The end is frayed and the rest of it can not be found</lookup-entry>
+		<lookup-entry>There is an sword lying about. It is old, rusted. The tip has snapped off</lookup-entry>
+		<lookup-entry>There are some marks on the floor. They are scraches. You notice an old finger nail and dried blood</lookup-entry>
+		<lookup-entry>A spike has been nailed into the floor</lookup-entry>
+	</lookup-table>
+
+  <!-- Trap Clue - Slashing trap-->
+	<lookup-table key="TCst">
+		<lookup-entry>There is are bones. It is a skeletal hand. It looks severed. Must have been called lefty</lookup-entry>
+		<lookup-entry>There is are bones. It is a skeletal foot but no sign of the owner. It looks severed. He must be called shorty</lookup-entry>
+		<lookup-entry>There is are bones. It is a skeletal arm. It looks severed. Someone is probably missing it</lookup-entry>
+		<lookup-entry>There is are bones. It is a skeletal leg. It looks severed. What did he do? walk away</lookup-entry>
+		<lookup-entry>It looks like there is a body part. It is an old, decayed hand. A ring was removed from the finger. It looks severed.</lookup-entry>
+		<lookup-entry>Someone left something behind. There is an old, decayed foot lying on the floor. Anyone need one boot. It looks severed</lookup-entry>
+		<lookup-entry>It appears there is a body part here. There is an old, decayed arm. It looks severed. It almost looks as if it was pointing</lookup-entry>
+		<lookup-entry>It looks like there is a body part here. There is an old,decayed leg. It looks severed</lookup-entry>
+	</lookup-table>
+
+  <!-- Trap Clue - Crushing trap-->
+	<lookup-table key="TCct">
+		<lookup-entry>There is are bones. It is a skeletal hand. It looks crushed. Must have been called lefty</lookup-entry>
+		<lookup-entry>There is are bones. It is a skeletal foot but no sign of the owner. It looks crushed. He must be called shorty</lookup-entry>
+		<lookup-entry>There is are bones. It is a skeletal arm. It looks crushed. Someone is probably missing it</lookup-entry>
+		<lookup-entry>There is are bones. It is a skeletal leg. It looks crushed. What did he do? walk away</lookup-entry>
+		<lookup-entry>It looks like there is a body part. It is an old, decayed hand. A ring was removed from the finger. It looks crushed.</lookup-entry>
+		<lookup-entry>Someone left something behind. There is an old, decayed foot lying on the floor. Anyone need one boot. It looks crushed</lookup-entry>
+		<lookup-entry>It appears there is a body part here. There is an old, decayed arm. It looks crushed. It almost looks as if it was pointing</lookup-entry>
+		<lookup-entry>It looks like there is a body part here. There is an old,decayed leg. It looks crushed</lookup-entry>
+	</lookup-table>
+
+
+  <!-- Trigger Clue - Players need clues -->
+	<lookup-table key="TCa">
+		<lookup-entry>crushed</lookup-entry>
+		<lookup-entry>severed</lookup-entry>
+		<lookup-entry>burnt</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger Clue  -->
+	<lookup-table key="TCb">
+		<lookup-entry>decaying</lookup-entry>
+		<lookup-entry>skeletal</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger Clue  -->
+	<lookup-table key="TCc">
+		<lookup-entry>hand</lookup-entry>
+		<lookup-entry>foot</lookup-entry>
+		<lookup-entry>head</lookup-entry>
+		<lookup-entry>arm</lookup-entry>
+		<lookup-entry>leg</lookup-entry>
+	</lookup-table>
 
 
   <!-- Trigger Disable  -->
@@ -478,6 +556,7 @@
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% to reset a tension line</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% blown to reset a switch</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by key press to reset a switch</lookup-entry>
+		<lookup-entry>plate has been ripped out and thrown to the side. The trap is broken but the characters do not know this for sure.</lookup-entry>
 	</lookup-table>
 
   <!-- Trigger reset heat  -->
@@ -523,6 +602,7 @@
 		<lookup-entry>knob which disables by a strong lift up and activates when door handle is pulled to open</lookup-entry>
 		<lookup-entry>knob which disables by a strong push down and activates when door handle is pushed to open</lookup-entry>
 		<lookup-entry>knob which disables by a strong push down and activates when door handle is pulled to open</lookup-entry>
+		<lookup-entry>knob is dangling from the door. The trap is broken but the player do not know this for sure.</lookup-entry>
 	</lookup-table>
 
   <!-- Water Type or quality -->
