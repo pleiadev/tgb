@@ -41,6 +41,9 @@
 //			possible value is 10.  The lower and upper bounds are optional when 
 //			absent they default to random number between 10-20.
 //			Examples, #R# and #5R10#	
+// $Key$ - Insert a text returned from a keyed string table. Calls RGStringTable(Key) to look
+//			up the result for the table.
+//			Examples: $D$, $N$, $L$
 //
 
 function RGLookupRandomKeyEntry(dom, key) 
@@ -122,6 +125,7 @@ function RGMakeReplacements( des, dom, level )
 					default:		text += c; break; // Insert Text
 					case "%":		mode = 1; key = ""; break; // Replace Open
 					case "#":		mode = 2; min = max = ""; break; // Random Min
+					case "$":		mode = 4; key = ""; break; // String Table Open
 				} // switch
 			}; break;
 
@@ -152,6 +156,17 @@ function RGMakeReplacements( des, dom, level )
 					case "#":	text += RGRandom(min, max); mode = 0; break; // Insert Random Number
 				} // switch
 			}; break;
+
+			case 4: // String Table Open
+			{
+				switch( c )
+				{
+					// Insert Replace Text
+					default: 	key += c; break; 
+					case "$":	text += RGStringTable(key, dom, level); mode = 0; break; // Normal
+				} // switch
+			}; break;
+
 		} // switch mode 
 
 		index++;
