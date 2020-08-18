@@ -206,10 +206,9 @@
   <!-- Simple Traps...Deadly! -->
 	<lookup-table key="S3">
   <lookup-entry>Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
   <lookup-entry>Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%.</lookup-entry>
-  <lookup-entry>Spiked Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %AD% mele22e (1d4 spikes for 1d4+5 points of damage per successful hit); %PT%; Reflex %RS% avoids falling; Search %SD%.</lookup-entry>
+  <lookup-entry>Spiked Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %AD% mele22e (1d4 spikes for $d4$ points of damage per successful hit); %PT%; Reflex %RS% avoids falling; Search %SD%.</lookup-entry>
   <lookup-entry>Poison Needle Trap: CR 3; %AS% ranged (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Dust Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Gas Trap: CR 3; no attack roll necessary (1d4, plus Poisoned); Gas remains active 1d4 rounds; Reflex %RD% avoids Poisoned; Search %SD%. Activation %AT%.</lookup-entry>
@@ -229,8 +228,7 @@
   <lookup-entry>Arrow Trap: CR 2; %AN% ranged 1d6/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Activation %AT%.</lookup-entry>
   <lookup-entry>Spear Trap: CR 2; %AN% ranged 1d8/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Activation %AT%.</lookup-entry>
   <lookup-entry>Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%; Reflex %RN% avoids falling; Search %SN%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RN% avoids falling; Search %SN%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DN% Deep): CR 6 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for 1d4+5 points of damage per successful hit); Reflex %RN% avoids falling; Search %SN%.</lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DN% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RN% avoids falling; Search %SN%.</lookup-entry>
   <lookup-entry>Swinging Log Trap: CR 2; %AN% ranged (1d8/x3 crit); Search %SN%. Note: Activation %AT%.</lookup-entry>
   <lookup-entry>Spiked Swinging Log Trap: CR 2; %AN% ranged (1d8x3, plus 1d4 spikes for 1d4+5 points of damage per spike); Reflex %RN% avoids; Search %SN%. Activation %AT%.</lookup-entry>  
   <lookup-entry>Poison Needle Trap: CR 2; %AN% ranged (1x3, plus greenblood oil poison); Search %SN%. Activation %AT%.</lookup-entry>
@@ -254,9 +252,9 @@
   <lookup-entry>Arrow Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Spear Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Pit Trap (%DS% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
-  <lookup-entry>Spiked Pit Trap (%DS% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AS% melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
+  <lookup-entry>Spiked Pit Trap (%DS% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AS% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
   <lookup-entry>Swinging Log Trap: CR 1; %AS% ranged ($S$/x2 crit); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AS% ranged ($S$x2, plus 1d4 spikes for 1d4+2 points of damage per spike); Reflex %RS% avoids; Search %SS%. Activation %AT%.</lookup-entry>  
+  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AS% ranged ($S$x2, plus 1d4 spikes for $d4$ points of damage per spike); Reflex %RS% avoids; Search %SS%. Activation %AT%.</lookup-entry>  
   <lookup-entry>Poison Needle Trap: CR 1; %AS% ranged (1, plus Poisoned); Reflex %RS% avoids being Poisoned; Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Dust Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Poison Gas Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Gas remains active 1d4 rounds; Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
