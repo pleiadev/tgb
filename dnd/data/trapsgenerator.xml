@@ -223,13 +223,13 @@
 
   <!-- Trigger Activation Type -->
 	<lookup-table key="AT">
-		<lookup-entry>trigger is on a hair trigger. Those probing with a 10 foot pole could avoid the trap</lookup-entry>
-		<lookup-entry>trigger is well maintained. Activate on the first in line</lookup-entry>
-		<lookup-entry>trigger is keyed for the second activation.</lookup-entry>
-		<lookup-entry>trigger is unreliable. Use marching order to determine when it activates</lookup-entry>
-		<lookup-entry>trigger is old. Use marching order to determine when it activates</lookup-entry>
-		<lookup-entry>trigger is old and unreliable. Use marching order to determine when it activates</lookup-entry>
-		<lookup-entry>trigger is fragile and breaks after activation. Use marching order to determine when it activates</lookup-entry>
+		<lookup-entry>trigger is on a hair trigger. Those probing with a 10 foot pole could avoid the trap. The trigger is a %TD%</lookup-entry>
+		<lookup-entry>trigger is well maintained. Activate on the first in line. The trigger is a %TD%</lookup-entry>
+		<lookup-entry>trigger is keyed for the second activation. The trigger is a %TD%</lookup-entry>
+		<lookup-entry>trigger is unreliable. Use marching order to determine when it activates. The trigger is a %TD%</lookup-entry>
+		<lookup-entry>trigger is old. Use marching order to determine when it activates. The trigger is a %TD%</lookup-entry>
+		<lookup-entry>trigger is old and unreliable. Use marching order to determine when it activates. The trigger is a %TD%</lookup-entry>
+		<lookup-entry>trigger is fragile and breaks after activation. Use marching order to determine when it activates. The trigger is a %TD%</lookup-entry>
 	</lookup-table>
 
   <!-- Creature Numbers -->
@@ -362,6 +362,73 @@
 		<lookup-entry>(DC 26); Disable Device (DC 25)</lookup-entry>
 		<lookup-entry>(DC 27); Disable Device (DC 25)</lookup-entry>
 		<lookup-entry>(DC 28); Disable Device (DC 30)</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger Disable  -->
+	<lookup-table key="TD">
+		<lookup-entry>door %TT%</lookup-entry>
+		<lookup-entry>floor %TF%</lookup-entry>
+		<lookup-entry>step %TF%</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger floor plate  -->
+	<lookup-table key="TF">
+		<lookup-entry>plate that activates when %TO% and disabled by first pushing a hidden reset button</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by first pulling a hidden reset lever</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by first sliding a disguised reset handle</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by first stepping on a hidden reset tile</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by heat from %TH% turning a hidden reset fan tumbler</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset vase </lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset a mill tumbler </lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by key used to reset a lock </lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by %TS% to reset a balance line</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by %TS% to reset a tension line</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by %TS% blown to reset a switch</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by key press to reset a switch</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger reset heat  -->
+	<lookup-table key="TH">
+		<lookup-entry>candle</lookup-entry>
+		<lookup-entry>lamp</lookup-entry>
+		<lookup-entry>torch</lookup-entry>
+		<lookup-entry>burning incense</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger on or off  -->
+	<lookup-table key="TO">
+		<lookup-entry>stepped on</lookup-entry>
+		<lookup-entry>stepped off</lookup-entry>
+		<lookup-entry>crossed</lookup-entry>
+		<lookup-entry>light over it is blocked</lookup-entry>
+		<lookup-entry>light over it is crossed</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger reset sound tone  -->
+	<lookup-table key="TS">
+		<lookup-entry>bell is struck</lookup-entry>
+		<lookup-entry>chord is plucked</lookup-entry>
+		<lookup-entry>chimes are blown</lookup-entry>
+	</lookup-table>
+
+  <!-- Trigger handle turned  -->
+	<lookup-table key="TT">
+		<lookup-entry>knob which disables by turning left and activates by turning right to open</lookup-entry>
+		<lookup-entry>knob which disables by pushing in and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pulling out and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pulling on knocker and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pushing on knocker and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by sliding knocker left and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by sliding knocker right and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pushing knocker up and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pushing knocker down and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pulling on lock and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pushing on lock and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by using key in lock and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by lifting up and activates when door handle is pushed to open</lookup-entry>
+		<lookup-entry>knob which disables by lifting up and activates when door handle is pulled to open</lookup-entry>
+		<lookup-entry>knob which disables by pushing down and activates when door handle is pushed to open</lookup-entry>
+		<lookup-entry>knob which disables by pushing down and activates when door handle is pulled to open</lookup-entry>
 	</lookup-table>
 
   <!-- Water Type or quality -->
