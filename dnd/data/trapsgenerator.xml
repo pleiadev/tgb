@@ -162,7 +162,7 @@
 
   <!-- Simple Traps...Fighters! -->
 	<lookup-table key="S">
-  <lookup-entry>Caltrops Trap: CR 0; %AS% melee negating armor, shield, and deflection ($S%, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Search %SS%. Note: 5-ft. reach, target passes over square. Activation %AT%.</lookup-entry>
+  <lookup-entry>Caltrops Trap: CR 0; %AS% melee negating armor, shield, and deflection ($S$, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Search %SS%. Note: 5-ft. reach, target passes over square. Activation %AT%.</lookup-entry>
   <lookup-entry>Arrow Trap: CR 0; %AS% ranged 1d6/x3; Reflex %RS% avoids critical damage; Search %SS%. Note: 200-ft. max range, target determined randomly from those in its path. Activation %AT%.</lookup-entry>
   <lookup-entry>Spear Trap: CR 0; %AN% ranged 1d8/x3; Reflex %RS% avoids critical damage; Search %SS%. Note: 200-ft. max range, target determined randomly from those in its path. Activation %AT%.</lookup-entry>
   <lookup-entry>Pit Trap (%DD% Deep): CR 0 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
