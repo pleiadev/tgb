@@ -375,10 +375,11 @@
 	<lookup-table key="TF">
 		<lookup-entry>plate that activates when %TO% and disabled by first pushing a hidden reset button</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by first pulling a hidden reset lever</lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by first pulling a hidden reset cord</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by first sliding a disguised reset handle</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by first stepping on a hidden reset tile</lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by heat from %TH% turning a hidden reset fan tumbler</lookup-entry>
-		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset vase </lookup-entry>
+		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset a balance vase </lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by water poured into a hidden drain to reset a mill tumbler </lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by key used to reset a lock </lookup-entry>
 		<lookup-entry>plate that activates when %TO% and disabled by %TS% to reset a balance line</lookup-entry>
@@ -414,21 +415,22 @@
   <!-- Trigger handle turned  -->
 	<lookup-table key="TT">
 		<lookup-entry>knob which disables by turning left and activates by turning right to open</lookup-entry>
-		<lookup-entry>knob which disables by pushing in and activates by turning to open</lookup-entry>
-		<lookup-entry>knob which disables by pulling out and activates by turning to open</lookup-entry>
-		<lookup-entry>knob which disables by pulling on knocker and activates by turning to open</lookup-entry>
-		<lookup-entry>knob which disables by pushing on knocker and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by pulling a hidden reset cord and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by a hard push in and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by a hard pull out and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by a hard pull on knocker and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by a hard push on the knocker and activates by turning to open</lookup-entry>
 		<lookup-entry>knob which disables by sliding knocker left and activates by turning to open</lookup-entry>
 		<lookup-entry>knob which disables by sliding knocker right and activates by turning to open</lookup-entry>
 		<lookup-entry>knob which disables by pushing knocker up and activates by turning to open</lookup-entry>
 		<lookup-entry>knob which disables by pushing knocker down and activates by turning to open</lookup-entry>
-		<lookup-entry>knob which disables by pulling on lock and activates by turning to open</lookup-entry>
-		<lookup-entry>knob which disables by pushing on lock and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by a hard pull on the lock and activates by turning to open</lookup-entry>
+		<lookup-entry>knob which disables by a hard push on the lock and activates by turning to open</lookup-entry>
 		<lookup-entry>knob which disables by using key in lock and activates by turning to open</lookup-entry>
-		<lookup-entry>knob which disables by lifting up and activates when door handle is pushed to open</lookup-entry>
-		<lookup-entry>knob which disables by lifting up and activates when door handle is pulled to open</lookup-entry>
-		<lookup-entry>knob which disables by pushing down and activates when door handle is pushed to open</lookup-entry>
-		<lookup-entry>knob which disables by pushing down and activates when door handle is pulled to open</lookup-entry>
+		<lookup-entry>knob which disables by a strong lift up and activates when door handle is pushed to open</lookup-entry>
+		<lookup-entry>knob which disables by a strong lift up and activates when door handle is pulled to open</lookup-entry>
+		<lookup-entry>knob which disables by a strong push down and activates when door handle is pushed to open</lookup-entry>
+		<lookup-entry>knob which disables by a strong push down and activates when door handle is pulled to open</lookup-entry>
 	</lookup-table>
 
   <!-- Water Type or quality -->
