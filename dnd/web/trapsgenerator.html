@@ -6,10 +6,81 @@
 <SCRIPT LANGUAGE="JavaScript" SRC="randomgenerator.js" TYPE="text/jscript"></SCRIPT>
 
 <SCRIPT LANGUAGE="JavaScript">
+
+function RGStringTable(key, dom, level)
+{
+	var lvalue = document.form1.level_value.value; 
+
+	switch ( lvalue )
+	{
+		default:
+		case "low": // Level 1-4
+		{
+			switch ( key )
+			{
+				default:
+				case "S": return "5,1d10";
+				case "N": return "11,2d10";
+				case "D": return "22,4d10";
+				case "d4": return "4,1d4+2"; // Arrow Spikes
+				case "d6": return "7,2d6"; // 
+				case "d8": return "4,1d8"; // Spear
+			} // switch difficulty
+			throw( new error( 1, "key " + key + ": value not handled!"));
+		}; break;
+		case "mid": // Level 5-10
+		{
+			switch ( key )
+			{
+				default:
+				case "S": return "11,2d10";
+				case "N": return "22,4d20";
+				case "D": return "55,10d10";
+				case "d4": return "4,1d4+2"; // Arrow Spikes
+				case "d6": return "10,3d6"; // 
+				case "d8": return "4,1d8"; // Spear
+			} // switch key
+			throw( new error( 1, "key " + key + ": value not handled!"));
+		}; break;
+		case "high": // Level 11-16
+		{
+			switch ( key )
+			{
+				default:
+				case "S": return "22,4d10";
+				case "N": return "55,10d10";
+				case "D": return "99,18d10";
+				case "d4": return "7,1d4+5"; // Arrow Spikes
+				case "d6": return "18,5d6"; // 
+				case "d8": return "5,2d4"; // Spear
+			} // switch key
+			throw( new error( 1, "key " + key + ": value not handled!"));
+		}; break;
+		case "capstone": // Level 17-20
+		{
+			switch ( key )
+			{
+				default:
+				case "S": return "55,10d10";
+				case "N": return "99,18d10";
+				case "D": return "132,24d10";
+				case "d4": return "7,1d4+5"; // Arrow Spikes
+				case "d6": return "28,8d6"; // 
+				case "d8": return "5,2d4"; // Spear
+			} // switch key
+			throw( new error( 1, "key " + key + ": value not handled!"));
+		}; break;
+	}; // switch mode
+
+	throw( new error( 1, "Level " + lvalue + ": value not handled!"));
+	return -1;
+}
+
 function generator() 
 {
 	// Read Inputs
 	var nvalue = document.form1.number_value.value; 
+	var lvalue = document.form1.level_value.value; 
 	
 	var generate_list = RGGenerate(generate, "https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/trapsgenerator.xml", nvalue);
 
@@ -97,6 +168,17 @@ to find a trap or to disable it is generally 20 + the dungeon level.</B>
 	<tr> <td width="20%" valign="top">
 						
 	<table border="0" cellpadding="1" cellspacing="1" width="100%">
+	<tr align="center"> 
+	<td>Character Level</td>
+	<td> 
+		<select name="level_value">
+			<option value="low">Levels 1-4</option>
+			<option value="mid">Levels 6-10</option>
+			<option value="high">Levels 11-16</option>
+			<option value="capstone">Levels 17-20</option>
+		</select>
+	</td>
+	</tr> 		
 	<tr align="center"> 
 	<td>Number</td>
 	<td><input type="text" name="number_value" maxlength="2" value="15"> </td>
