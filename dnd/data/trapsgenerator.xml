@@ -334,7 +334,7 @@
 	</lookup-table>
 
   <!-- Distance Deadly Fall Lengths -->
-	<lookup-table key="DL">
+	<lookup-table key="DD">
 		<lookup-entry>50 feet</lookup-entry>
 		<lookup-entry>60 feet</lookup-entry>
 		<lookup-entry>80 feet</lookup-entry>
