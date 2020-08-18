@@ -250,19 +250,19 @@
 
   <!-- Simple Traps...Setbacks -->
 <lookup-table key="S1">
-  <lookup-entry>Caltrops Trap: CR 1; %AS% melee negating armor, shield, and deflection (1 pt dmg/x3, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Arrow Trap: CR 1; %AS% ranged 1d6/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Spear Trap: CR 1; %AS% ranged 1d8/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Caltrops Trap: CR 1; %AS% melee negating armor, shield, and deflection ($S$/x3, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Arrow Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Spear Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Activation %AT%.</lookup-entry>
   <lookup-entry>Pit Trap (%DS% Deep): CR 1 (+1 per 20 feet of fall); %PT%; Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
   <lookup-entry>Spiked Pit Trap (%DS% Deep): CR 2 (+1 per 20 feet of fall); %PT%, %AS% melee (1d4 spikes for 1d4+2 points of damage per successful hit); Reflex %RS% avoids falling; Search %SS%.</lookup-entry>
-  <lookup-entry>Swinging Log Trap: CR 1; %AS% ranged (1d8/x2 crit); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AS% ranged (1d8x2, plus 1d4 spikes for 1d4+2 points of damage per spike); Reflex %RS% avoids; Search %SS%. Activation %AT%.</lookup-entry>  
+  <lookup-entry>Swinging Log Trap: CR 1; %AS% ranged ($S$/x2 crit); Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Spiked Swinging Log Trap: CR 2; %AS% ranged ($S$x2, plus 1d4 spikes for 1d4+2 points of damage per spike); Reflex %RS% avoids; Search %SS%. Activation %AT%.</lookup-entry>  
   <lookup-entry>Poison Needle Trap: CR 1; %AS% ranged (1, plus Poisoned); Reflex %RS% avoids being Poisoned; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Dust Trap: CR 1; no attack roll necessary (1d4, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Poison Gas Trap: CR 1; no attack roll necessary (1d4, plus %PG%); Gas remains active 1d4 rounds; Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Hail of Needles: CR 1; %AS% ranged (2d4); Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Scything Blade Trap: CR 1; %AS% melee 1d8/x2; Reflex %RS% avoids critical damage; Search %SS%. Activation %AT%.</lookup-entry>
-  <lookup-entry>Portcullis Trap: CR 1; %AS% melee 2d6/x2; Reflex %RS% avoids critical damage; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Dust Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Poison Gas Trap: CR 1; no attack roll necessary ($S$, plus %PG%); Gas remains active 1d4 rounds; Reflex %RS% avoids gas; Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Hail of Needles: CR 1; %AS% ranged ($S$); Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Scything Blade Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Search %SS%. Activation %AT%.</lookup-entry>
+  <lookup-entry>Portcullis Trap: CR 1; %AS% melee $S$/x2; Reflex %RS% avoids critical damage; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway. Search %SS%. Activation %AT%.</lookup-entry>
 </lookup-table>
 
 
