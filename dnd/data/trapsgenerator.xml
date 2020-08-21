@@ -157,15 +157,16 @@
 
 
 
-  <!-- Creature Traps...Clerics! -->
-  <lookup-table key="C">
+<!-- Creature Traps...Clerics! -->
+<lookup-table key="C">
     <lookup-entry>%CC% %CS% stand above the portal on a ledge %DS% up. They stand by a crate of rocks near the ledge. Upon spoting an intruder, they push the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each creature.</lookup-entry>
     <lookup-entry>%CC% %CS% stand above the portal on a ledge %DS% up. They hold a crate full of rocks between them. Upon spoting an intruder, they drop the crate so it crashes down upon them. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then jump down from the ledge to attack, apply falling damage to each of the creatures.</lookup-entry>
     <lookup-entry>%CC% %CS% stand in an alcove to the sides of the door. One is tied by a rope to a suspended crate of rocks. Upon spoting an intruder, it moves triggering the crate to drop so it crashes down upon the intruder. Dexterity saving throw (DC 12) or take 2d6 bludgeoning damage. They then step out to attack.</lookup-entry>
-  </lookup-table>
+    <lookup-entry>%CC% %CD% stands hidden behind a closed portcullis and will make a special attack, possibly in the surprise round. After taunting, teasing, or toying with the characters they then wander off to pursue their own more interesting objectives. This encounter is likely too powerful for the players but an opportunty to introduce the player's to danger or roleplay. Search %SD%.</lookup-entry>
+</lookup-table>
 
-  <!-- Magical Traps...Wizards! -->
-  <lookup-table key="M">
+<!-- Magical Traps...Wizards! -->
+<lookup-table key="M">
     <lookup-entry>Flame Jet: CR 2; 1 foot wide, 50 feet long stream of flame (3d6); Reflex %RN% avoids; Search %SD%.</lookup-entry>
     <lookup-entry>Lightning Blast: CR 3; 5 feet wide, 50 feet long blast (3d6); Reflex %RN% avoids; Search %SD%.</lookup-entry>
     <lookup-entry>Globe of Cold: CR 4; 20 foot radius sphere or hemisphere (5d6); Reflex %RN% avoids; Search %SD%.</lookup-entry>
@@ -173,10 +174,10 @@
     <lookup-entry>Floor Transforms into acid: CR 6; section of floor (10d6); Reflex %RD% negates; Search %SD%. Note: Successful save means character dives to safety in time.</lookup-entry>
     <lookup-entry>Illusion over Spiked Pit (%DN% deep): CR 3 (+1 per 20 feet of fall); %PT%, %AN% melee (1d4 spike attacks for 1d4+2 points of damage per successful hit); Reflex %RN% avoids; Search %SD%.</lookup-entry>
     <lookup-entry>Air Sucked out of room: CR 5; Room takes 4 rounds to decompress and once decompressed air refills in 1d4+1 rounds. Search %SD%. </lookup-entry>
-  </lookup-table>
+</lookup-table>
 
-  <!-- Simple Traps...Deadly! -->
-	<lookup-table key="S3">
+<!-- Simple Traps...Deadly! -->
+<lookup-table key="S3">
   <lookup-entry>Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%. Clues %TCft%.</lookup-entry>
   <lookup-entry>Spiked Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%, %AD% melee (1d4 spikes for $d4$ points of damage per successful hit); Reflex %RD% avoids falling; Search %SD%. Clues %TCft%.</lookup-entry>
   <lookup-entry>Tilting Floor Pit Trap (%DD% Deep): CR 3 (+1 per 20 feet of fall); %PT%; Reflex %RD% avoids falling; Search %SD%. Clues %TCft%.</lookup-entry>
@@ -194,8 +195,8 @@
   <lookup-entry>Flooding Room Trap: CR 3 (+1 per round of flood); no attack roll necessary (see note below); Note: Room floods in 4 rounds and drains in 1d4+1 rounds. Search %SD%. Activation %AT%.</lookup-entry>
 </lookup-table>
 
-  <!-- Simple Traps...Dangerous -->
-	<lookup-table key="S2">
+<!-- Simple Traps...Dangerous -->
+<lookup-table key="S2">
   <lookup-entry>Caltrops Trap: CR 2; %AN% melee negating armor, shield, and deflection ($d4$/x3, reduced to 1/2 speed); Reflex %RN% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SN%. Clues %TCpf%. Activation %AT%.</lookup-entry>
   <lookup-entry>Arrow Trap: CR 2; %AN% ranged 1d6/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Clues %TCpt%. Activation %AT%.</lookup-entry>
   <lookup-entry>Spear Trap: CR 2; %AN% ranged 1d8/x3; Reflex %RN% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SN%. Clues %TCpt%. Activation %AT%.</lookup-entry>
@@ -218,7 +219,7 @@
 </lookup-table>
 
 
-  <!-- Simple Traps...Setbacks -->
+<!-- Simple Traps...Setbacks -->
 <lookup-table key="S1">
   <lookup-entry>Caltrops Trap: CR 1; %AS% melee negating armor, shield, and deflection ($d4$/x3, reduced to 1/2 speed); Reflex %RS% avoids critical damage; Note: 5-ft. reach, target passes over square. Search %SS%. Clues %TCpf%. Activation %AT%.</lookup-entry>
   <lookup-entry>Arrow Trap: CR 1; %AS% ranged $S$/x2; Reflex %RS% avoids critical damage; Note: 200-ft. max range, target determined randomly from those in its path. Search %SS%. Clues %TCpt%. Activation %AT%.</lookup-entry>
@@ -273,6 +274,7 @@
   <!-- Creature - Deadly -->
 	<lookup-table key="CD">
 		<lookup-entry>troll</lookup-entry>
+		<lookup-entry>young dragon</lookup-entry>
 	</lookup-table>
 
   <!-- Creature - Dangerous -->
