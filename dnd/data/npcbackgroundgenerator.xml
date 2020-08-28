@@ -7,7 +7,7 @@
 	
 	<lookup-table key="traits">
 <lookup-entry>
-Weakness: %weakness% 
+<P>Weakness: %weakness%</P> 
 Needs: %needs% 
 Desires: %desires% 
 Enemies: %enemies% 
