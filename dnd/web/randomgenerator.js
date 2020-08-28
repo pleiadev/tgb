@@ -280,7 +280,8 @@ function XmlNodeAttribute(node, attrib)
 function XmlNodeText(node)
 {
 	// return node.text;
-	return node.textContent;	
+	//return node.textContent;
+	return node.innerHTML;
 }
 
 function RGGenerate(dom, filepath, count, xpath_start = null)
