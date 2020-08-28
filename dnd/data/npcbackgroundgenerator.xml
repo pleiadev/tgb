@@ -2,7 +2,7 @@
 <generator start-xpath="//lookup-table[@key = 'D']/lookup-entry" escape="%">
 
 	<lookup-table key="D">
-		<lookup-entry>  How does the community react to the NPC's family? Well, truthfully, the family %viewsfamily% The NPC has %foes% who %foesviews% Luckily, though, the character also has %allies% and allies who %alliesviews% As for companions, the NPC has %companions% and appreciates those who are %companionstraits%. Important Events %events% %parents% The NPC %viewsparents% The NPC %siblings% %viewssiblings% The character's family %family%  Traits %traits%.  </lookup-entry>
+		<lookup-entry>  How does the community react to the NPC's family? Well, truthfully, the family %viewsfamily% The NPC has %foes% who %foesviews% Luckily, though, the character also has %allies% and allies who %alliesviews% As for companions, the NPC has %companions% and appreciates those who are %companionstraits%  Important Events %events% %parents% The NPC %viewsparents% The NPC %siblings% %viewssiblings% The character's family %family%  Traits %traits%.  </lookup-entry>
 	</lookup-table>
 	
 	<lookup-table key="traits">
