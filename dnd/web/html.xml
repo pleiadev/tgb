@@ -43,9 +43,9 @@
     <navbar name="Campaign Outline" link="campaignoutline.html" file="campaignoutline" />
     <navbar name="Adventure Outline" link="adventureoutline.html" file="adventureoutline" />
     <navbar name="Mapping" link="mapping.html" file="mapping" />
-	<navbar name="Glory" link="glory.html" file="glory" />
+    <navbar name="Glory" link="glory.html" file="glory" />
     <navbar name="Foreshadowing" link="foreshadowing.html" file="foreshadowing" />
-	<navbar name="NPCs" link="npcs.html" file="npcs" />
+    <navbar name="NPCs" link="npcs.html" file="npcs" />
     <navbar name="Consequences" link="consequences.html" file="consequences" />
     <navbar name="Traps" link="traps.html" file="traps" />
     <navbar name="Encounters" link="encounters.html" file="encounters" />
