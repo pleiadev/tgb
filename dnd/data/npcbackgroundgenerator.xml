@@ -2,9 +2,14 @@
 <generator start-xpath="//lookup-table[@key = 'D']/lookup-entry" escape="%">
 
 	<lookup-table key="D">
-		<lookup-entry> %parents% The NPC %viewsparents% The NPC %siblings% %viewssiblings% The character's family %family% How does the community react to the NPC's family? Well, truthfully, the family %viewsfamily% The NPC has %foes% who %foesviews% Luckily, though, the character also has %allies% and allies who %alliesviews% As for companions, the NPC has %companions% %companionstraits% Important Events %events% </lookup-entry>
+		<lookup-entry> %traits%<BR/> How does the community react to the NPC's family? Well, truthfully, the family %viewsfamily% The NPC has %foes% who %foesviews% Luckily, though, the character also has %allies% and allies who %alliesviews% As for companions, the NPC has %companions% %companionstraits% Important Events %events% %parents% The NPC %viewsparents% The NPC %siblings% %viewssiblings% The character's family %family%. </lookup-entry>
 	</lookup-table>
 	
+	<lookup-table key="traits">
+		<lookup-entry><BR/>Weakness: %weakness%<BR/>Needs: %needs%<BR/>Desires: %desires%<BR/>Enemies: %enemies%<BR/></lookup-entry>
+	</lookup-table>
+
+
 	<lookup-table key="parents">
 		<lookup-entry>Both of the NPC's parents are alive and well.</lookup-entry>
 		<lookup-entry>Both of the NPC's parents are alive, but one is in poor health.</lookup-entry>
@@ -242,9 +247,150 @@
 		<lookup-entry><BR/>The character once owned some great item, perhaps an incredibly valuable gem or a magical item of glory. This object has been taken from him, leaving the character with an insatiable desire to reclaim his treasure. This relic, however, has found its way into the hands of a creature far more powerful than the character, perhaps even a dragon. The character will not rest until he reclaims the item or dies in the attempt. The DM should determine what the item was and who currently has it.<BR/></lookup-entry>
 		<lookup-entry><BR/>Through some mishap, the character has some alter personality. Perhaps this personality is a spirit who possesses him, or it might be a second personality which surfaces in times of stress. When the character's darker half comes to the surface, he behaves in ways unthinkable to his 'normal' self.<BR/></lookup-entry>
 		<lookup-entry><BR/>The character has a seemingly imaginary enemy. This might be the spirit of a long-dead foe, an extra-planar being or untold evil, or a delusion born of the character's disturbed mind. The nature of this enemy should be decided by the DM. When the imaginary villain attacks, it will be difficult for the character to convince his companions that he is in real danger. Before long, they may begin to doubt his sanity or sincerity, as they never find any evidence to support the character's assertions that he has been menaced.<BR/></lookup-entry>
-		<lookup-entry><BR/>The character has frequent periods of missing time. The length of these blackouts varies, but they generally run about an hour. The character has no memory at all of what happens during this time, but he associates great feelings of anxiety with them. Exactly what happens to the character during these periods is up to the DM."
-	</lookup-entry>
-</lookup-table>
+		<lookup-entry><BR/>The character has frequent periods of missing time. The length of these blackouts varies, but they generally run about an hour. The character has no memory at all of what happens during this time, but he associates great feelings of anxiety with them. Exactly what happens to the character during these periods is up to the DM.<BR/></lookup-entry>
+	</lookup-table>
 
+	<lookup-table key="weakness">
+		<lookup-entry>Aggressive</lookup-entry>
+		<lookup-entry>Angry</lookup-entry>
+		<lookup-entry>Apathetic</lookup-entry>
+		<lookup-entry>Aimless</lookup-entry>
+		<lookup-entry>Aloof</lookup-entry>
+		<lookup-entry>Amoral</lookup-entry>
+		<lookup-entry>Annoying</lookup-entry>
+		<lookup-entry>Argumentative</lookup-entry>
+		<lookup-entry>Arrogant</lookup-entry>
+		<lookup-entry>Bewildered</lookup-entry>
+		<lookup-entry>Blunt</lookup-entry>
+		<lookup-entry>Blustering</lookup-entry>
+		<lookup-entry>Clingy</lookup-entry>
+		<lookup-entry>Clumsy</lookup-entry>
+		<lookup-entry>Conceited</lookup-entry>
+		<lookup-entry>Crude</lookup-entry>
+		<lookup-entry>Cynical</lookup-entry>
+		<lookup-entry>Domineering</lookup-entry>
+		<lookup-entry>Fearful</lookup-entry>
+		<lookup-entry>Hesitant</lookup-entry>
+		<lookup-entry>Rude</lookup-entry>
+		<lookup-entry>Impulsive</lookup-entry>
+		<lookup-entry>Irritable</lookup-entry>
+		<lookup-entry>Ponderous</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="needs">
+		<lookup-entry>Community - Belonging</lookup-entry>
+		<lookup-entry>Community - Communication</lookup-entry>
+		<lookup-entry>Community - Cooperation</lookup-entry>
+		<lookup-entry>Community - Equality</lookup-entry>
+		<lookup-entry>Community - Inclusion</lookup-entry>
+		<lookup-entry>Community - Mutuality</lookup-entry>
+		<lookup-entry>Community - Participation</lookup-entry>
+		<lookup-entry>Community - Partnership</lookup-entry>
+		<lookup-entry>Community - Self-expression</lookup-entry>
+		<lookup-entry>Community - Sharing</lookup-entry>
+		<lookup-entry>Connection - Appreciation</lookup-entry>
+		<lookup-entry>Connection - Attention</lookup-entry>
+		<lookup-entry>Connection - Closeness</lookup-entry>
+		<lookup-entry>Connection - Companionship</lookup-entry>
+		<lookup-entry>Connection - Harmony</lookup-entry>
+		<lookup-entry>Connection - Intimacy</lookup-entry>
+		<lookup-entry>Connection - Love</lookup-entry>
+		<lookup-entry>Connection - Nurturing</lookup-entry>
+		<lookup-entry>Connection - Sexual Expression</lookup-entry>
+		<lookup-entry>Connection - Support</lookup-entry>
+		<lookup-entry>Connection - Tenderness</lookup-entry>
+		<lookup-entry>Connection - Warmth</lookup-entry>
+		<lookup-entry>Freedom - Autonomy</lookup-entry>
+		<lookup-entry>Freedom - Choice</lookup-entry>
+		<lookup-entry>Freedom - Ease</lookup-entry>
+		<lookup-entry>Freedom - Independence</lookup-entry>
+		<lookup-entry>Purpose - Acceptance</lookup-entry>
+		<lookup-entry>Purpose - Care</lookup-entry>
+		<lookup-entry>Purpose - Compassion</lookup-entry>
+		<lookup-entry>Purpose - Consideration</lookup-entry>
+		<lookup-entry>Purpose - Empathy</lookup-entry>
+		<lookup-entry>Purpose - Kindness</lookup-entry>
+		<lookup-entry>Purpose - Mutual Recognition</lookup-entry>
+		<lookup-entry>Purpose - Respect</lookup-entry>
+		<lookup-entry>Purpose - To be witnessed</lookup-entry>
+		<lookup-entry>Purpose - To be understood</lookup-entry>
+		<lookup-entry>Purpose - To be trusted</lookup-entry>
+		<lookup-entry>Purpose - Understanding of others</lookup-entry>
+		<lookup-entry>Meaning - Authenticity</lookup-entry>
+		<lookup-entry>Meaning - Competence</lookup-entry>
+		<lookup-entry>Meaning - Creativity</lookup-entry>
+		<lookup-entry>Meaning - Dignity</lookup-entry>
+		<lookup-entry>Meaning - Growth</lookup-entry>
+		<lookup-entry>Meaning - Healing</lookup-entry>
+		<lookup-entry>Meaning - Honesty</lookup-entry>
+		<lookup-entry>Meaning - Integrity</lookup-entry>
+		<lookup-entry>Meaning - Self Acceptance</lookup-entry>
+		<lookup-entry>Meaning - Self Care</lookup-entry>
+		<lookup-entry>Meaning - Self Connection</lookup-entry>
+		<lookup-entry>Meaning - Self Knowledge</lookup-entry>
+		<lookup-entry>Meaning - Self Realization</lookup-entry>
+		<lookup-entry>Meaning - Self Importance</lookup-entry>
+		<lookup-entry>Leisure - Humor</lookup-entry>
+		<lookup-entry>Leisure - Joy</lookup-entry>
+		<lookup-entry>Leisure - Play</lookup-entry>
+		<lookup-entry>Leisure - Pleasure</lookup-entry>
+		<lookup-entry>Leisure - Rejuvenation</lookup-entry>
+		<lookup-entry>Subsistence - Food</lookup-entry>
+		<lookup-entry>Subsistence - Health</lookup-entry>
+		<lookup-entry>Subsistence - Safety</lookup-entry>
+		<lookup-entry>Subsistence - Sleep</lookup-entry>
+		<lookup-entry>Subsistence - Rest</lookup-entry>
+		<lookup-entry>Subsistence - Shelter</lookup-entry>
+		<lookup-entry>Subsistence - Touch</lookup-entry>
+		<lookup-entry>Security - Consistency</lookup-entry>
+		<lookup-entry>Security - Order</lookup-entry>
+		<lookup-entry>Security - Structure</lookup-entry>
+		<lookup-entry>Security - Peace</lookup-entry>
+		<lookup-entry>Security - Peace of mind</lookup-entry>
+		<lookup-entry>Security - Protection</lookup-entry>
+		<lookup-entry>Security - Safety</lookup-entry>
+		<lookup-entry>Security - Stability</lookup-entry>
+		<lookup-entry>Security - Trusting</lookup-entry>
+		<lookup-entry>Understanding - Awareness</lookup-entry>
+		<lookup-entry>Understanding - Clarity</lookup-entry>
+		<lookup-entry>Understanding - Discovery</lookup-entry>
+		<lookup-entry>Understanding - Learning</lookup-entry>
+		<lookup-entry>Understanding - Existential</lookup-entry>
+		<lookup-entry>Understanding - Stimulation</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="desires">
+		<lookup-entry>Acceptance</lookup-entry>
+		<lookup-entry>Curiosity</lookup-entry>
+		<lookup-entry>Eating</lookup-entry>
+		<lookup-entry>Family</lookup-entry>
+		<lookup-entry>Honor</lookup-entry>
+		<lookup-entry>Idealism</lookup-entry>
+		<lookup-entry>Independence</lookup-entry>
+		<lookup-entry>Order</lookup-entry>
+		<lookup-entry>Physical Exercise</lookup-entry>
+		<lookup-entry>Power</lookup-entry>
+		<lookup-entry>Romance</lookup-entry>
+		<lookup-entry>Saving</lookup-entry>
+		<lookup-entry>Social Contact</lookup-entry>
+		<lookup-entry>Status</lookup-entry>
+		<lookup-entry>Tranquility</lookup-entry>
+		<lookup-entry>Vengeance</lookup-entry>
+	</lookup-table>
+
+	<lookup-table key="enemies">
+		<lookup-entry>Rivals - Cultural</lookup-entry>
+		<lookup-entry>Rivals - Econimic</lookup-entry>
+		<lookup-entry>Rivals - Personal</lookup-entry>
+		<lookup-entry>Rivals - Personal</lookup-entry>
+		<lookup-entry>Forces - Nature</lookup-entry>
+		<lookup-entry>Forces - Supernatural</lookup-entry>
+		<lookup-entry>Forces - Time</lookup-entry>
+		<lookup-entry>Ally - Betrayal</lookup-entry>
+		<lookup-entry>Ally - Poor Choices</lookup-entry>
+		<lookup-entry>Interfering Authority</lookup-entry>
+		<lookup-entry>Internal Saboteur</lookup-entry>
+		<lookup-entry></lookup-entry>
+	</lookup-table>
 
 </generator>
