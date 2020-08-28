@@ -6,9 +6,13 @@
 	</lookup-table>
 	
 	<lookup-table key="traits">
-		<lookup-entry><BR/>Weakness: %weakness%<BR/>Needs: %needs%<BR/>Desires: %desires%<BR/>Enemies: %enemies%<BR/></lookup-entry>
+<lookup-entry>
+Weakness: %weakness% 
+Needs: %needs% 
+Desires: %desires% 
+Enemies: %enemies% 
+</lookup-entry>
 	</lookup-table>
-
 
 	<lookup-table key="parents">
 		<lookup-entry>Both of the NPC's parents are alive and well.</lookup-entry>
