@@ -6,7 +6,7 @@
 	</lookup-table>
 	
 	<lookup-table key="traits">
-		<lookup-entry>  Weakness: %weakness%;  Needs: %needs%;  Desires: %desires%;  Enemies: %enemies%</lookup-entry>
+		<lookup-entry><br/>  Weakness: %weakness%;<br/>  Needs: %needs%;<br/>  Desires: %desires%;<br/>  Enemies: %enemies%<br/></lookup-entry>
 	</lookup-table>
 
 	<lookup-table key="parents">
