@@ -90,6 +90,9 @@
 		<lookup-entry>is the subject of dark tales.</lookup-entry>
 		<lookup-entry>is viewed with suspicion.</lookup-entry>
 		<lookup-entry>is reviled and hated.</lookup-entry>
+		<lookup-entry>is considered inconsequential and replaceable.</lookup-entry>
+		<lookup-entry>is sympathetic to their misfortune.</lookup-entry>
+		<lookup-entry>is considered essential and provids e a unique but common trade.</lookup-entry>
 	</lookup-table>
 
 	<lookup-table key="foes">
