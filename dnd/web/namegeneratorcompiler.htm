@@ -5,6 +5,62 @@
 <link rel="stylesheet" type="text/css" href="dnd.css" />
 <SCRIPT LANGUAGE="JavaScript" SRC="namegeneratorcompiler.js" TYPE="text/jscript"> </SCRIPT>
 
+<SCRIPT LANGUAGE="JavaScript">
+
+
+function compileNames()
+{
+	var names_source = document.form1.names_source.value; 
+
+	var compiled_list = compile( names_source );
+
+	//display("theResult", compiled_list);
+	//display("compiled_names", compiled_list);
+
+	var xmlText = document.createTextNode(compiled_list);
+	//document.getElementById("theResult").appendChild(xmlText);
+	document.getElementById("theResult").innerHTML = "";
+	document.getElementById("theResult").appendChild(xmlText);
+}
+
+///// Beginning of Message Output Functions /////
+
+function Msg( s )
+{
+	//window.alert(s);
+	display("statusArea", s);
+}
+
+<!-- display text function -->
+var NS = (document.layers) ? 1 : 0;
+var NS6 = (document.getElementById) ? 1 : 0;
+var IE = (document.all) ? 1 : 0;
+
+function display(id, str) 
+{
+	if (NS) 
+	{
+    	with (document[id].document) 
+		{
+			open();
+    		write(str);
+			close();
+		}
+	}
+	else if (NS6)
+	{
+    	document.getElementById(id).innerHTML = str;
+	}
+	else
+	{
+		document.all[id].innerHTML = str;
+	}
+}
+
+///// Ending of Message Output Functions /////
+
+</SCRIPT>
+
 </head>
 <BODY>
 
@@ -43,15 +99,21 @@ comments send it to me via email.
 	<td> <div><input type=button value="Compile" onClick="compileNames()" /></div> </td>
 	</table>
 	</form>
-	
 	</td>
+	</tr>
+
 	<tr>
 	<td STYLE="BACKGROUND-COLOR: #ffdfbe"  valign="middle">
 	<p><span id="statusArea">&nbsp;</span></p>
 	</td>
 	</tr>
 	<tr>
-	</tr>
+
+	<tr align="left">
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe" width="80%" valign="middle">
+	<p><div id="theResult">Press the Generate button to start.</div></p>
+	</td>
+	</tr>	
 	</table>
 
 	<xml id="compiled_names"></xml>
