@@ -301,7 +301,7 @@ function compile(filename)
 	Msg("Reload file to verify data.");
 	var dic = LCReadDoubletList(compiled);
 
-	Msg("Finished compile.");
+	Msg("Finished compile. Copy the xml to a file to create a data set.");
 
 	// pass back the text file data
 	return compiled;
