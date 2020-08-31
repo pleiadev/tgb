@@ -8,11 +8,20 @@
 <SCRIPT LANGUAGE="JavaScript">
 
 
-function compileNames()
+function compileNames(mode)
 {
 	var names_source = document.form1.names_source.value; 
+	var names_list = document.form1.names_list.value; 
+	var compiled_list = null;
 
-	var compiled_list = compile( names_source );
+	if (1 == mode)
+	{
+		compiled_list = compile_names_from_file( names_source );
+	}
+	else
+	{
+		compiled_list = compile_names_from_list( names_list );
+	}
 
 	//display("theResult", compiled_list);
 	//display("compiled_names", compiled_list);
@@ -94,7 +103,14 @@ comments send it to me via email.
 	<tr align="center"> 
 	<td>Name Source File</td>
 	<td> <input type="text" name="names_source" maxlength="256" value="https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/name_sample.txt"> </td>
-	<td> <div><input type=button value="Compile" onClick="compileNames()" /></div> </td>
+	<td> <div><input type=button value="Compile" onClick="compileNames(1)" /></div> </td>
+	</td>
+	</tr>
+
+	<tr align="center"> 
+	<td>Name List</td>
+	<td> <input type="text" name="names_list"> </td>
+	<td> <div><input type=button value="Compile" onClick="compileNames(2)" /></div> </td>
 	</table>
 	</form>
 	</td>

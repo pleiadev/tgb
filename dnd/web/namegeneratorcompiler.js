@@ -286,12 +286,8 @@ function XmlNodeText(node)
 
 ///// Beginning of Data File Compilation Routines /////
 
-
-function compile(filename) 
+function compile(dic) 
 {
-	Msg("Parsing and compiling names uri: " + filename);
-	var dic = LCParseFile(filename);
-
 	var compiled = "";
 
 	// Write the double list to the file format
@@ -305,6 +301,21 @@ function compile(filename)
 
 	// pass back the text file data
 	return compiled;
+}
+
+function compile_names_from_file(filename)
+{
+	Msg("Parsing and compiling names uri: " + filename);
+	var dic = LCParseFile(filename);
+	return compile(dic);
+}
+
+function compile_names_from_list(txtDoc)
+{
+	Msg("Parsing and names list.");
+	var dic = new Object(); // char pair map
+	dic = LCReadWords(txtDoc, dic);
+	return compile(dic);
 }
 
 
