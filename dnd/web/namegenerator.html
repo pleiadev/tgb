@@ -20,56 +20,63 @@ can be found <a href="index.html">here</a>.
 
 <table border="0" cellpadding="1" cellspacing="1" width="100%">
 	
-	<tr> <td width="20%" valign="top">
+	<tr> <td valign="top">
 						
 	<form method="post" action="" name="form1">
 	<table border="0" cellpadding="1" cellspacing="1" width="100%">
 	<tr align="center"> 
 	<td>Source File</td>
-	<td> 
-    <input type="text" name="names_source" maxlength="256" value="https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/namegenerator.xml" size="20"> </td>
+	<td width="80%"> 
+	<div><input type="text" name="names_source" size="80" maxlength="256" value="https://raw.githubusercontent.com/pleiadev/tgb/master/dnd/data/namegenerator.xml"></div>
+	</td>
 	</tr> 
 	<tr align="center"> 
 	<td>Word Maximum</td>
 	<td> 
-    <input type="text" name="word_maximum" maxlength="2" value="7" size="20"> </td>
+    <input type="text" name="word_maximum" size="20" maxlength="2" value="7" > </td>
 	</tr> 
 	<tr align="center">
 	<td>Word Minimum</td>
 	<td> 
-    <input type="text" name="word_minimum" maxlength="2" value="3" size="20"> </td>
+    <input type="text" name="word_minimum" size="20" maxlength="2" value="3" > </td>
 	</tr> 
 	<tr align="center">
 	<td>Number of Words</td>
 	<td> 
-    <input type="text" name="word_count" maxlength="2" value="100" size="20"> </td>
+    <input type="text" name="word_count" size="20" maxlength="2" value="100" > </td>
 	</tr> 
 	<tr align="center">
 	<td>Max Vowels</td>
 	<td> 
-    <input type="text" name="vowel_maximum" maxlength="2" value="3" size="20"> </td>
+    <input type="text" name="vowel_maximum" size="20" maxlength="2" value="3" > </td>
 	</tr> 
+
 	<tr align="center">
 	<td>Number of Names</td>
 	<td> 
-    <input type="text" name="name_count" maxlength="2" value="18" size="20"> </td>
+    <input type="text" name="name_count" size="20" maxlength="2" value="18" > </td>
 	</tr> 
+
 	<tr align="center">
-		<td colspan="2">
-			<div><input type=button value="Generate" onClick="generateWords()" /></div> 
-		</td>
+	<td colspan="2">
+		<div><input type=button value="Generate" onClick="generateWords()" /></div> 
+	</td>
 	</tr>
 	</table>
 	</form>
-	
-	</td>
-	<td STYLE="BACKGROUND-COLOR: #ffdfbe" width="80%" valign="middle">
-	<p><span id="statusArea">&nbsp;</span></p>
-	<p><span id="theNames">Press the logo to create a room.</span></p>
-
 	</td>
 	</tr>
+
 	<tr>
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe" valign="middle">
+	<p><span id="statusArea">&nbsp;</span></p>
+	</td>
+	</tr>
+
+	<tr>
+	<td STYLE="BACKGROUND-COLOR: #ffdfbe" width="80%" valign="middle">
+	<p><span id="theNames">Press the logo to create a room.</span></p>
+	</td>
 	</tr>
 	</table>
 
